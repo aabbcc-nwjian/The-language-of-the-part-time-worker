@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://c73fuxlcpbusb"]
+
+[ext_resource type="Texture2D" uid="uid://c7x8w2bc3823s" path="res://assets/矩形 72@1x.png" id="1_sitq3"]
+[ext_resource type="Script" uid="uid://2o0ksof73ls1" path="res://scene/progress_bar.gd" id="1_wegfc"]
+[ext_resource type="Texture2D" uid="uid://dqduo8ylu27nv" path="res://assets/进度条空.png" id="2_hq8lm"]
+[ext_resource type="Texture2D" uid="uid://cutvo0vmuu564" path="res://assets/进度条满.png" id="3_wegfc"]
+
+[sub_resource type="Gradient" id="Gradient_l86xc"]
+colors = PackedColorArray(0, 0, 0, 0.337255, 0, 0, 0, 0.380392)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_nug58"]
+gradient = SubResource("Gradient_l86xc")
+
+[node name="ProgressBar" type="CanvasLayer"]
+script = ExtResource("1_wegfc")
+metadata/_edit_vertical_guides_ = [234.0]
+metadata/_edit_horizontal_guides_ = [119.0]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 329.0
+offset_top = 150.0
+offset_right = 965.0
+offset_bottom = 553.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(301, 226.375)
+scale = Vector2(5.28906, 865.25)
+texture = SubResource("GradientTexture1D_nug58")
+
+[node name="Background" type="Sprite2D" parent="Control"]
+position = Vector2(318, 201)
+texture = ExtResource("1_sitq3")
+
+[node name="Title" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 70.0
+offset_right = 589.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 30
+text = "正在等下班倒计时"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Bar" type="TextureProgressBar" parent="Control"]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 205.0
+offset_right = 598.0
+offset_bottom = 257.0
+value = 50.0
+texture_under = ExtResource("2_hq8lm")
+texture_progress = ExtResource("3_wegfc")
