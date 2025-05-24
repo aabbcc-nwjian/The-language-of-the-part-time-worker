@@ -1,6 +1,10 @@
-[gd_scene format=3 uid="uid://8e5swejfi5uv"]
+[gd_scene load_steps=3 format=3 uid="uid://8e5swejfi5uv"]
+
+[ext_resource type="Texture2D" uid="uid://clmroir2lbjlv" path="res://assets/bangongshi.png" id="1_brupb"]
+[ext_resource type="Script" uid="uid://cx2d1g05q2uir" path="res://scene/game_scene.gd" id="1_sl1kl"]
 
 [node name="GameScene" type="Node2D"]
+script = ExtResource("1_sl1kl")
 
 [node name="Event" type="Node" parent="."]
 
@@ -13,3 +17,8 @@
 [node name="Message" type="Node" parent="Event/Content"]
 
 [node name="UserHud" type="SubViewport" parent="."]
+
+[node name="Bangongshi" type="Sprite2D" parent="."]
+position = Vector2(643, 336)
+scale = Vector2(1.30664, 1.0293)
+texture = ExtResource("1_brupb")
