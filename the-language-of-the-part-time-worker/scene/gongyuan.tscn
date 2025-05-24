@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbaipj5fpokep"]
+
+[ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="1_hvxmv"]
+
+[node name="gongyuan" type="Node2D"]
+
+[node name="Gongyuan" type="Sprite2D" parent="."]
+position = Vector2(640, 359)
+texture = ExtResource("1_hvxmv")

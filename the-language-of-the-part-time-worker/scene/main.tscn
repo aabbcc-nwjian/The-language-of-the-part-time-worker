@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://c3gdxkomo5ady"]
+[gd_scene load_steps=3 format=3 uid="uid://cwwkfcf8rbmmd"]
 
 [ext_resource type="Texture2D" uid="uid://co72c7p8scank" path="res://assets/fengmian.png" id="1_itxqv"]
 [ext_resource type="Script" uid="uid://dmb3j7ohn81j0" path="res://script/ui_event.gd" id="1_v0l8b"]
