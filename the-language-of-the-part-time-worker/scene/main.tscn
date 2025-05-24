@@ -1,11 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3gdxkomo5ady"]
+[gd_scene load_steps=3 format=3 uid="uid://c3gdxkomo5ady"]
 
-[sub_resource type="GDScript" id="GDScript_v0l8b"]
-script/source = "extends Button
-"
+[ext_resource type="Texture2D" uid="uid://co72c7p8scank" path="res://assets/fengmian.png" id="1_itxqv"]
+[ext_resource type="Script" uid="uid://dmb3j7ohn81j0" path="res://script/ui_event.gd" id="1_v0l8b"]
 
-[node name="Main" type="Node2D"]
-script = ExtResource("1_v0l8b")
+[node name="Main" type="Node"]
 
 [node name="StartupPage" type="Node2D" parent="."]
 script = ExtResource("1_v0l8b")
@@ -24,7 +22,6 @@ offset_right = 279.0
 offset_bottom = 408.0
 theme_override_font_sizes/font_size = 28
 text = "新游戏"
-script = SubResource("GDScript_v0l8b")
 
 [node name="ButtonContinue" type="Button" parent="StartupPage/SubViewport"]
 offset_left = 80.0
