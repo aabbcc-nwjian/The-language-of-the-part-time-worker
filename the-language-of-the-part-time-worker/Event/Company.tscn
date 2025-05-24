@@ -1,10 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://dp071pfqq0o2u"]
 
-[ext_resource type="Texture2D" uid="uid://clmroir2lbjlv" path="res://assets/bangongshi.png" id="1_ocg5o"]
+[ext_resource type="Texture2D" uid="uid://yhx4iudq8qtx" path="res://assets/bangongs.png" id="1_ocg5o"]
 
 [node name="Company" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(640, 360)
-scale = Vector2(1.25, 0.703125)
+scale = Vector2(0.97561, 0.978261)
 texture = ExtResource("1_ocg5o")

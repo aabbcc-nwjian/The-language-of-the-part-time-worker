@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3gc64uf10cvl"]
+[gd_scene load_steps=3 format=3 uid="uid://dv5mf6h8gog8n"]
 
-[ext_resource type="Script" uid="uid://tqwbsqmep01b" path="res://scene/ditu.gd" id="1_acov4"]
+[ext_resource type="Script" path="res://scene/ditu.gd" id="1_acov4"]
 [ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="2_wwuf8"]
 
 [node name="ditu" type="Node2D"]

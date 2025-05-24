@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"description": "你在公园看到有人弹吉他，你...",
+		"options": [
+			{"text": "驻足欣赏", "effect": {"san": 10}},
+			{"text": "给点打赏", "effect": {"money": -20, "san": 15}},
+			{"text": "继续散步", "effect": {"san": 5}}
+		]
+	},
+	{
+		"id": 2,
+		"description": "你在草坪上打瞌睡了一会...",
+		"options": [
+			{"text": "醒来继续散步", "effect": {"san": 10}},
+			{"text": "继续躺着", "effect": {"health": 5, "san": 10}},
+			{"text": "被蚊子咬醒", "effect": {"health": -5, "san": -5}}
+		]
+	},
+	{
+		"id": 3,
+		"description": "你在跑步时不小心扭到了脚...",
+		"options": [
+			{"text": "去医务室处理", "effect": {"money": -100, "health": -5}},
+			{"text": "坚持慢慢走回家", "effect": {"health": -10}},
+			{"text": "找路人帮忙", "effect": {"san": 5}}
+		]
+	},
+	{
+		"id": 4,
+		"description": "你看到一个孩子走失在找家人...",
+		"options": [
+			{"text": "帮助他找家人", "effect": {"san": 15}},
+			{"text": "找保安处理", "effect": {"san": 5}},
+			{"text": "不管", "effect": {"san": -10}}
+		]
+	},
+	{
+		"id": 5,
+		"description": "你在公园捡到一个钱包...",
+		"options": [
+			{"text": "交给警察", "effect": {"san": 15}},
+			{"text": "翻看信息联系失主", "effect": {"san": 10, "ability": 5}},
+			{"text": "自己拿走", "effect": {"money": 300, "san": -30}}
+		]
+	},
+	{
+		"id": 6,
+		"description": "公园举办了一场小型音乐会...",
+		"options": [
+			{"text": "参与其中", "effect": {"san": 15}},
+			{"text": "观看但不参与", "effect": {"san": 10}},
+			{"text": "离开找个安静的地方", "effect": {"san": 5}}
+		]
+	},
+	{
+		"id": 7,
+		"description": "天突然下起了雨...",
+		"options": [
+			{"text": "跑去树下躲雨", "effect": {"health": -5}},
+			{"text": "撑伞回家", "effect": {"san": -5}},
+			{"text": "在雨中漫步", "effect": {"san": 10, "health": -10}}
+		]
+	},
+	{
+		"id": 8,
+		"description": "你看到有人遛狗不牵绳...",
+		"options": [
+			{"text": "劝导对方", "effect": {"san": -5, "ability": 5}},
+			{"text": "走开远离", "effect": {"san": 5}},
+			{"text": "举报给管理员", "effect": {"san": 10}}
+		]
+	},
+	{
+		"id": 9,
+		"description": "你看到有人在公园乱扔垃圾...",
+		"options": [
+			{"text": "主动捡起来", "effect": {"san": 10}},
+			{"text": "提醒对方", "effect": {"ability": 5, "san": -5}},
+			{"text": "视而不见", "effect": {"san": -5}}
+		]
+	},
+	{
+		"id": 10,
+		"description": "你在公园偶遇多年未见的老同学...",
+		"options": [
+			{"text": "热情寒暄", "effect": {"san": 10}},
+			{"text": "简单打招呼", "effect": {"san": 5}},
+			{"text": "装作没看到", "effect": {"san": -5}}
+		]
+	}
+]
