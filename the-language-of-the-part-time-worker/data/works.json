@@ -1,0 +1,786 @@
+[
+	{
+		"title": "凌晨紧急上线",
+		"desc": "半夜被电话叫醒处理生产环境崩溃",
+		"money": 120,
+		"health": -3,
+		"san": -25,
+		"ability": 2
+	},
+	{
+		"title": "帮产品经理改PPT",
+		"desc": "花了3小时调整毫无意义的动画效果",
+		"money": 40,
+		"health": 0,
+		"san": -15,
+		"ability": 1
+	},
+	{
+		"title": "参加无意义晨会",
+		"desc": "站着开了2小时会却没有任何结论",
+		"money": 0,
+		"health": -1,
+		"san": -20,
+		"ability": 0
+	},
+	{
+		"title": "处理祖传屎山代码",
+		"desc": "阅读完全没注释的10年前代码",
+		"money": 80,
+		"health": 0,
+		"san": -30,
+		"ability": 3
+	},
+	{
+		"title": "背同事黑锅",
+		"desc": "为关系好的同事承担了他的错误",
+		"money": 50,
+		"health": -2,
+		"san": -35,
+		"ability": 0
+	},
+	{
+		"title": "被强制参加团队建设",
+		"desc": "周末被拉去做尴尬的拓展训练",
+		"money": 0,
+		"health": -3,
+		"san": -40,
+		"ability": 0
+	},
+	{
+		"title": "应付合规检查",
+		"desc": "花整天时间伪造各种流程文档",
+		"money": 60,
+		"health": 0,
+		"san": -25,
+		"ability": 1
+	},
+	{
+		"title": "处理用户无理投诉",
+		"desc": "被用户用粗话骂了半小时",
+		"money": 30,
+		"health": -4,
+		"san": -50,
+		"ability": 0
+	},
+	{
+		"title": "赶制虚假数据报告",
+		"desc": "为取悦投资人编造漂亮数据",
+		"money": 100,
+		"health": 0,
+		"san": -30,
+		"ability": 1
+	},
+	{
+		"title": "参加洗脑式培训",
+		"desc": "被迫听8小时成功学讲座",
+		"money": 0,
+		"health": -2,
+		"san": -45,
+		"ability": 0
+	},
+	{
+		"title": "应付突发审计",
+		"desc": "临时准备大量应付检查的材料",
+		"money": 70,
+		"health": -1,
+		"san": -20,
+		"ability": 0
+	},
+	{
+		"title": "处理领导私事",
+		"desc": "用工作时间帮领导孩子做作业",
+		"money": 90,
+		"health": 0,
+		"san": -15,
+		"ability": 0
+	},
+	{
+		"title": "参加形式主义学习",
+		"desc": "抄写完全不会看的政策文件",
+		"money": 0,
+		"health": 0,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "修复他人bug",
+		"desc": "同事离职留下的烂摊子",
+		"money": 110,
+		"health": -3,
+		"san": -30,
+		"ability": 2
+	},
+	{
+		"title": "编写虚假日报",
+		"desc": "编造一周的工作成果汇报",
+		"money": 20,
+		"health": 0,
+		"san": -10,
+		"ability": 0
+	},
+	{
+		"title": "参加无效脑暴会",
+		"desc": "听同事们天马行空地扯淡",
+		"money": 0,
+		"health": -1,
+		"san": -35,
+		"ability": 0
+	},
+	{
+		"title": "处理线上事故",
+		"desc": "系统崩溃导致通宵修复",
+		"money": 150,
+		"health": -5,
+		"san": -40,
+		"ability": 3
+	},
+	{
+		"title": "陪客户应酬",
+		"desc": "被迫喝酒到深夜",
+		"money": 130,
+		"health": -4,
+		"san": -30,
+		"ability": 1
+	},
+	{
+		"title": "修改需求第20版",
+		"desc": "产品经理反复无常的要求",
+		"money": 45,
+		"health": -2,
+		"san": -25,
+		"ability": 1
+	},
+	{
+		"title": "参加强制加班",
+		"desc": "明明没事做也要待到很晚",
+		"money": 60,
+		"health": -3,
+		"san": -35,
+		"ability": 0
+	},
+	{
+		"title": "处理同事甩锅",
+		"desc": "明明不是你的错却要你解决",
+		"money": 35,
+		"health": -1,
+		"san": -20,
+		"ability": 0
+	},
+	{
+		"title": "编写无用文档",
+		"desc": "写一份永远不会有人看的文档",
+		"money": 25,
+		"health": 0,
+		"san": -15,
+		"ability": 0
+	},
+	{
+		"title": "参加领导画饼会",
+		"desc": "听不切实际的未来规划",
+		"money": 0,
+		"health": 0,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急但不重要的事",
+		"desc": "被临时安排打乱工作计划",
+		"money": 55,
+		"health": -1,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "参加跨部门扯皮会",
+		"desc": "各部门互相推诿责任",
+		"money": 0,
+		"health": -2,
+		"san": -40,
+		"ability": 0
+	},
+	{
+		"title": "做重复性测试工作",
+		"desc": "手动测试上百个相似用例",
+		"money": 65,
+		"health": 0,
+		"san": -20,
+		"ability": 1
+	},
+	{
+		"title": "处理领导突发奇想",
+		"desc": "实现领导半夜想到的'好点子'",
+		"money": 85,
+		"health": -2,
+		"san": -30,
+		"ability": 1
+	},
+	{
+		"title": "参加无准备评审会",
+		"desc": "被临时叫去参加不熟悉的项目评审",
+		"money": 0,
+		"health": -1,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "处理历史遗留问题",
+		"desc": "解决前任留下的技术债务",
+		"money": 95,
+		"health": 0,
+		"san": -35,
+		"ability": 2
+	},
+	{
+		"title": "参加无效复盘会",
+		"desc": "同样的错误下次还会犯",
+		"money": 0,
+		"health": 0,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "处理跨时区会议",
+		"desc": "凌晨3点与美国团队开会",
+		"money": 75,
+		"health": -4,
+		"san": -40,
+		"ability": 1
+	},
+	{
+		"title": "编写周报月报",
+		"desc": "绞尽脑汁编造工作内容",
+		"money": 15,
+		"health": 0,
+		"san": -15,
+		"ability": 0
+	},
+	{
+		"title": "参加强制培训",
+		"desc": "学习早已掌握的基础知识",
+		"money": 0,
+		"health": -1,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急hotfix",
+		"desc": "周末修复线上小问题",
+		"money": 140,
+		"health": -3,
+		"san": -35,
+		"ability": 2
+	},
+	{
+		"title": "参加领导述职准备",
+		"desc": "帮领导准备升职用的材料",
+		"money": 105,
+		"health": 0,
+		"san": -20,
+		"ability": 0
+	},
+	{
+		"title": "处理部门政治",
+		"desc": "小心应对各种明争暗斗",
+		"money": 0,
+		"health": -2,
+		"san": -45,
+		"ability": 0
+	},
+	{
+		"title": "参加无意义团建",
+		"desc": "强迫参加不喜欢的集体活动",
+		"money": 0,
+		"health": -3,
+		"san": -50,
+		"ability": 0
+	},
+	{
+		"title": "处理领导情绪",
+		"desc": "安抚心情不好的领导",
+		"money": 50,
+		"health": -1,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "参加强制分享会",
+		"desc": "被迫听不感兴趣的分享",
+		"money": 0,
+		"health": 0,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "处理流程审批",
+		"desc": "走繁琐的审批流程",
+		"money": 30,
+		"health": 0,
+		"san": -20,
+		"ability": 0
+	},
+	{
+		"title": "参加无效站立会",
+		"desc": "每天重复同样的内容",
+		"money": 0,
+		"health": -1,
+		"san": -15,
+		"ability": 0
+	},
+	{
+		"title": "处理临时汇报",
+		"desc": "突然被要求准备汇报材料",
+		"money": 65,
+		"health": -2,
+		"san": -30,
+		"ability": 1
+	},
+	{
+		"title": "参加领导家宴",
+		"desc": "被迫参加领导的家庭聚会",
+		"money": 0,
+		"health": -3,
+		"san": -40,
+		"ability": 0
+	},
+	{
+		"title": "处理数据迁移",
+		"desc": "枯燥的数据搬运工作",
+		"money": 70,
+		"health": 0,
+		"san": -25,
+		"ability": 1
+	},
+	{
+		"title": "参加强制读书会",
+		"desc": "读领导推荐的成功学书籍",
+		"money": 0,
+		"health": 0,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "处理领导亲戚入职",
+		"desc": "带毫无经验的领导亲戚",
+		"money": 90,
+		"health": -2,
+		"san": -35,
+		"ability": 0
+	},
+	{
+		"title": "参加无效复盘",
+		"desc": "同样的错误下次还会犯",
+		"money": 0,
+		"health": 0,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急出差",
+		"desc": "临时通知要去外地",
+		"money": 150,
+		"health": -4,
+		"san": -45,
+		"ability": 1
+	},
+	{
+		"title": "参加强制运动会",
+		"desc": "被迫参加公司运动会",
+		"money": 0,
+		"health": -3,
+		"san": -40,
+		"ability": 0
+	},
+	{
+		"title": "处理领导宠物",
+		"desc": "帮领导照顾他的狗",
+		"money": 40,
+		"health": 0,
+		"san": -20,
+		"ability": 0
+	},
+	{
+		"title": "参加无效培训",
+		"desc": "学习完全用不到的知识",
+		"money": 0,
+		"health": -1,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "处理部门合并",
+		"desc": "适应新的组织架构",
+		"money": 0,
+		"health": -2,
+		"san": -50,
+		"ability": 0
+	},
+	{
+		"title": "参加领导生日会",
+		"desc": "被迫参加领导的生日派对",
+		"money": 0,
+		"health": -1,
+		"san": -35,
+		"ability": 0
+	},
+	{
+		"title": "处理系统升级",
+		"desc": "通宵进行系统升级",
+		"money": 160,
+		"health": -5,
+		"san": -50,
+		"ability": 3
+	},
+	{
+		"title": "参加强制志愿者",
+		"desc": "公司组织的强制志愿活动",
+		"money": 0,
+		"health": -2,
+		"san": -40,
+		"ability": 0
+	},
+	{
+		"title": "处理领导家务",
+		"desc": "帮领导处理私人事务",
+		"money": 100,
+		"health": 0,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "参加无效战略会",
+		"desc": "听高管们不切实际的规划",
+		"money": 0,
+		"health": 0,
+		"san": -45,
+		"ability": 0
+	},
+	{
+		"title": "处理数据造假",
+		"desc": "美化不理想的数据",
+		"money": 120,
+		"health": 0,
+		"san": -35,
+		"ability": 1
+	},
+	{
+		"title": "参加强制聚餐",
+		"desc": "不得不参加的部门聚餐",
+		"money": 0,
+		"health": -1,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "处理领导演讲",
+		"desc": "帮领导准备演讲稿",
+		"money": 80,
+		"health": 0,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "参加无效分享",
+		"desc": "听同事分享过时的技术",
+		"money": 0,
+		"health": 0,
+		"san": -20,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急封网",
+		"desc": "节假日突然要求封网",
+		"money": 180,
+		"health": -5,
+		"san": -60,
+		"ability": 2
+	},
+	{
+		"title": "参加强制体检",
+		"desc": "公司安排的强制体检",
+		"money": 0,
+		"health": 0,
+		"san": -15,
+		"ability": 0
+	},
+	{
+		"title": "处理领导装修",
+		"desc": "帮领导监督家里装修",
+		"money": 110,
+		"health": 0,
+		"san": -40,
+		"ability": 0
+	},
+	{
+		"title": "参加无效评审",
+		"desc": "评审没人关心的项目",
+		"money": 0,
+		"health": -1,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急值班",
+		"desc": "突然被安排节假日值班",
+		"money": 200,
+		"health": -4,
+		"san": -50,
+		"ability": 1
+	},
+	{
+		"title": "参加强制打卡",
+		"desc": "明明在家工作也要去公司打卡",
+		"money": 0,
+		"health": -2,
+		"san": -35,
+		"ability": 0
+	},
+	{
+		"title": "处理领导购物",
+		"desc": "帮领导挑选礼物",
+		"money": 60,
+		"health": 0,
+		"san": -20,
+		"ability": 0
+	},
+	{
+		"title": "参加无效考核",
+		"desc": "填写繁琐的考核表格",
+		"money": 0,
+		"health": 0,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急备份",
+		"desc": "半夜被叫来做数据备份",
+		"money": 140,
+		"health": -3,
+		"san": -40,
+		"ability": 1
+	},
+	{
+		"title": "参加强制早会",
+		"desc": "每天早上8点的例会",
+		"money": 0,
+		"health": -1,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "处理领导接送",
+		"desc": "接送领导孩子上下学",
+		"money": 95,
+		"health": 0,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "参加无效测试",
+		"desc": "测试明知没问题的功能",
+		"money": 35,
+		"health": 0,
+		"san": -20,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急封版",
+		"desc": "假期前最后一刻要求改版",
+		"money": 170,
+		"health": -4,
+		"san": -55,
+		"ability": 2
+	},
+	{
+		"title": "参加强制年会",
+		"desc": "被迫表演尴尬节目",
+		"money": 0,
+		"health": -3,
+		"san": -60,
+		"ability": 0
+	},
+	{
+		"title": "处理领导旅行",
+		"desc": "帮领导规划家庭旅行",
+		"money": 85,
+		"health": 0,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "参加无效复盘",
+		"desc": "重复讨论已知问题",
+		"money": 0,
+		"health": 0,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急迁移",
+		"desc": "突然通知要搬办公室",
+		"money": 0,
+		"health": -2,
+		"san": -40,
+		"ability": 0
+	},
+	{
+		"title": "参加强制早操",
+		"desc": "每天早上集体做操",
+		"money": 0,
+		"health": -1,
+		"san": -35,
+		"ability": 0
+	},
+	{
+		"title": "处理领导聚会",
+		"desc": "组织领导的同学聚会",
+		"money": 115,
+		"health": 0,
+		"san": -45,
+		"ability": 0
+	},
+	{
+		"title": "参加无效评审",
+		"desc": "评审已经决定的项目",
+		"money": 0,
+		"health": 0,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急补丁",
+		"desc": "节假日紧急修复漏洞",
+		"money": 190,
+		"health": -5,
+		"san": -65,
+		"ability": 3
+	},
+	{
+		"title": "参加强制军训",
+		"desc": "公司组织的新员工军训",
+		"money": 0,
+		"health": -4,
+		"san": -70,
+		"ability": 0
+	},
+	{
+		"title": "处理领导搬家",
+		"desc": "帮领导搬新家",
+		"money": 125,
+		"health": -3,
+		"san": -50,
+		"ability": 0
+	},
+	{
+		"title": "参加无效考核",
+		"desc": "填写毫无意义的考核表",
+		"money": 0,
+		"health": 0,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急断网",
+		"desc": "半夜处理网络中断",
+		"money": 210,
+		"health": -5,
+		"san": -75,
+		"ability": 3
+	},
+	{
+		"title": "参加强制晨读",
+		"desc": "每天早上朗读公司文化",
+		"money": 0,
+		"health": -1,
+		"san": -40,
+		"ability": 0
+	},
+	{
+		"title": "处理领导婚礼",
+		"desc": "帮领导筹备婚礼",
+		"money": 150,
+		"health": 0,
+		"san": -60,
+		"ability": 0
+	},
+	{
+		"title": "参加无效分享",
+		"desc": "听同事分享过时经验",
+		"money": 0,
+		"health": 0,
+		"san": -25,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急扩容",
+		"desc": "突然流量暴增需要扩容",
+		"money": 220,
+		"health": -5,
+		"san": -80,
+		"ability": 3
+	},
+	{
+		"title": "参加强制文化课",
+		"desc": "学习老板的创业史",
+		"money": 0,
+		"health": -2,
+		"san": -50,
+		"ability": 0
+	},
+	{
+		"title": "处理领导生日",
+		"desc": "组织领导的生日惊喜",
+		"money": 135,
+		"health": 0,
+		"san": -55,
+		"ability": 0
+	},
+	{
+		"title": "参加无效考核",
+		"desc": "重复填写相同表格",
+		"money": 0,
+		"health": 0,
+		"san": -30,
+		"ability": 0
+	},
+	{
+		"title": "处理紧急故障",
+		"desc": "核心系统全面崩溃",
+		"money": 250,
+		"health": -5,
+		"san": -90,
+		"ability": 3
+	},
+	{
+		"title": "参加强制宣誓",
+		"desc": "每天早上的忠诚宣誓",
+		"money": 0,
+		"health": -3,
+		"san": -60,
+		"ability": 0
+	},
+	{
+		"title": "处理领导家事",
+		"desc": "帮领导处理家庭纠纷",
+		"money": 175,
+		"health": 0,
+		"san": -70,
+		"ability": 0
+	},
+	{
+		"title": "参加无效会议",
+		"desc": "听领导读文件",
+		"money": 0,
+		"health": 0,
+		"san": -40,
+		"ability": 0
+	},
+	{
+		"title": "处理灾难恢复",
+		"desc": "数据中心全面故障",
+		"money": 300,
+		"health": -5,
+		"san": -100,
+		"ability": 3
+	}
+]

@@ -1,11 +1,19 @@
 extends Node2D
 
+@onready var todo = $TodoList
+
 func _on_confirm_off_work():
 	var scene = load("res://scene/my_home.tscn")
 	get_tree().change_scene_to_packed(scene)
 	User.stage = 1
 	pass
-	
+
+func _generate_todos():
+	for i in range(4):
+		var task = DataLoader.get_random_task()
+		todo.add_task_item(task.title, task.desc, task.money, task.health, task.san, task.ability)
+	pass
+
 func _on_cancel_off_work():
 	_enable_actions()
 	pass
@@ -14,7 +22,8 @@ func _ready() -> void:
 	$ProgressBar.progress_complete.connect(_on_progress_finished)
 	$ConfirmOffWork.dialog_ok.connect(_on_confirm_off_work)
 	$ConfirmOffWork.dialog_cancel.connect(_on_cancel_off_work)
-
+	_generate_todos()
+	
 func _disable_actions() -> void:
 	$Actions/DoFishing.disabled = true
 	$Actions/DoPhone.disabled = true

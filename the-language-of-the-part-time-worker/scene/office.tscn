@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bkd4sd303tv6f"]
+[gd_scene load_steps=15 format=3 uid="uid://bkd4sd303tv6f"]
 
 [ext_resource type="Texture2D" uid="uid://yhx4iudq8qtx" path="res://assets/bangongs.png" id="1_pgah7"]
 [ext_resource type="Texture2D" uid="uid://nan68du6fk8n" path="res://assets/kansouji.png" id="2_nwkqs"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://jil4t5terbfd" path="res://scene/popup.tscn" id="11_4jcat"]
 [ext_resource type="PackedScene" uid="uid://q8yx3khnaqsu" path="res://scene/progress_bar.tscn" id="11_ypve7"]
 [ext_resource type="PackedScene" uid="uid://c837doqwlwuqw" path="res://scene/popup_confirm.tscn" id="13_gliqy"]
+[ext_resource type="PackedScene" uid="uid://d3kadyisvovxr" path="res://scene/todo_list.tscn" id="14_8ob14"]
 
 [node name="Office" type="Node2D"]
 script = ExtResource("4_vnthd")
@@ -52,10 +53,15 @@ texture_normal = ExtResource("6_3fjca")
 texture_hover = ExtResource("9_ypve7")
 
 [node name="Popup" parent="." instance=ExtResource("11_4jcat")]
+visible = false
 
 [node name="ProgressBar" parent="." instance=ExtResource("11_ypve7")]
+visible = false
 
 [node name="ConfirmOffWork" parent="." instance=ExtResource("13_gliqy")]
+visible = false
+
+[node name="TodoList" parent="." instance=ExtResource("14_8ob14")]
 
 [connection signal="pressed" from="Actions/DoFishing" to="." method="_on_do_fishing_pressed"]
 [connection signal="pressed" from="Actions/DoFinishWork" to="." method="_on_do_finish_work_pressed"]

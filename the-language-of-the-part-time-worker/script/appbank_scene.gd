@@ -33,9 +33,9 @@ func _update_returnLoan() -> void:
 	pass
 
 
-func _on_accept_dialog_confirmed(loan:int) -> void:
+func _on_accept_dialog_confirmed() -> void:
 	loanCount -= 1;
-	returnLoan+=loan*1.3
+	returnLoan+=int(loan*1.3)
 	User.mod_money(loan)
 	_update_money()
 	_update_loanCount()
@@ -69,7 +69,7 @@ func _on_back_pressed() -> void:
 func _on_confirm_pressed() -> void:
 	if(loan>0&&loanCount>0):
 		accept_dialog.popup()
-		_on_accept_dialog_confirmed(loan)
+		_on_accept_dialog_confirmed()
 	else:
 		accept_dialog2.popup()
 	pass # Replace with function body.
@@ -95,7 +95,7 @@ func _on_accept_dialog_3_confirmed() -> void:
 
 func _on_accept_dialog_4_confirmed() -> void:
 	_update_money()
-	_update_returnLoan()
+	_update_loanCount()
 	pass # Replace with function body.
 
 
