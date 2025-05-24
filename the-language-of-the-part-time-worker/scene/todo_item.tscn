@@ -1,0 +1,147 @@
+[gd_scene load_steps=9 format=3 uid="uid://der6q13aussjh"]
+
+[ext_resource type="Script" uid="uid://crvw6s8v3gtpl" path="res://scene/todo_item.gd" id="1_djjik"]
+[ext_resource type="Script" uid="uid://drbb2met3efqf" path="res://script/round_rect.gd" id="1_myedn"]
+[ext_resource type="PackedScene" uid="uid://c837doqwlwuqw" path="res://scene/popup_confirm.tscn" id="2_djjik"]
+[ext_resource type="Texture2D" uid="uid://dccy2eiulqjh5" path="res://assets/icon/容器@2x.png" id="3_8rodb"]
+[ext_resource type="Texture2D" uid="uid://5funfimbhccy" path="res://assets/icon/4.png" id="4_djjik"]
+[ext_resource type="Texture2D" uid="uid://b3oedtxo1a4oi" path="res://assets/icon/3.png" id="5_iuv60"]
+[ext_resource type="Texture2D" uid="uid://cbk1vhoyd78we" path="res://assets/icon/5.png" id="6_4s0yk"]
+[ext_resource type="PackedScene" uid="uid://jil4t5terbfd" path="res://scene/popup.tscn" id="8_iuv60"]
+
+[node name="TodoItem" type="Panel"]
+custom_minimum_size = Vector2(445, 149)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -835.0
+offset_bottom = -571.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_djjik")
+
+[node name="PopupConfirm" parent="." instance=ExtResource("2_djjik")]
+visible = false
+
+[node name="RoundRect" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 445.0
+offset_bottom = 148.0
+script = ExtResource("1_myedn")
+color = Color(0.984314, 0.964706, 0.901961, 1)
+
+[node name="Icon" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="IconMoney" type="Sprite2D" parent="Icon"]
+position = Vector2(65, 122)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("3_8rodb")
+
+[node name="IconMental" type="Sprite2D" parent="Icon"]
+position = Vector2(249, 122)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_djjik")
+
+[node name="IconHealth" type="Sprite2D" parent="Icon"]
+position = Vector2(161, 123)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_iuv60")
+
+[node name="IconAbilitity" type="Sprite2D" parent="Icon"]
+position = Vector2(338, 122)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("6_4s0yk")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 19.0
+offset_right = 112.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.174626, 0.174626, 0.174626, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 16
+text = "工作："
+
+[node name="LabelMoney" type="Label" parent="."]
+layout_mode = 0
+offset_left = 81.0
+offset_top = 108.0
+offset_right = 129.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0.174626, 0.174626, 0.174626, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "+30"
+
+[node name="LabelHealth" type="Label" parent="."]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 108.0
+offset_right = 227.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0.174626, 0.174626, 0.174626, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "-0"
+
+[node name="LabelSan" type="Label" parent="."]
+layout_mode = 0
+offset_left = 267.0
+offset_top = 108.0
+offset_right = 315.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0.174626, 0.174626, 0.174626, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "-20"
+
+[node name="LabelAbility" type="Label" parent="."]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 108.0
+offset_right = 402.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0.174626, 0.174626, 0.174626, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 14
+text = "+1"
+
+[node name="LabelTitle" type="Label" parent="."]
+layout_mode = 0
+offset_left = 117.0
+offset_top = 19.0
+offset_right = 245.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.174626, 0.174626, 0.174626, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 16
+text = "帮老板接孩子放学"
+
+[node name="LabelDesc" type="Label" parent="."]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 49.0
+offset_right = 408.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0.174626, 0.174626, 0.174626, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 16
+text = "帮老板接孩子放学帮老板接孩子放学帮老板接孩子放学帮老板接孩子放学帮老板接孩子放学"
+autowrap_mode = 1
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_right = 445.0
+offset_bottom = 149.0
+
+[node name="Popup" parent="." instance=ExtResource("8_iuv60")]
+visible = false
+
+[connection signal="dialog_ok" from="PopupConfirm" to="." method="_on_popup_confirm_dialog_ok"]
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

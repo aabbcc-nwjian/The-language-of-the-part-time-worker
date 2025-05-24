@@ -1,6 +1,7 @@
 extends Control
 
 func _ready() -> void:
+	$LabelDay.text = "%d" % User.cycle_num
 	# 工作日
 	if (User.stage == 0):
 		$BackgroundWeekday.show()

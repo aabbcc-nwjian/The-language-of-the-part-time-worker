@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbg2fk6chdhu"]
+
+[ext_resource type="Script" uid="uid://b4flvuc6d4ser" path="res://scene/intro.gd" id="1_lf28b"]
+[ext_resource type="Texture2D" uid="uid://gqfybgnoveid" path="res://assets/1.png" id="1_srnjo"]
+[ext_resource type="Texture2D" uid="uid://dnfesryhevywb" path="res://assets/biyerenwu.png" id="2_lf28b"]
+[ext_resource type="Texture2D" uid="uid://dniwgpg1g1pjm" path="res://assets/组 3@1x.png" id="3_wk1th"]
+
+[node name="Intro" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lf28b")
+
+[node name="1" type="Sprite2D" parent="."]
+position = Vector2(635.878, 360)
+scale = Vector2(1.25436, 1.25436)
+texture = ExtResource("1_srnjo")
+
+[node name="Biyerenwu" type="Sprite2D" parent="."]
+position = Vector2(254, 462)
+scale = Vector2(0.500977, 0.500977)
+texture = ExtResource("2_lf28b")
+
+[node name="组3_1x" type="Sprite2D" parent="."]
+position = Vector2(785.194, 602.5)
+scale = Vector2(0.731343, 0.731343)
+texture = ExtResource("3_wk1th")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 363.194
+offset_top = 602.5
+offset_right = 1233.19
+offset_bottom = 645.5
+theme_override_font_sizes/font_size = 30
+text = "你是一名刚刚毕业，初入职场的大学生。请在游戏中自由探索吧。"
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_top = 383.0
+offset_right = 1277.0
+offset_bottom = 718.0
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
