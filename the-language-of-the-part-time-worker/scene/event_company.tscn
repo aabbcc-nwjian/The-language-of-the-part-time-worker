@@ -3,13 +3,8 @@
 [ext_resource type="Script" uid="uid://d2n2rxgn4ncjv" path="res://scene/event_company.gd" id="1_mund1"]
 [ext_resource type="PackedScene" uid="uid://dp071pfqq0o2u" path="res://Event/Company.tscn" id="2_lm7p6"]
 [ext_resource type="PackedScene" uid="uid://d0np6fj70qxg8" path="res://Character/Person.tscn" id="3_mund1"]
-<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="5_lm7p6"]
 [ext_resource type="PackedScene" uid="uid://b5l3pr0yuxr06" path="res://Dialogue/Discussion.tscn" id="5_mund1"]
-=======
-[ext_resource type="PackedScene" uid="uid://cvxhj06fo8ugi" path="res://Options/options.tscn" id="4_r3xf1"]
-[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="5_lm7p6"]
->>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 
 [node name="EventCompany" type="Node2D"]
 script = ExtResource("1_mund1")
