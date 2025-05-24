@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://cl12dmbh6y11n" path="res://assets/icon/A40FA6BDD497E133305F503F7E0A56DE.png" id="7_vnthd"]
 [ext_resource type="Texture2D" uid="uid://dow4dx42kg1e1" path="res://assets/icon/55B2A052BC1CBCEBA9DEE2D72A0983B8.png" id="9_ypve7"]
 [ext_resource type="PackedScene" uid="uid://jil4t5terbfd" path="res://scene/popup.tscn" id="11_4jcat"]
-[ext_resource type="PackedScene" uid="uid://c73fuxlcpbusb" path="res://scene/progress_bar.tscn" id="11_ypve7"]
+[ext_resource type="PackedScene" uid="uid://q8yx3khnaqsu" path="res://scene/progress_bar.tscn" id="11_ypve7"]
 [ext_resource type="PackedScene" uid="uid://c837doqwlwuqw" path="res://scene/popup_confirm.tscn" id="13_gliqy"]
 
 [node name="Office" type="Node2D"]

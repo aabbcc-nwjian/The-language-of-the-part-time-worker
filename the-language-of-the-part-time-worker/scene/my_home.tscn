@@ -182,3 +182,4 @@ texture_normal = ExtResource("29_kd7y5")
 [connection signal="pressed" from="Room1/Computer" to="." method="_on_computer_pressed"]
 [connection signal="pressed" from="Room1/BookShelf" to="." method="_on_book_shelf_pressed"]
 [connection signal="pressed" from="Actions/ButtonPhone" to="." method="_on_button_phone_pressed"]
+[connection signal="pressed" from="Actions/ButtonMap" to="." method="_on_button_map_pressed"]
