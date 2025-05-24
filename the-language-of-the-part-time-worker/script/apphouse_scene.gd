@@ -45,3 +45,8 @@ func _on_accept_dialog_confirmed() -> void:
 	get_tree().change_scene_to_packed(scene)
 	
 	pass # Replace with function body.
+
+
+func _on_back_pressed() -> void:
+	get_tree().change_scene_to_file("res://scene/phone.tscn")
+	pass # Replace with function body.
