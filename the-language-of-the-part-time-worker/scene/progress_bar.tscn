@@ -5,11 +5,11 @@
 [ext_resource type="Texture2D" uid="uid://dqduo8ylu27nv" path="res://assets/进度条空.png" id="2_hq8lm"]
 [ext_resource type="Texture2D" uid="uid://cutvo0vmuu564" path="res://assets/进度条满.png" id="3_wegfc"]
 
-[sub_resource type="Gradient" id="Gradient_l86xc"]
+[sub_resource type="Gradient" id="Gradient_wegfc"]
 colors = PackedColorArray(0, 0, 0, 0.337255, 0, 0, 0, 0.380392)
 
 [sub_resource type="GradientTexture1D" id="GradientTexture1D_nug58"]
-gradient = SubResource("Gradient_l86xc")
+gradient = SubResource("Gradient_wegfc")
 
 [node name="ProgressBar" type="CanvasLayer"]
 script = ExtResource("1_wegfc")

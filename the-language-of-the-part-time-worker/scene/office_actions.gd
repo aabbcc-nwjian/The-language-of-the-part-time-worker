@@ -15,9 +15,14 @@ func _enable_actions() -> void:
 
 var _last_action: String
 
+func _on_do_finish_work_pressed() -> void:
+	pass # Replace with function body.
+
+
 func _on_do_fishing_pressed() -> void:
 	if (User.ability == 0):
-		pass
+		$Popup.show_popup("今天的能力值已用尽，该回家休息了")
+		return
 		
 	_disable_actions()
 	_last_action = "fishing"
