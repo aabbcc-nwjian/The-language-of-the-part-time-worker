@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfahy8qartjq6"]
+
+[ext_resource type="Texture2D" uid="uid://c8ynt8leoevvx" path="res://assets/jiesuan@1x.png" id="1_1sld3"]
+[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="1_onl0i"]
+[ext_resource type="Script" uid="uid://cownsnwbh5jf7" path="res://scene/daily_summary.gd" id="1_vhwf3"]
+
+[node name="DailySummary" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vhwf3")
+
+[node name="Hud" parent="." instance=ExtResource("1_onl0i")]
+
+[node name="Jiesuan_1x" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+texture = ExtResource("1_1sld3")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 682.0
+offset_top = 549.0
+offset_right = 908.0
+offset_bottom = 632.0
+theme_override_font_sizes/font_size = 38
+text = "继续"
+
+[node name="DiffMoney" type="Label" parent="."]
+layout_mode = 0
+offset_left = 819.0
+offset_top = 175.0
+offset_right = 1049.0
+offset_bottom = 228.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+text = "1000"
+
+[node name="DiffSan" type="Label" parent="."]
+offset_left = 819.0
+offset_top = 263.0
+offset_right = 1049.0
+offset_bottom = 316.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+text = "1000"
+
+[node name="DiffHealth" type="Label" parent="."]
+offset_left = 819.0
+offset_top = 358.0
+offset_right = 1049.0
+offset_bottom = 411.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+text = "1000"
+
+[node name="DiffAbility" type="Label" parent="."]
+offset_left = 819.0
+offset_top = 446.0
+offset_right = 1049.0
+offset_bottom = 499.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+text = "1000"

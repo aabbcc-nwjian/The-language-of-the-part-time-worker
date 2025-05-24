@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmndr0i6fmtvg"]
 
 [ext_resource type="Texture2D" uid="uid://dgdslt2eppjp0" path="res://Pictures/选择出身.png" id="1_stlec"]
-[ext_resource type="Script" uid="uid://bv1pj6tmjy1pw" path="res://scene/choose.gd" id="1_vh0bc"]
+[ext_resource type="Script" path="res://scene/choose.gd" id="1_vh0bc"]
 
 [sub_resource type="GDScript" id="GDScript_vh0bc"]
 script/source = "extends AcceptDialog
@@ -41,6 +41,7 @@ theme_override_font_sizes/font_size = 40
 text = "选择"
 
 [node name="Button3" type="Button" parent="Node2D/Control"]
+layout_mode = 0
 offset_left = 950.0
 offset_top = 458.0
 offset_right = 1131.0

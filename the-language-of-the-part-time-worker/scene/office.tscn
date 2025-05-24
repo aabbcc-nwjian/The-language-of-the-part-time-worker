@@ -1,19 +1,58 @@
-[gd_scene load_steps=4 format=3 uid="uid://bkd4sd303tv6f"]
+[gd_scene load_steps=13 format=3 uid="uid://bkd4sd303tv6f"]
 
 [ext_resource type="Texture2D" uid="uid://yhx4iudq8qtx" path="res://assets/bangongs.png" id="1_pgah7"]
 [ext_resource type="Texture2D" uid="uid://nan68du6fk8n" path="res://assets/kansouji.png" id="2_nwkqs"]
 [ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_nwkqs"]
+[ext_resource type="Script" uid="uid://bp584ulovwjei" path="res://scene/office_actions.gd" id="4_vnthd"]
+[ext_resource type="Texture2D" uid="uid://bry2fxmjuje7k" path="res://assets/icon/摸鱼.png" id="4_wk7dr"]
+[ext_resource type="Texture2D" uid="uid://dvj8w2qsimwfi" path="res://assets/icon/D5E57E10216FB35F684AF4D50E9CF738.png" id="5_feqpg"]
+[ext_resource type="Texture2D" uid="uid://dttp6d7kiql7r" path="res://assets/icon/看手机.png" id="5_iboqp"]
+[ext_resource type="Texture2D" uid="uid://bkm0fsflm5yim" path="res://assets/icon/下班.png" id="6_3fjca"]
+[ext_resource type="Texture2D" uid="uid://cl12dmbh6y11n" path="res://assets/icon/A40FA6BDD497E133305F503F7E0A56DE.png" id="7_vnthd"]
+[ext_resource type="Texture2D" uid="uid://dow4dx42kg1e1" path="res://assets/icon/55B2A052BC1CBCEBA9DEE2D72A0983B8.png" id="9_ypve7"]
+[ext_resource type="PackedScene" uid="uid://jil4t5terbfd" path="res://scene/popup.tscn" id="11_4jcat"]
+[ext_resource type="PackedScene" uid="uid://c73fuxlcpbusb" path="res://scene/progress_bar.tscn" id="11_ypve7"]
 
 [node name="Office" type="Node2D"]
+script = ExtResource("4_vnthd")
 
-[node name="Bangongs" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 position = Vector2(642, 360)
 scale = Vector2(-1, 1)
 texture = ExtResource("1_pgah7")
 
-[node name="Kansouji" type="Sprite2D" parent="."]
+[node name="Charactor" type="Sprite2D" parent="."]
 position = Vector2(235, 445)
 scale = Vector2(0.78, 0.78)
 texture = ExtResource("2_nwkqs")
 
 [node name="Hud" parent="." instance=ExtResource("3_nwkqs")]
+
+[node name="Actions" type="HBoxContainer" parent="."]
+offset_left = 58.0
+offset_top = 574.0
+offset_right = 478.0
+offset_bottom = 688.0
+theme_override_constants/separation = 39
+
+[node name="DoFishing" type="TextureButton" parent="Actions"]
+layout_mode = 2
+texture_normal = ExtResource("4_wk7dr")
+texture_hover = ExtResource("5_feqpg")
+
+[node name="DoPhone" type="TextureButton" parent="Actions"]
+layout_mode = 2
+texture_normal = ExtResource("5_iboqp")
+texture_hover = ExtResource("7_vnthd")
+
+[node name="DoFinishWork" type="TextureButton" parent="Actions"]
+layout_mode = 2
+texture_normal = ExtResource("6_3fjca")
+texture_hover = ExtResource("9_ypve7")
+
+[node name="Popup" parent="." instance=ExtResource("11_4jcat")]
+
+[node name="ProgressBar" parent="." instance=ExtResource("11_ypve7")]
+
+[connection signal="pressed" from="Actions/DoFishing" to="." method="_on_do_fishing_pressed"]
+[connection signal="pressed" from="Actions/DoFinishWork" to="." method="_on_do_finish_work_pressed"]
