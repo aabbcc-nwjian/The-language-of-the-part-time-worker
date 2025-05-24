@@ -56,7 +56,7 @@ offset_top = 21.0
 offset_right = 133.0
 offset_bottom = 76.0
 theme_override_font_sizes/font_size = 40
-text = "书名"
+text = "商品"
 
 [node name="Label2" type="Label" parent="Node2D/ItemList"]
 layout_mode = 0

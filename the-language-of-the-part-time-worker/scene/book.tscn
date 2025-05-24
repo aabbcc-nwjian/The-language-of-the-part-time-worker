@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://m0jn7fykfstm"]
+[gd_scene load_steps=4 format=3 uid="uid://m0jn7fykfstm"]
 
 [ext_resource type="Texture2D" uid="uid://bvoofsfaps5y1" path="res://Pictures/gongyuan.png" id="1_du0vi"]
 [ext_resource type="Script" uid="uid://cpb30i5ar3do3" path="res://scene/book.gd" id="1_rnjoa"]
+[ext_resource type="PackedScene" uid="uid://dxfh70ky0mlo3" path="res://books message/books.tscn" id="3_mftuw"]
 
 [node name="book" type="Node2D"]
 script = ExtResource("1_rnjoa")
@@ -59,27 +60,56 @@ text = "书名"
 
 [node name="Label2" type="Label" parent="Node2D/ItemList"]
 layout_mode = 0
-offset_left = 248.0
+offset_left = 218.0
 offset_top = 24.0
-offset_right = 328.0
+offset_right = 298.0
 offset_bottom = 79.0
 theme_override_font_sizes/font_size = 40
 text = "价格"
 
 [node name="Label3" type="Label" parent="Node2D/ItemList"]
 layout_mode = 0
-offset_left = 436.0
+offset_left = 417.0
 offset_top = 26.0
-offset_right = 516.0
+offset_right = 497.0
 offset_bottom = 81.0
 theme_override_font_sizes/font_size = 40
 text = "收益"
 
 [node name="Label4" type="Label" parent="Node2D/ItemList"]
 layout_mode = 0
-offset_left = 620.0
+offset_left = 633.0
 offset_top = 27.0
-offset_right = 700.0
+offset_right = 713.0
 offset_bottom = 82.0
 theme_override_font_sizes/font_size = 40
 text = "页数"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Node2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Books" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
+position = Vector2(32, 71)
+label_text = "java"
+
+[node name="Books2" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
+position = Vector2(32, 165)
+label_text = "c++"
+label2_text = 200
+label3_text = "能力25+"
+label4_text = 200
+
+[node name="Books3" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
+position = Vector2(30, 262)
+label_text = "Godot"
+label2_text = 400
+label3_text = "能力20+"
+label4_text = 100
+
+[node name="Books4" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
+position = Vector2(34, 354)
+label_text = "c#"
+label2_text = 300
+label3_text = "能力30+"
+label4_text = 220

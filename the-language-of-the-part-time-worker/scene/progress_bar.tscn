@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://c73fuxlcpbusb"]
+[gd_scene load_steps=7 format=3 uid="uid://q8yx3khnaqsu"]
 
 [ext_resource type="Texture2D" uid="uid://c7x8w2bc3823s" path="res://assets/矩形 72@1x.png" id="1_sitq3"]
-[ext_resource type="Script" uid="uid://2o0ksof73ls1" path="res://scene/progress_bar.gd" id="1_wegfc"]
+[ext_resource type="Script" path="res://scene/progress_bar.gd" id="1_wegfc"]
 [ext_resource type="Texture2D" uid="uid://dqduo8ylu27nv" path="res://assets/进度条空.png" id="2_hq8lm"]
 [ext_resource type="Texture2D" uid="uid://cutvo0vmuu564" path="res://assets/进度条满.png" id="3_wegfc"]
 
