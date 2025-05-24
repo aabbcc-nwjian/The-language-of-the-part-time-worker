@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://bgu8dfbicqqeq"]
 
 [ext_resource type="Script" uid="uid://bo8aqw3dndjxt" path="res://script/phone.gd" id="1_phbhh"]
-[ext_resource type="Texture2D" uid="uid://myulnkqdbtny" path="res://assets/手机@1x.png" id="2_dx8mv"]
+[ext_resource type="Texture2D" uid="uid://ccrlo5akogf8b" path="res://assets/手机@1x2.0.png" id="2_44wvl"]
 [ext_resource type="PackedScene" uid="uid://nqe4jke58msw" path="res://scene/apphouse_scene.tscn" id="3_dx8mv"]
 [ext_resource type="Texture2D" uid="uid://d32m27tfulk3n" path="res://assets/7D2110154633EC1BF7C80BF323681300.png" id="3_g8n6r"]
 [ext_resource type="Texture2D" uid="uid://otsbg1w63jio" path="res://assets/9B09352C28158F189D736AC405D0F97F.png" id="4_44wvl"]
@@ -18,7 +18,7 @@ script = ExtResource("1_phbhh")
 [node name="phoneLayout" type="Sprite2D" parent="."]
 position = Vector2(1345.68, 272.469)
 scale = Vector2(0.891079, 0.841738)
-texture = ExtResource("2_dx8mv")
+texture = ExtResource("2_44wvl")
 offset = Vector2(-283.676, 102.085)
 
 [node name="SubViewport" type="Control" parent="."]
@@ -27,33 +27,33 @@ anchors_preset = 0
 [node name="BankApp" type="TextureButton" parent="SubViewport"]
 layout_mode = 0
 offset_left = 942.0
-offset_top = 441.0
+offset_top = 331.0
 offset_right = 1038.0
-offset_bottom = 534.0
+offset_bottom = 424.0
 texture_normal = ExtResource("3_g8n6r")
 
 [node name="CarApp" type="TextureButton" parent="SubViewport"]
 layout_mode = 0
 offset_left = 1172.0
-offset_top = 441.0
+offset_top = 331.0
 offset_right = 1239.0
-offset_bottom = 534.0
+offset_bottom = 424.0
 texture_normal = ExtResource("4_44wvl")
 
 [node name="JobApp" type="TextureButton" parent="SubViewport"]
 layout_mode = 0
 offset_left = 1096.0
-offset_top = 441.0
+offset_top = 331.0
 offset_right = 1163.0
-offset_bottom = 534.0
+offset_bottom = 424.0
 texture_normal = ExtResource("5_ov8t6")
 
 [node name="HouseApp" type="TextureButton" parent="SubViewport"]
 layout_mode = 0
 offset_left = 1019.0
-offset_top = 441.0
+offset_top = 331.0
 offset_right = 1114.0
-offset_bottom = 534.0
+offset_bottom = 424.0
 texture_normal = ExtResource("6_7rygr")
 
 [node name="AppLayer" type="Control" parent="."]
