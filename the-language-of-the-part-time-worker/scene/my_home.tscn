@@ -29,7 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://wx38rftmul5" path="res://assets/home2/6E5F24DCCC2E7AE659F04E372065F914.png" id="16_c7q7s"]
 [ext_resource type="Texture2D" uid="uid://bu1l4rscio7v" path="res://assets/icon/2B4AD0D0CBAADA8F510B146F04B6E87B.png" id="28_7w57e"]
 [ext_resource type="Texture2D" uid="uid://xrnpquggs6u1" path="res://assets/icon/180AD33DE5423F5C7D757CD8CC119157.png" id="29_kd7y5"]
-[ext_resource type="PackedScene" uid="uid://b4l7rd3ehnkhi" path="res://mobile/mobile.tscn" id="30_6kgs7"]
+[ext_resource type="PackedScene" uid="uid://bgu8dfbicqqeq" path="res://scene/phone.tscn" id="30_6kgs7"]
 
 [node name="MyHome" type="Control"]
 layout_mode = 3
@@ -168,9 +168,7 @@ offset_right = 403.0
 offset_bottom = 695.0
 texture_normal = ExtResource("29_kd7y5")
 
-[node name="Phone" type="CanvasLayer" parent="."]
-
-[node name="Phone" parent="Phone" instance=ExtResource("30_6kgs7")]
+[node name="Phone" parent="." instance=ExtResource("30_6kgs7")]
 
 [connection signal="pressed" from="Room2/Bed" to="." method="_on_bed_pressed"]
 [connection signal="pressed" from="Room2/Computer" to="." method="_on_computer_pressed"]

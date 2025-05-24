@@ -21,7 +21,7 @@ func _ready() -> void:
 	confirm_sleep.dialog_ok.connect(_on_confirm_sleep)
 	confirm_computer.dialog_ok.connect(_on_confirm_computer)
 	progress_computer.progress_complete.connect(_on_computer_finished)
-	$Phone.hide()
+	$Phone.hide_phone()
 	_show_room()
 	
 func _on_computer_finished():
@@ -58,7 +58,7 @@ func _on_book_shelf_pressed() -> void:
 
 func _on_button_phone_pressed() -> void:
 	if (_show_phone):
-		$Phone.hide()
+		$Phone.hide_phone()
 	else:
-		$Phone.show()
+		$Phone.show_phone()
 	_show_phone = !_show_phone

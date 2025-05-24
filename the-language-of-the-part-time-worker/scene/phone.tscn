@@ -1,17 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://bgu8dfbicqqeq"]
+[gd_scene load_steps=6 format=3 uid="uid://bgu8dfbicqqeq"]
 
 [ext_resource type="Script" uid="uid://bo8aqw3dndjxt" path="res://script/phone.gd" id="1_phbhh"]
 [ext_resource type="Texture2D" uid="uid://cv0mjkr8samim" path="res://assets/去除聊天框.png" id="2_pmu8d"]
+[ext_resource type="PackedScene" uid="uid://nqe4jke58msw" path="res://scene/apphouse_scene.tscn" id="3_dx8mv"]
+[ext_resource type="PackedScene" uid="uid://bc5p1meq10uah" path="res://scene/appbank_scene.tscn" id="4_g8n6r"]
+[ext_resource type="PackedScene" uid="uid://d3tk1s5e20fe0" path="res://scene/appjob_scene.tscn" id="5_blbx6"]
 
-[node name="Phone" type="Node2D"]
+[node name="Phone" type="CanvasLayer"]
 script = ExtResource("1_phbhh")
 
 [node name="phoneLayout" type="Sprite2D" parent="."]
-position = Vector2(1085, 358.75)
+position = Vector2(1249, 303)
 scale = Vector2(0.578125, 0.546113)
 texture = ExtResource("2_pmu8d")
+offset = Vector2(-283.676, 102.085)
 
 [node name="SubViewport" type="CanvasLayer" parent="."]
+layer = 4
 
 [node name="BankApp" type="Button" parent="SubViewport"]
 offset_left = 915.0
@@ -35,6 +40,25 @@ offset_top = 119.0
 offset_right = 1249.0
 offset_bottom = 219.0
 text = "Job"
+
+[node name="AppLayer" type="CanvasLayer" parent="."]
+layer = 4
+visible = false
+
+[node name="ApphouseScene" type="CanvasLayer" parent="AppLayer"]
+visible = false
+
+[node name="ApphouseScene" parent="AppLayer/ApphouseScene" instance=ExtResource("3_dx8mv")]
+
+[node name="AppjobScene" type="CanvasLayer" parent="AppLayer"]
+visible = false
+
+[node name="AppjobScene" parent="AppLayer/AppjobScene" instance=ExtResource("5_blbx6")]
+
+[node name="AppbankScene" type="CanvasLayer" parent="AppLayer"]
+visible = false
+
+[node name="AppbankScene" parent="AppLayer/AppbankScene" instance=ExtResource("4_g8n6r")]
 
 [connection signal="pressed" from="SubViewport/BankApp" to="." method="_on_bank_app_pressed"]
 [connection signal="pressed" from="SubViewport/HouseApp" to="." method="_on_company_app_pressed"]
