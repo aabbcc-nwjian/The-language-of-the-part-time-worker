@@ -1,7 +1,7 @@
 extends Node
 
 var nick_name := "张晓梅"
-var money := 0
+var money := 10000
 var health := 100
 var max_health := 100
 var san := 100
@@ -14,6 +14,10 @@ signal money_changed(new_value)
 signal health_changed(new_value)
 signal san_changed(new_value)
 signal ability_changed(new_value)
+
+signal max_health_changed(new_value)
+signal max_san_changed(new_value)
+signal max_ability_changed(new_value)
 
 # 加减金钱
 func mod_money(value: int) -> void:
@@ -71,14 +75,17 @@ func set_ability(value: int) -> void:
 # 设置最大健康的绝对值
 func set_max_health(value: int) -> void:
 	max_health = value
+	max_health_changed.emit(value)
 	set_health(clamp(health, 0, value))
 
 # 设置最大精神的绝对值
 func set_max_san(value: int) -> void:
 	max_san = value
+	max_san_changed.emit(value)
 	set_san(clamp(san, 0, value))
 
 # 设置最大能力的绝对值
 func set_max_ability(value: int) -> void:
 	max_ability = value
+	max_ability_changed.emit(value)
 	set_ability(clamp(ability, 0, value))

@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvxhj06fo8ugi"]
+
+[ext_resource type="Script" uid="uid://yny48b0qag10" path="res://Options/options.gd" id="1_6k1gw"]
+
+[node name="Options" type="VBoxContainer"]
+offset_left = 860.0
+offset_top = 31.0
+offset_right = 868.0
+offset_bottom = 63.0
+scale = Vector2(48.3388, 12.9928)
+script = ExtResource("1_6k1gw")
+metadata/_edit_vertical_guides_ = [300.0]
+metadata/_edit_horizontal_guides_ = [200.0]
+
+[node name="Option1" type="Button" parent="."]
+layout_mode = 2
+
+[node name="Option2" type="Button" parent="."]
+layout_mode = 2
+
+[node name="Option3" type="Button" parent="."]
+layout_mode = 2

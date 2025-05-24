@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://co0cie3v0kx5l"]
+
+[ext_resource type="Texture2D" uid="uid://c1jirx8doy6eq" path="res://Pictures/yiyuan.png" id="1_y632x"]
+
+[node name="Hospital" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.97561, 0.978261)
+texture = ExtResource("1_y632x")

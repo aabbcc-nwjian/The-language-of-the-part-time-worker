@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://bso1todi3t2q4"]
+
+[ext_resource type="PackedScene" uid="uid://chgrvlys4l0je" path="res://Dialogue/Dialogue.tscn" id="1_se7br"]
+[ext_resource type="PackedScene" uid="uid://dp071pfqq0o2u" path="res://Event/Company.tscn" id="2_lm7p6"]
+[ext_resource type="PackedScene" uid="uid://d0np6fj70qxg8" path="res://Character/Person.tscn" id="3_mund1"]
+[ext_resource type="PackedScene" uid="uid://cvxhj06fo8ugi" path="res://Options/options.tscn" id="4_r3xf1"]
+[ext_resource type="PackedScene" uid="uid://ddrhstkb5vjje" path="res://scene/hud.tscn" id="5_lm7p6"]
+
+[node name="EventCompany" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Dialogue" parent="CanvasLayer" instance=ExtResource("1_se7br")]
+
+[node name="Company" parent="CanvasLayer" instance=ExtResource("2_lm7p6")]
+
+[node name="Person" parent="CanvasLayer" instance=ExtResource("3_mund1")]
+
+[node name="Options" parent="CanvasLayer" instance=ExtResource("4_r3xf1")]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("5_lm7p6")]
