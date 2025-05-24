@@ -5,6 +5,7 @@ var scene_paths = {
 	"gongyuan": "res://scene/gongyuan.tscn",
 	"book": "res://scene/book.tscn",
 	"shop": "res://scene/shop.tscn",
+	"home":"res://scene/home.tscn"
 }
 
 @onready var scene_container = $map
@@ -15,8 +16,8 @@ func _ready():
 	$map/buttons/Button2.pressed.connect(_on_gongyuan_pressed)
 	$map/buttons/Button4.pressed.connect(_on_book_pressed)
 	$map/buttons/Button3.pressed.connect(_on_shop_pressed)
-	hud.hide()
-	
+	$map/buttons/Button.pressed.connect(_on_home_pressed)
+
 func load_scene(scene_key: String):
 	# 清除旧场景
 	for child in scene_container.get_children():
@@ -44,8 +45,5 @@ func _on_book_pressed():
 func _on_shop_pressed():
 	hud.hide()
 	load_scene("shop")
-
-
-func _on_button_return_pressed() -> void:
-	get_tree().change_scene_to_file("res://scene/my_home.tscn")
-	pass # Replace with function body.
+func _on_home_pressed():
+	load_scene("home")

@@ -44,28 +44,28 @@ func buy_first():
 		buybook1.visible=true
 		User.a = true
 		User.mod_money(-100)
-		User.add_item("java",100,"能力10+",150,0)
+		User.add_item("java",100,"能力10+",150,0,10)
 func buy_second():
 	if User.money >= 200 and not buybook2.visible:
 		buybook2.visible=true
 		User.b = true
 		User.mod_money(-200)
-		User.add_item("c++",200,"能力25+",200,0)
+		User.add_item("c++",200,"能力25+",200,0,25)
 func buy_three():
 	if User.money >= 400 and not buybook3.visible:
 		buybook3.visible=true
 		User.c = true
 		User.mod_money(-400)
-		User.add_item("Godot",400,"能力20+",100,0)
+		User.add_item("Godot",400,"能力20+",100,0,20)
 func buy_four():
 	if User.money >= 300 and not buybook4.visible:
 		buybook4.visible=true
 		User.d = true
 		User.mod_money(-300)
-		User.add_item("c#",300,"能力30+",220,0)
+		User.add_item("c#",300,"能力30+",220,0,30)
 func buy_five():
 	if User.money >= 300 and not buybook5.visible:
 		buybook5.visible=true
 		User.e = true
 		User.mod_money(-300)
-		User.add_item("css",300,"能力20+",160,0)
+		User.add_item("css",300,"能力20+",160,0,20)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://3gj2ppwqhp5l"]
+[gd_scene load_steps=6 format=3 uid="uid://cbaipj5fpokep"]
 
 [ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://script/gongyuan.gd" id="1_1qifb"]
 [ext_resource type="Texture2D" uid="uid://brbj3fy7ucxe6" path="res://Pictures/98045f3f462673ee9c3a7330fee42e72.png" id="2_1qifb"]

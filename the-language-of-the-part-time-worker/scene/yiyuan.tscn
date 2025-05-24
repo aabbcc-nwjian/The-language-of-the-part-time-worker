@@ -120,4 +120,4 @@ dialog_text = "金钱 -400
 健康+100"
 script = SubResource("GDScript_rij73")
 
-[node name="Hud" parent="Node2D" instance=ExtResource("3_w1vcl")]
+[node name="Hud" parent="." instance=ExtResource("3_w1vcl")]
