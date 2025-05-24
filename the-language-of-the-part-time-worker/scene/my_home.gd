@@ -25,6 +25,12 @@ func _ready() -> void:
 	phone.hide_phone()
 	_show_room()
 	
+	# 只有休息日才能外出
+	if (User.stage == 2):
+		$Actions/ButtonMap.show()
+	else:
+		$Actions/ButtonMap.hide()
+	
 func _on_computer_finished():
 	computer_result.show_popup("金钱: -50  健康: -5\n精神: +10  能力上限: +2")
 	User.mod_money(-50)
@@ -63,3 +69,9 @@ func _on_button_phone_pressed() -> void:
 	else:
 		phone.show_phone()
 	_show_phone = !_show_phone
+
+
+func _on_button_map_pressed() -> void:
+	var scene = load("res://scene/ditu.tscn")
+	get_tree().change_scene_to_packed(scene)
+	pass # Replace with function body.

@@ -1,20 +1,14 @@
-<<<<<<< HEAD
-[gd_scene load_steps=3 format=3 uid="uid://ctq645vo2gg65"]
-
-[ext_resource type="Script" path="res://scene/gongyuan.gd" id="1_1qifb"]
-[ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="1_hvxmv"]
-=======
-[gd_scene load_steps=5 format=3 uid="uid://cbaipj5fpokep"]
+[gd_scene load_steps=6 format=3 uid="uid://3gj2ppwqhp5l"]
 
 [ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://script/gongyuan.gd" id="1_1qifb"]
 [ext_resource type="Texture2D" uid="uid://brbj3fy7ucxe6" path="res://Pictures/98045f3f462673ee9c3a7330fee42e72.png" id="2_1qifb"]
+[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="2_07dvy"]
 
 [sub_resource type="Theme" id="Theme_1qifb"]
 
 [sub_resource type="GDScript" id="GDScript_1qifb"]
 script/source = "extends AcceptDialog
 "
->>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 
 [node name="gongyuan" type="Node2D"]
 script = ExtResource("1_1qifb")
@@ -66,6 +60,7 @@ text = "休闲"
 flat = true
 
 [node name="VBoxContainer" type="Control" parent="Node2D"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 278.0
@@ -117,3 +112,5 @@ content_scale_factor = 1.46
 dialog_text = "健康-5
 精神+10"
 script = SubResource("GDScript_1qifb")
+
+[node name="Hud" parent="Node2D" instance=ExtResource("2_07dvy")]

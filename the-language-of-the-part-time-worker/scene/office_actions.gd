@@ -3,6 +3,7 @@ extends Node2D
 func _on_confirm_off_work():
 	var scene = load("res://scene/my_home.tscn")
 	get_tree().change_scene_to_packed(scene)
+	User.stage = 1
 	pass
 	
 func _on_cancel_off_work():

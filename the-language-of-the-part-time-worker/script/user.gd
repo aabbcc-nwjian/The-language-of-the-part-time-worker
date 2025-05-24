@@ -6,7 +6,7 @@ var cycle_num = 0
 # 0： 工作日白天
 # 1： 工作日下班后
 # 2： 休息日
-var stage = 0
+var stage = 2
 
 # 选择的出身
 var choose = 0

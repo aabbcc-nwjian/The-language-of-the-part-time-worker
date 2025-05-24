@@ -8,6 +8,8 @@
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_268i2")
+metadata/_edit_vertical_guides_ = [880.0, 1462.0, 1274.0]
+metadata/_edit_horizontal_guides_ = [4.0, 343.0, 719.0]
 
 [node name="BankLayer" type="Control" parent="."]
 anchors_preset = 0

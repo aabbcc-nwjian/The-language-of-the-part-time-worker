@@ -25,24 +25,21 @@ func hide_all_app():
 	
 
 func _on_bank_app_pressed() -> void:
-	var path = "appbank_scene.tscn"
 	hide_all_app()
 	bank.show()
 	$SubViewport.hide()
 	$AppLayer.show()
 
-
-func _on_company_app_pressed() -> void:
-	var path = "apphouse_scene.tscn"
-	hide_all_app()
-	house.show()
-	$SubViewport.hide()
-	$AppLayer.show()
-
-
 func _on_job_app_pressed() -> void:
-	var path = "appjob_scene.tscn"
 	hide_all_app()
 	job.show()
 	$SubViewport.hide()
 	$AppLayer.show()
+
+
+func _on_house_app_pressed() -> void:
+	hide_all_app()
+	house.show()
+	$SubViewport.hide()
+	$AppLayer.show()
+	pass # Replace with function body.

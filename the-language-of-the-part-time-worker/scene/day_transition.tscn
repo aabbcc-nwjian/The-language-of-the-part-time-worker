@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3jmwl52gm0vs"]
+
+[ext_resource type="Script" uid="uid://c0q5odp8v8cel" path="res://scene/day_transition.gd" id="1_cndrc"]
+[ext_resource type="Texture2D" uid="uid://cfqw6g30nt8l0" path="res://assets/248072228CD0363F7314C5D4320286F7.png" id="2_78bn4"]
+[ext_resource type="Texture2D" uid="uid://bk7kexb1mbqjf" path="res://assets/D4D7B74822EBF5F28B884D28BF89608D.png" id="3_em0mp"]
+
+[node name="DayTransition" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cndrc")
+
+[node name="BackgroundWeekend" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(640, 360)
+texture = ExtResource("2_78bn4")
+
+[node name="BackgroundWeekday" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(640, 360)
+texture = ExtResource("3_em0mp")
+
+[node name="LabelDay" type="Label" parent="."]
+layout_mode = 0
+offset_left = 710.0
+offset_top = 218.0
+offset_right = 754.0
+offset_bottom = 324.0
+theme_override_font_sizes/font_size = 77
+text = "123"
