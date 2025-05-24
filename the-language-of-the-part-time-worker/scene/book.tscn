@@ -22,6 +22,7 @@ offset_bottom = 40.0
 [node name="Books" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
 position = Vector2(-33, 65)
 label_text = "java"
+label4_text = 160
 
 [node name="Books2" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
 position = Vector2(-32, 169)
@@ -83,12 +84,12 @@ texture = ExtResource("5_c8bge")
 
 [node name="A3995f8d33a4b46Bf86f5Ab89c5c60Fc3" type="Sprite2D" parent="Node2D/VBoxContainer"]
 visible = false
-position = Vector2(1044, 420)
+position = Vector2(1043, 420)
 texture = ExtResource("5_c8bge")
 
 [node name="A3995f8d33a4b46Bf86f5Ab89c5c60Fc4" type="Sprite2D" parent="Node2D/VBoxContainer"]
 visible = false
-position = Vector2(1045, 532)
+position = Vector2(1044, 532)
 texture = ExtResource("5_c8bge")
 
 [node name="A3995f8d33a4b46Bf86f5Ab89c5c60Fc5" type="Sprite2D" parent="Node2D/VBoxContainer"]
@@ -140,9 +141,9 @@ flat = true
 light_mask = 0
 visibility_layer = 0
 layout_mode = 0
-offset_left = 316.0
+offset_left = 315.0
 offset_top = 22.0
-offset_right = 493.0
+offset_right = 492.0
 offset_bottom = 106.0
 flat = true
 

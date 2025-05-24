@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3wvs5g2jt3bh"]
+[gd_scene load_steps=5 format=3 uid="uid://b3wvs5g2jt3bh"]
 
 [ext_resource type="Script" uid="uid://b2hht0iyy6bex" path="res://script/yiyuan.gd" id="1_rij73"]
 [ext_resource type="Texture2D" uid="uid://bjqj44vsht54l" path="res://Pictures/da67d9468b620a67cd4680fba5015960.png" id="2_rij73"]
+[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_w1vcl"]
 
 [sub_resource type="GDScript" id="GDScript_rij73"]
 script/source = "extends AcceptDialog
@@ -118,3 +119,5 @@ content_scale_factor = 1.46
 dialog_text = "金钱 -400
 健康+100"
 script = SubResource("GDScript_rij73")
+
+[node name="Hud" parent="." instance=ExtResource("3_w1vcl")]

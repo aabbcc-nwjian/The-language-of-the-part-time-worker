@@ -5,6 +5,7 @@ var scene_paths = {
 	"gongyuan": "res://scene/gongyuan.tscn",
 	"book": "res://scene/book.tscn",
 	"shop": "res://scene/shop.tscn",
+	"home":"res://scene/home.tscn"
 }
 
 @onready var scene_container = $map
@@ -13,6 +14,7 @@ func _ready():
 	$map/buttons/Button2.pressed.connect(_on_gongyuan_pressed)
 	$map/buttons/Button4.pressed.connect(_on_book_pressed)
 	$map/buttons/Button3.pressed.connect(_on_shop_pressed)
+	$map/buttons/Button.pressed.connect(_on_home_pressed)
 
 func load_scene(scene_key: String):
 	# 清除旧场景
@@ -37,3 +39,5 @@ func _on_book_pressed():
 	load_scene("book")
 func _on_shop_pressed():
 	load_scene("shop")
+func _on_home_pressed():
+	load_scene("home")

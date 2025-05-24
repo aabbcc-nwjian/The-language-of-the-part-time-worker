@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dgehub3vuxi55" path="res://assets/home1/5556@1x.png" id="2_ntff0"]
 [ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="2_suw3g"]
 [ext_resource type="Texture2D" uid="uid://dfgcptp0spudc" path="res://assets/home3/D0D87EC97916CFCDAC7877ECF08CCA42.png" id="3_7w57e"]
-[ext_resource type="Script" uid="uid://tf38bv5k047g" path="res://script/alpha_texture_button.gd" id="3_oly1t"]
+[ext_resource type="Script" path="res://script/alpha_texture_button.gd" id="3_oly1t"]
 [ext_resource type="Texture2D" uid="uid://bx3kfnwkq8w5f" path="res://assets/home1/551@1x.png" id="4_b8885"]
 [ext_resource type="Texture2D" uid="uid://bhqu1mlcc4wq6" path="res://assets/home3/002DB2C440DB4253552BC336D688E93E.png" id="4_kd7y5"]
 [ext_resource type="Texture2D" uid="uid://bioqgdsorkl6i" path="res://assets/home3/BAF597459694D8F2C3F4371ECE5E5664.png" id="6_6kgs7"]
@@ -29,7 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://wx38rftmul5" path="res://assets/home2/6E5F24DCCC2E7AE659F04E372065F914.png" id="16_c7q7s"]
 [ext_resource type="Texture2D" uid="uid://bu1l4rscio7v" path="res://assets/icon/2B4AD0D0CBAADA8F510B146F04B6E87B.png" id="28_7w57e"]
 [ext_resource type="Texture2D" uid="uid://xrnpquggs6u1" path="res://assets/icon/180AD33DE5423F5C7D757CD8CC119157.png" id="29_kd7y5"]
-[ext_resource type="PackedScene" uid="uid://bgu8dfbicqqeq" path="res://scene/phone.tscn" id="30_6kgs7"]
+[ext_resource type="PackedScene" path="res://scene/phone.tscn" id="30_6kgs7"]
 
 [node name="MyHome" type="Control"]
 layout_mode = 3
@@ -182,3 +182,4 @@ texture_normal = ExtResource("29_kd7y5")
 [connection signal="pressed" from="Room1/Computer" to="." method="_on_computer_pressed"]
 [connection signal="pressed" from="Room1/BookShelf" to="." method="_on_book_shelf_pressed"]
 [connection signal="pressed" from="Actions/ButtonPhone" to="." method="_on_button_phone_pressed"]
+[connection signal="pressed" from="Actions/ButtonMap" to="." method="_on_button_map_pressed"]

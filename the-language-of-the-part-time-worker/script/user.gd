@@ -136,13 +136,14 @@ var b = false
 var c = false
 var d = false
 var e = false
-func add_item(name:String,price:float,description:String,page:int,reading:int):
+func add_item(name:String,price:float,description:String,page:int,reading:int,ability:int):
 	var item = {
 		"name":name,
 		"price":price,
 		"description":description,
 		"page":page,
-		"reading":reading
+		"reading":reading,
+		"ability":ability
 	}
 	item_list.append(item)
 func get_item(index:int):

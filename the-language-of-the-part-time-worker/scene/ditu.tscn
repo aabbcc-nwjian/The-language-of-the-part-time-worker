@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3gc64uf10cvl"]
+[gd_scene load_steps=5 format=3 uid="uid://b3gc64uf10cvl"]
 
 [ext_resource type="Script" uid="uid://tqwbsqmep01b" path="res://script/ditu.gd" id="1_acov4"]
 [ext_resource type="Texture2D" uid="uid://e3quphgr7m73" path="res://Pictures/地图.png" id="2_wwuf8"]
+[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_uunpp"]
+[ext_resource type="Texture2D" uid="uid://bq8eebohdhkdm" path="res://Pictures/2103e3152452ad2fcf96bc6a5c1736a7.png" id="4_wsywj"]
 
 [node name="ditu" type="Node2D"]
 script = ExtResource("1_acov4")
@@ -72,3 +74,19 @@ offset_bottom = 816.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
 flat = true
+
+[node name="Button" type="Button" parent="map/buttons"]
+light_mask = 0
+visibility_layer = 0
+offset_left = 1328.0
+offset_top = 782.0
+offset_right = 1436.0
+offset_bottom = 900.0
+flat = true
+
+[node name="2103e3152452Ad2Fcf96Bc6a5c1736a7" type="Sprite2D" parent="map"]
+position = Vector2(1177, 628)
+scale = Vector2(1.89831, 2.2069)
+texture = ExtResource("4_wsywj")
+
+[node name="Hud" parent="map" instance=ExtResource("3_uunpp")]

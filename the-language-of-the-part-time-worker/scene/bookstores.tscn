@@ -1,6 +1,89 @@
-[gd_scene load_steps=2 format=3 uid="uid://dpbh3w7ofqxmm"]
+[gd_scene load_steps=4 format=3 uid="uid://dpbh3w7ofqxmm"]
 
 [ext_resource type="Script" uid="uid://c3phao4kddsjl" path="res://scene/bookstores.gd" id="1_g6fgn"]
+[ext_resource type="Texture2D" uid="uid://d0q6u4851m28g" path="res://Pictures/5c0186804976450f60537947a87eb25e.png" id="2_xktwi"]
+[ext_resource type="PackedScene" uid="uid://dxfh70ky0mlo3" path="res://books message/books.tscn" id="3_bpedp"]
 
 [node name="bookstores" type="Node2D"]
 script = ExtResource("1_g6fgn")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Gongyuan" type="Sprite2D" parent="Node2D"]
+position = Vector2(642, 355)
+texture = ExtResource("2_xktwi")
+
+[node name="Books" parent="Node2D" instance=ExtResource("3_bpedp")]
+visible = false
+position = Vector2(-43, 64)
+
+[node name="Books2" parent="Node2D" instance=ExtResource("3_bpedp")]
+visible = false
+position = Vector2(-45, 173)
+
+[node name="Books3" parent="Node2D" instance=ExtResource("3_bpedp")]
+visible = false
+position = Vector2(-44, 282)
+
+[node name="Books4" parent="Node2D" instance=ExtResource("3_bpedp")]
+visible = false
+position = Vector2(-44, 391)
+
+[node name="Books5" parent="Node2D" instance=ExtResource("3_bpedp")]
+visible = false
+position = Vector2(-41, 492)
+
+[node name="Button" type="Button" parent="Node2D"]
+visible = false
+light_mask = 0
+offset_left = 957.0
+offset_top = 152.0
+offset_right = 1115.0
+offset_bottom = 243.0
+theme_override_font_sizes/font_size = 40
+text = "阅读"
+flat = true
+
+[node name="Button2" type="Button" parent="Node2D"]
+visible = false
+light_mask = 0
+offset_left = 957.0
+offset_top = 252.0
+offset_right = 1115.0
+offset_bottom = 343.0
+theme_override_font_sizes/font_size = 40
+text = "阅读"
+flat = true
+
+[node name="Button3" type="Button" parent="Node2D"]
+visible = false
+light_mask = 0
+offset_left = 960.0
+offset_top = 369.0
+offset_right = 1118.0
+offset_bottom = 460.0
+theme_override_font_sizes/font_size = 40
+text = "阅读"
+flat = true
+
+[node name="Button4" type="Button" parent="Node2D"]
+visible = false
+light_mask = 0
+offset_left = 964.0
+offset_top = 478.0
+offset_right = 1122.0
+offset_bottom = 569.0
+theme_override_font_sizes/font_size = 40
+text = "阅读"
+flat = true
+
+[node name="Button5" type="Button" parent="Node2D"]
+visible = false
+light_mask = 0
+offset_left = 965.0
+offset_top = 587.0
+offset_right = 1123.0
+offset_bottom = 678.0
+theme_override_font_sizes/font_size = 40
+text = "阅读"
+flat = true

@@ -63,3 +63,8 @@ func _on_button_phone_pressed() -> void:
 	else:
 		phone.show_phone()
 	_show_phone = !_show_phone
+
+func _on_button_map_pressed() -> void:
+	var scene = load("res://scene/ditu.tscn")
+	get_tree().change_scene_to_packed(scene)
+	pass # Replace with function body.

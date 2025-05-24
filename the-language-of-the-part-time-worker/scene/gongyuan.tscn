@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://cbaipj5fpokep"]
+[gd_scene load_steps=6 format=3 uid="uid://cbaipj5fpokep"]
 
 [ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://script/gongyuan.gd" id="1_1qifb"]
 [ext_resource type="Texture2D" uid="uid://brbj3fy7ucxe6" path="res://Pictures/98045f3f462673ee9c3a7330fee42e72.png" id="2_1qifb"]
+[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_07dvy"]
 
 [sub_resource type="Theme" id="Theme_1qifb"]
 
@@ -110,3 +111,5 @@ content_scale_factor = 1.46
 dialog_text = "健康-5
 精神+10"
 script = SubResource("GDScript_1qifb")
+
+[node name="Hud" parent="." instance=ExtResource("3_07dvy")]
