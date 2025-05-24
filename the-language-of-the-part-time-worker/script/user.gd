@@ -128,3 +128,30 @@ func set_max_ability(value: int) -> void:
 	max_ability = value
 	max_ability_changed.emit(value)
 	set_ability(clamp(ability, 0, value))
+
+
+
+var item_list = []
+var a = false
+var b = false
+var c = false
+var d = false
+var e = false
+func add_item(name:String,price:float,description:String,page:int,reading:int):
+	var item = {
+		"name":name,
+		"price":price,
+		"description":description,
+		"page":page,
+		"reading":reading
+	}
+	item_list.append(item)
+func get_item(index:int):
+	return item_list[index]
+func get_all_items():
+	return item_list;
+func readbook(index:int,num:int):
+	if num + item_list[index].reading>=item_list[index].page:
+		item_list[index].reading=item_list[index].page
+	else :
+		item_list[index].reading=num + item_list[index].reading

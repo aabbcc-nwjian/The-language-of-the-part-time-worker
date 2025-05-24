@@ -1,7 +1,11 @@
+<<<<<<< HEAD
+[gd_scene load_steps=0 format=3 uid="uid://d0nkhna4ydc7p"]
+=======
 [gd_scene load_steps=3 format=3 uid="uid://d0nkhna4ydc7p"]
 
 [ext_resource type="Script" uid="uid://c8sqisq7rthoq" path="res://scene/shop.gd" id="1_4p3p6"]
 [ext_resource type="Texture2D" uid="uid://bvoofsfaps5y1" path="res://Pictures/gongyuan.png" id="1_iuafe"]
+>>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 
 [node name="shop" type="Node2D"]
 script = ExtResource("1_4p3p6")

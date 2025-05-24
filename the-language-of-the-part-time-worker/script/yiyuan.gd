@@ -5,6 +5,9 @@ var scene_paths = {
 }
 
 @onready var scene_container = $Node2D
+@onready var accept_dialog1 = $Node2D/AcceptDialog
+@onready var accept_dialog2 = $Node2D/AcceptDialog2
+@onready var accept_dialog3 = $Node2D/AcceptDialog3
 func _ready():
 	$Node2D/Control/Button2.pressed.connect(_on_back_pressed)
 	$Node2D/VBoxContainer/Button.pressed.connect(first)
@@ -29,16 +32,19 @@ func load_scene(scene_key: String):
 func _on_back_pressed():
 	load_scene("map")
 func first():
+	accept_dialog1.popup_centered()
 	User.mod_health(10)
 	User.mod_money(-50)
 	print(User.money)
 	print(User.health)
 func second():
+	accept_dialog2.popup_centered()
 	User.mod_health(40)
 	User.mod_money(-180)
 	print(User.money)
 	print(User.health)
 func three():
+	accept_dialog3.popup_centered()
 	User.mod_health(100)
 	User.mod_money(-400)
 	print(User.money)
