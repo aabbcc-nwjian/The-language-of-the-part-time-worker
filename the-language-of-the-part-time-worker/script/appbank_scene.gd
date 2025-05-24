@@ -35,7 +35,7 @@ func _update_returnLoan() -> void:
 
 func _on_accept_dialog_confirmed() -> void:
 	loanCount -= 1;
-	returnLoan+=loan*1.3
+	returnLoan+=int(loan*1.3)
 	User.mod_money(loan)
 	_update_money()
 	_update_loanCount()

@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://dbojht36oajwa"]
+
+[node name="AppchatScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
