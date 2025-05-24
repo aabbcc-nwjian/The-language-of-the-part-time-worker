@@ -18,7 +18,7 @@ extends CanvasLayer
 @export var health_max: int = 100:
 	set(value):
 		health_max = max(1, value)
-		health = clamp(value, 0, health_max)
+		health = clamp(health, 0, health_max)
 		_update_health()
 		
 @export var san: int = 100:
@@ -29,7 +29,7 @@ extends CanvasLayer
 @export var san_max: int = 100:
 	set(value):
 		san_max = max(1, value)
-		san = clamp(value, 0, san_max)
+		san = clamp(san, 0, san_max)
 		_update_san()
 		
 @export var ability: int = 100:
@@ -40,7 +40,7 @@ extends CanvasLayer
 @export var ability_max: int = 100:
 	set(value):
 		ability_max = max(1, value)
-		ability = clamp(value, 0, ability_max)
+		ability = clamp(ability, 0, ability_max)
 		_update_ability()
 		
 @onready var nickname_label = $LabelNickName
