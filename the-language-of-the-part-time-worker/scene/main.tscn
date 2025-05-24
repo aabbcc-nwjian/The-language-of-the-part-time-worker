@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3gdxkomo5ady"]
+
+[ext_resource type="Texture2D" uid="uid://clmroir2lbjlv" path="res://assets/bangongshi.png" id="1_itxqv"]
+
+[node name="Main" type="Node"]
+
+[node name="StartupPage" type="Node2D" parent="."]
+
+[node name="Background" type="Sprite2D" parent="StartupPage"]
+position = Vector2(637.75, 359)
+scale = Vector2(1.24463, 0.696289)
+texture = ExtResource("1_itxqv")
+
+[node name="SubViewport" type="CanvasLayer" parent="StartupPage"]
+
+[node name="ButtonNewGame" type="Button" parent="StartupPage/SubViewport"]
+offset_left = 80.0
+offset_top = 259.0
+offset_right = 279.0
+offset_bottom = 336.0
+theme_override_font_sizes/font_size = 28
+text = "新游戏"
+
+[node name="ButtonContinue" type="Button" parent="StartupPage/SubViewport"]
+offset_left = 80.0
+offset_top = 383.0
+offset_right = 279.0
+offset_bottom = 460.0
+theme_override_font_sizes/font_size = 28
+text = "继续游戏
+"
+
+[node name="ButtonContinue" type="Button" parent="StartupPage/SubViewport/ButtonContinue"]
+offset_top = 119.0
+offset_right = 199.0
+offset_bottom = 196.0
+theme_override_font_sizes/font_size = 28
+text = "退出游戏
+"
+
+[node name="Label" type="Label" parent="StartupPage/SubViewport"]
+offset_left = 80.0
+offset_top = 56.0
+offset_right = 380.0
+offset_bottom = 162.0
+theme_override_font_sizes/font_size = 75
+text = "打工时代"
+
+[node name="GameScene" type="Node2D" parent="."]
+
+[node name="Event" type="Node" parent="GameScene"]
+
+[node name="Dialog" type="SubViewport" parent="GameScene/Event"]
+
+[node name="Content" type="SubViewport" parent="GameScene/Event"]
+
+[node name="Person" type="Sprite2D" parent="GameScene/Event/Content"]
+
+[node name="Message" type="Node" parent="GameScene/Event/Content"]
+
+[node name="UserHud" type="SubViewport" parent="GameScene"]

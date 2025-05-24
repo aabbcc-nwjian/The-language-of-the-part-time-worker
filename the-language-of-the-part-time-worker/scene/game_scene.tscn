@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://8e5swejfi5uv"]
+
+[node name="GameScene" type="Node2D"]
+
+[node name="Event" type="Node" parent="."]
+
+[node name="Dialog" type="SubViewport" parent="Event"]
+
+[node name="Content" type="SubViewport" parent="Event"]
+
+[node name="Person" type="Sprite2D" parent="Event/Content"]
+
+[node name="Message" type="Node" parent="Event/Content"]
+
+[node name="UserHud" type="SubViewport" parent="."]
