@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 var loan:int = 1000
 var balance: int = 0

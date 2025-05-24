@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 var housePrice: int = 0;
 var room: int = 0;

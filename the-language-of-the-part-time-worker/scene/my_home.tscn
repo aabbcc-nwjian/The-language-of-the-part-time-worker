@@ -168,7 +168,9 @@ offset_right = 403.0
 offset_bottom = 695.0
 texture_normal = ExtResource("29_kd7y5")
 
-[node name="Phone" parent="." instance=ExtResource("30_6kgs7")]
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Phone" parent="CanvasLayer" instance=ExtResource("30_6kgs7")]
 
 [connection signal="pressed" from="Room2/Bed" to="." method="_on_bed_pressed"]
 [connection signal="pressed" from="Room2/Computer" to="." method="_on_computer_pressed"]

@@ -4,15 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://ugohmeskwq67" path="res://assets/appbank.png" id="2_eqfcm"]
 [ext_resource type="Script" uid="uid://do02kwcb8vapn" path="res://script/transparent_button.gd" id="4_7dg0d"]
 
-[node name="AppbankScene" type="Node2D"]
+[node name="AppbankScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_268i2")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="BankLayer" type="Control" parent="."]
+anchors_preset = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="BankLayer"]
 position = Vector2(1077, 367)
 scale = Vector2(1.00233, 0.839306)
 texture = ExtResource("2_eqfcm")
-
-[node name="BankLayer" type="CanvasLayer" parent="."]
 
 [node name="balance" type="Label" parent="BankLayer"]
 offset_left = 963.0
@@ -35,7 +38,8 @@ offset_right = 936.0
 offset_bottom = 89.0
 script = ExtResource("4_7dg0d")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="Control" parent="."]
+anchors_preset = 0
 
 [node name="loan1000" type="Button" parent="CanvasLayer"]
 offset_left = 963.0

@@ -4,7 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://bg8h1k8cqpl2j" path="res://assets/renthouse.png" id="1_ptbwp"]
 [ext_resource type="Script" uid="uid://do02kwcb8vapn" path="res://script/transparent_button.gd" id="3_caekl"]
 
-[node name="ApphouseScene" type="Node2D"]
+[node name="ApphouseScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
 script = ExtResource("1_6e5u1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
@@ -12,7 +14,8 @@ position = Vector2(1096.5, 364)
 scale = Vector2(0.916084, 0.843931)
 texture = ExtResource("1_ptbwp")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="Control" parent="."]
+anchors_preset = 0
 
 [node name="ButtonBigHouse" type="Button" parent="CanvasLayer"]
 offset_left = 942.0
