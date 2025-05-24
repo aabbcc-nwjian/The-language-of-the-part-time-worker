@@ -75,3 +75,11 @@ offset_right = 516.0
 offset_bottom = 81.0
 theme_override_font_sizes/font_size = 40
 text = "作用"
+
+[node name="Label" type="Label" parent="Node2D"]
+offset_left = 393.0
+offset_top = 232.0
+offset_right = 930.0
+offset_bottom = 430.0
+theme_override_font_sizes/font_size = 130
+text = "敬请期待"

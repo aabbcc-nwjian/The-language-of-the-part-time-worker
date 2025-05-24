@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dddhuayk7i5u3" path="res://script/apphouse_scene.gd" id="1_6e5u1"]
 [ext_resource type="Texture2D" uid="uid://bg8h1k8cqpl2j" path="res://assets/renthouse.png" id="1_ptbwp"]
-[ext_resource type="Script" uid="uid://do02kwcb8vapn" path="res://script/transparent_button.gd" id="3_caekl"]
+[ext_resource type="Script" path="res://script/transparent_button.gd" id="3_caekl"]
 
 [node name="ApphouseScene" type="Control"]
 layout_mode = 3
