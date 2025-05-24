@@ -32,11 +32,19 @@ theme_override_font_sizes/font_size = 28
 text = "继续游戏
 "
 
+<<<<<<< Updated upstream
 [node name="ButtonExit" type="Button" parent="StartupPage/SubViewport"]
 offset_left = 80.0
 offset_top = 560.0
 offset_right = 279.0
 offset_bottom = 637.0
+=======
+[node name="ButtonContinue" type="Button" parent="StartupPage/SubViewport/ButtonContinue"]
+layout_mode = 0
+offset_top = 119.0
+offset_right = 199.0
+offset_bottom = 196.0
+>>>>>>> Stashed changes
 theme_override_font_sizes/font_size = 28
 text = "退出游戏
 "

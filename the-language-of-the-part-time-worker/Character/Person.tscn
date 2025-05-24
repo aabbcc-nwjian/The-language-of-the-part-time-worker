@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0np6fj70qxg8"]
+
+[ext_resource type="Texture2D" uid="uid://bi7hxebhf56ix" path="res://Pictures/kansouji.png" id="1_k8hd2"]
+
+[node name="Node2D" type="Node2D"]
+metadata/_edit_vertical_guides_ = [300.0]
+metadata/_edit_horizontal_guides_ = [200.0]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(198, 502)
+scale = Vector2(0.540654, 0.621197)
+texture = ExtResource("1_k8hd2")

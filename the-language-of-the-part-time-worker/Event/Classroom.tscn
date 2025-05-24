@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://di0byxytxbn11"]
+
+[ext_resource type="Texture2D" uid="uid://sq7iq8fjpftm" path="res://Pictures/1 (1).png" id="1_sd156"]
+
+[node name="Classroom" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(1.25, 1.25436)
+texture = ExtResource("1_sd156")

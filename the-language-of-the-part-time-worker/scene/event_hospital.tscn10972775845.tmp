@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://b4tsr8avonkig"]
+
+[ext_resource type="PackedScene" uid="uid://co0cie3v0kx5l" path="res://Event/Hospital.tscn" id="1_l7248"]
+[ext_resource type="PackedScene" uid="uid://chgrvlys4l0je" path="res://Dialogue/Dialogue.tscn" id="1_ra4kt"]
+[ext_resource type="PackedScene" uid="uid://cvxhj06fo8ugi" path="res://Options/options.tscn" id="2_t1vq2"]
+[ext_resource type="PackedScene" uid="uid://d0np6fj70qxg8" path="res://Character/Person.tscn" id="4_anu0e"]
+[ext_resource type="PackedScene" uid="uid://ddrhstkb5vjje" path="res://scene/hud.tscn" id="5_anu0e"]
+
+[node name="Event_Hospital" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Dialogue" parent="CanvasLayer" instance=ExtResource("1_ra4kt")]
+
+[node name="Hospital" parent="CanvasLayer" instance=ExtResource("1_l7248")]
+
+[node name="Options" parent="CanvasLayer" instance=ExtResource("2_t1vq2")]
+
+[node name="Person" parent="CanvasLayer" instance=ExtResource("4_anu0e")]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("5_anu0e")]

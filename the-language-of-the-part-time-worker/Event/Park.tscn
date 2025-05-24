@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dhpjlbwe8smxg"]
+
+[ext_resource type="Texture2D" uid="uid://bvoofsfaps5y1" path="res://Pictures/gongyuan.png" id="1_jv8yx"]
+
+[node name="Park" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(640, 360)
+scale = Vector2(0.97561, 0.978261)
+texture = ExtResource("1_jv8yx")

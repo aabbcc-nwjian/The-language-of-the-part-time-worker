@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://brd771tia6v4h"]
+[gd_scene load_steps=7 format=3 uid="uid://ddrhstkb5vjje"]
 
 [ext_resource type="Texture2D" uid="uid://dccy2eiulqjh5" path="res://assets/icon/容器@2x.png" id="1_ry2h7"]
 [ext_resource type="Texture2D" uid="uid://5funfimbhccy" path="res://assets/icon/4.png" id="2_lky30"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bf7876j2fyi2s" path="res://assets/icon/组 1@1x.png" id="5_xphas"]
 
 [sub_resource type="SystemFont" id="SystemFont_ry2h7"]
+subpixel_positioning = 0
 
 [node name="Control" type="CanvasLayer"]
 metadata/_edit_vertical_guides_ = [300.0]
