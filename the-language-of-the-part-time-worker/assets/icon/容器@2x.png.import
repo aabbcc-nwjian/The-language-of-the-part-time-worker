@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://co72c7p8scank"
-path="res://.godot/imported/fengmian.png-ba99b754cdcfa807247ffef8d5070db6.ctex"
+uid="uid://dccy2eiulqjh5"
+path="res://.godot/imported/容器@2x.png-27ba75e4c91901f70fa05f3d0834cb91.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fengmian.png"
-dest_files=["res://.godot/imported/fengmian.png-ba99b754cdcfa807247ffef8d5070db6.ctex"]
+source_file="res://assets/icon/容器@2x.png"
+dest_files=["res://.godot/imported/容器@2x.png-27ba75e4c91901f70fa05f3d0834cb91.ctex"]
 
 [params]
 

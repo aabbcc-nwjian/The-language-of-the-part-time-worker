@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://co72c7p8scank"
-path="res://.godot/imported/fengmian.png-ba99b754cdcfa807247ffef8d5070db6.ctex"
+uid="uid://bf7876j2fyi2s"
+path="res://.godot/imported/组 1@1x.png-6074af5fbc2cc00c9b294d89983c7371.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fengmian.png"
-dest_files=["res://.godot/imported/fengmian.png-ba99b754cdcfa807247ffef8d5070db6.ctex"]
+source_file="res://assets/icon/组 1@1x.png"
+dest_files=["res://.godot/imported/组 1@1x.png-6074af5fbc2cc00c9b294d89983c7371.ctex"]
 
 [params]
 

@@ -1,7 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c3gdxkomo5ady"]
-
-[ext_resource type="Script" uid="uid://dlbuiq2ohvqxo" path="res://scene/main.gd" id="1_v0l8b"]
-[ext_resource type="Texture2D" uid="uid://dd8tvvegjs63x" path="res://assets/fengmian.png" id="2_wp4xf"]
+[gd_scene load_steps=2 format=3 uid="uid://c3gdxkomo5ady"]
 
 [sub_resource type="GDScript" id="GDScript_v0l8b"]
 script/source = "extends Button
@@ -11,50 +8,42 @@ script/source = "extends Button
 script = ExtResource("1_v0l8b")
 
 [node name="StartupPage" type="Node2D" parent="."]
+script = ExtResource("1_v0l8b")
 
-[node name="Fengmian" type="Sprite2D" parent="StartupPage"]
-position = Vector2(654, 363)
-texture = ExtResource("2_wp4xf")
+[node name="Background" type="Sprite2D" parent="StartupPage"]
+position = Vector2(639.5, 359.5)
+scale = Vector2(0.974848, 0.976902)
+texture = ExtResource("1_itxqv")
 
 [node name="SubViewport" type="CanvasLayer" parent="StartupPage"]
 
 [node name="ButtonNewGame" type="Button" parent="StartupPage/SubViewport"]
-offset_left = 77.0
-offset_top = 259.0
-offset_right = 276.0
-offset_bottom = 336.0
+offset_left = 80.0
+offset_top = 331.0
+offset_right = 279.0
+offset_bottom = 408.0
 theme_override_font_sizes/font_size = 28
 text = "新游戏"
 script = SubResource("GDScript_v0l8b")
 
 [node name="ButtonContinue" type="Button" parent="StartupPage/SubViewport"]
 offset_left = 80.0
-offset_top = 383.0
+offset_top = 447.0
 offset_right = 279.0
-offset_bottom = 460.0
+offset_bottom = 524.0
 theme_override_font_sizes/font_size = 28
 text = "继续游戏
 "
 
-[node name="ButtonContinue2" type="Button" parent="StartupPage/SubViewport"]
+[node name="ButtonExit" type="Button" parent="StartupPage/SubViewport"]
 offset_left = 80.0
-offset_top = 502.0
+offset_top = 560.0
 offset_right = 279.0
-offset_bottom = 579.0
+offset_bottom = 637.0
 theme_override_font_sizes/font_size = 28
 text = "退出游戏
 "
 
-[node name="GameScene" type="Node2D" parent="."]
-
-[node name="Event" type="Node" parent="GameScene"]
-
-[node name="Dialog" type="SubViewport" parent="GameScene/Event"]
-
-[node name="Content" type="SubViewport" parent="GameScene/Event"]
-
-[node name="Person" type="Sprite2D" parent="GameScene/Event/Content"]
-
-[node name="Message" type="Node" parent="GameScene/Event/Content"]
-
-[node name="UserHud" type="SubViewport" parent="GameScene"]
+[connection signal="pressed" from="StartupPage/SubViewport/ButtonNewGame" to="StartupPage" method="_on_button_new_game_pressed"]
+[connection signal="pressed" from="StartupPage/SubViewport/ButtonContinue" to="StartupPage" method="_on_button_continue_pressed"]
+[connection signal="pressed" from="StartupPage/SubViewport/ButtonExit" to="StartupPage" method="_on_button_exit_pressed"]
