@@ -4,7 +4,7 @@ extends Control
 func _on_button_pressed() -> void:
 	print("按钮被点击了！")
 	# 加载嵌套场景
-	var scene = load("res://mobile/apps/app1.tscn")
+	var scene = load("res://mobile/apps/Bank.tscn")
 	if scene:
 		# 实例化场景
 		var instance = scene.instantiate()
@@ -21,7 +21,7 @@ func _on_button_pressed() -> void:
 func _on_button_2_pressed() -> void:
 	print("按钮被点击了！")
 	# 加载嵌套场景
-	var scene = load("res://mobile/apps/app2.tscn")
+	var scene = load("res://mobile/apps/Company.tscn")
 	if scene:
 		# 实例化场景
 		var instance = scene.instantiate()
@@ -38,7 +38,7 @@ func _on_button_2_pressed() -> void:
 func _on_button_3_pressed() -> void:
 	print("按钮被点击了！")
 	# 加载嵌套场景
-	var scene = load("res://mobile/apps/app3.tscn")
+	var scene = load("res://mobile/apps/Job.tscn")
 	if scene:
 		# 实例化场景
 		var instance = scene.instantiate()

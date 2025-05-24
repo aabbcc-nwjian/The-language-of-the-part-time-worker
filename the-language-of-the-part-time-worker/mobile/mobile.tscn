@@ -15,21 +15,21 @@ offset_left = 876.0
 offset_top = 155.0
 offset_right = 978.0
 offset_bottom = 248.0
-text = "App1"
+text = "Bank"
 
 [node name="Button2" type="Button" parent="CanvasLayer"]
 offset_left = 1008.0
 offset_top = 154.0
 offset_right = 1113.0
 offset_bottom = 255.0
-text = "App2"
+text = "Company"
 
 [node name="Button3" type="Button" parent="CanvasLayer"]
 offset_left = 1148.0
 offset_top = 150.0
 offset_right = 1255.0
 offset_bottom = 256.0
-text = "App3"
+text = "Job"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1075, 364)
@@ -39,10 +39,11 @@ texture = ExtResource("4_8f28n")
 [node name="AppContainer" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = 889.0
-offset_top = 46.0
-offset_right = 1257.0
-offset_bottom = 696.0
+offset_left = 882.0
+offset_top = 52.0
+offset_right = 1258.0
+offset_bottom = 704.0
+pivot_offset = Vector2(185, 200)
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]

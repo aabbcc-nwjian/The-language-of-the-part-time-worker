@@ -41,6 +41,7 @@ theme_override_font_sizes/font_size = 40
 text = "选择"
 
 [node name="Button3" type="Button" parent="Node2D/Control"]
+layout_mode = 0
 offset_left = 950.0
 offset_top = 458.0
 offset_right = 1131.0
@@ -52,6 +53,7 @@ text = "选择"
 title = ""
 initial_position = 2
 size = Vector2i(200, 200)
+visible = true
 content_scale_factor = 1.32
 dialog_text = "确定要选择这个吗"
 script = SubResource("GDScript_vh0bc")

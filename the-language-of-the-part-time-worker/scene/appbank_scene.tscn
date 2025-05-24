@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc5p1meq10uah"]
+
+[ext_resource type="Texture2D" uid="uid://cv0mjkr8samim" path="res://assets/去除聊天框.png" id="1_7objn"]
+[ext_resource type="Script" uid="uid://dnisdd83enf8r" path="res://script/appbank_scene.gd" id="1_268i2"]
+[ext_resource type="Script" uid="uid://br5ad1wbuy6ii" path="res://script/accept_dialog.gd" id="3_ndsoy"]
+
+[node name="AppbankScene" type="Node2D"]
+script = ExtResource("1_268i2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1085, 358.75)
+scale = Vector2(0.578, 0.546)
+texture = ExtResource("1_7objn")
+
+[node name="BankLayer" type="CanvasLayer" parent="."]
+
+[node name="title" type="Label" parent="BankLayer"]
+offset_left = 1051.0
+offset_top = 75.0
+offset_right = 1114.0
+offset_bottom = 98.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "银行APP"
+
+[node name="balance" type="Label" parent="BankLayer"]
+offset_left = 919.0
+offset_top = 123.0
+offset_right = 1008.0
+offset_bottom = 170.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="loan" type="Button" parent="BankLayer"]
+offset_left = 914.0
+offset_top = 247.0
+offset_right = 1017.0
+offset_bottom = 318.0
+text = "贷款
+"
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+title = "请选择贷款金额"
+position = Vector2i(1000, 300)
+size = Vector2i(200, 200)
+visible = true
+script = ExtResource("3_ndsoy")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="AcceptDialog"]
+
+[node name="loan1000" type="Button" parent="AcceptDialog/CanvasLayer"]
+offset_right = 193.0
+offset_bottom = 42.0
+text = "1000刀乐"
+
+[node name="loan2000" type="Button" parent="AcceptDialog/CanvasLayer"]
+offset_top = 50.0
+offset_right = 193.0
+offset_bottom = 92.0
+text = "2000刀乐"
+
+[node name="loan3000" type="Button" parent="AcceptDialog/CanvasLayer"]
+offset_top = 100.0
+offset_right = 193.0
+offset_bottom = 142.0
+text = "3000刀乐"
+
+[connection signal="pressed" from="BankLayer/loan" to="." method="_on_loan_pressed"]
+[connection signal="confirmed" from="AcceptDialog" to="." method="_on_accept_dialog_confirmed"]
+[connection signal="pressed" from="AcceptDialog/CanvasLayer/loan1000" to="." method="_on_loan_1000_pressed"]
+[connection signal="pressed" from="AcceptDialog/CanvasLayer/loan2000" to="." method="_on_loan_2000_pressed"]
+[connection signal="pressed" from="AcceptDialog/CanvasLayer/loan3000" to="." method="_on_loan_3000_pressed"]
