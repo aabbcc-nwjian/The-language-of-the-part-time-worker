@@ -87,3 +87,14 @@ offset_bottom = 678.0
 theme_override_font_sizes/font_size = 40
 text = "阅读"
 flat = true
+
+[node name="back" type="Button" parent="Node2D"]
+light_mask = 0
+visibility_layer = 0
+offset_left = 1145.0
+offset_top = 63.0
+offset_right = 1271.0
+offset_bottom = 138.0
+flat = true
+
+[connection signal="pressed" from="Node2D/back" to="." method="_on_back_pressed"]

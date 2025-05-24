@@ -43,8 +43,8 @@ light_mask = 0
 visibility_layer = 0
 layout_mode = 0
 offset_left = 524.0
-offset_top = 631.0
-offset_right = 602.0
+offset_top = 557.0
+offset_right = 623.0
 offset_bottom = 756.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
@@ -91,3 +91,5 @@ scale = Vector2(1.89831, 2.2069)
 texture = ExtResource("4_wsywj")
 
 [node name="Hud" parent="map" instance=ExtResource("3_uunpp")]
+
+[connection signal="pressed" from="map/buttons/Button" to="." method="_on_button_pressed"]

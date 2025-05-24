@@ -47,3 +47,9 @@ func _on_shop_pressed():
 	load_scene("shop")
 func _on_home_pressed():
 	load_scene("home")
+
+
+func _on_button_pressed() -> void:
+	var scene = load("res://scene/my_home.tscn")
+	get_tree().change_scene_to_packed(scene)
+	pass # Replace with function body.

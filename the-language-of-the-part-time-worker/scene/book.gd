@@ -44,7 +44,7 @@ func buy_first():
 		buybook1.visible=true
 		User.a = true
 		User.mod_money(-100)
-		User.add_item("java",100,"能力10+",150,0,10)
+		User.add_item("java",100,"能力10+",160,0,10)
 func buy_second():
 	if User.money >= 200 and not buybook2.visible:
 		buybook2.visible=true

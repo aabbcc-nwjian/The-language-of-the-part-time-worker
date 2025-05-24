@@ -52,52 +52,73 @@ func _ready() -> void:
 		book1.label3_text = str(User.item_list[0]["description"])
 		book1.label4_text = str(User.item_list[0]["page"]-User.item_list[0]["reading"])
 func read1():
-	if User.item_list[0]["page"]!=User.item_list[0]["reading"]+20:
-		User.item_list[0]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(-10)
-	if User.item_list[0]["page"]!=User.item_list[0]["reading"]+20:
-		User.item_list[0]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(10)
-		User.mod_ability(User.item_list[0]["ability"])
+	if User.item_list[0]["page"]-User.item_list[0]["reading"]>0:
+		if User.item_list[0]["page"]!=User.item_list[0]["reading"]+20:
+			User.item_list[0]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(-10)
+			book1.label4_text = str(User.item_list[0]["page"]-User.item_list[0]["reading"])
+		if User.item_list[0]["page"]==User.item_list[0]["reading"]+20:
+			User.item_list[0]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(10)
+			User.mod_ability(User.item_list[0]["ability"])
+			book1.label4_text = str(User.item_list[0]["page"]-User.item_list[0]["reading"])
 func read2():
-	if User.item_list[1]["page"]!=User.item_list[1]["reading"]+20:
-		User.item_list[1]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(-10)
-	if User.item_list[1]["page"]!=User.item_list[1]["reading"]+20:
-		User.item_list[1]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(10)
-		User.mod_ability(User.item_list[1]["ability"])
+	if User.item_list[1]["page"]-User.item_list[1]["reading"]>0:
+		if User.item_list[1]["page"]!=User.item_list[1]["reading"]+20:
+			User.item_list[1]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(-10)
+			book2.label4_text = str(User.item_list[1]["page"]-User.item_list[1]["reading"])
+		if User.item_list[1]["page"]!=User.item_list[1]["reading"]+20:
+			User.item_list[1]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(10)
+			User.mod_ability(User.item_list[1]["ability"])
+			book2.label4_text = str(User.item_list[1]["page"]-User.item_list[1]["reading"])
 func read3():
-	if User.item_list[2]["page"]!=User.item_list[2]["reading"]+20:
-		User.item_list[2]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(-10)
-	if User.item_list[2]["page"]!=User.item_list[2]["reading"]+20:
-		User.item_list[2]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(10)
-		User.mod_ability(User.item_list[2]["ability"])
+	if User.item_list[2]["page"]-User.item_list[2]["reading"]>0:
+		if User.item_list[2]["page"]!=User.item_list[2]["reading"]+20:
+			User.item_list[2]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(-10)
+			book3.label4_text = str(User.item_list[2]["page"]-User.item_list[2]["reading"])
+		if User.item_list[2]["page"]!=User.item_list[2]["reading"]+20:
+			User.item_list[2]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(10)
+			User.mod_ability(User.item_list[2]["ability"])
+			book3.label4_text = str(User.item_list[2]["page"]-User.item_list[2]["reading"])
 func read4():
-	if User.item_list[3]["page"]!=User.item_list[3]["reading"]+20:
-		User.item_list[3]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(-10)
-	if User.item_list[3]["page"]!=User.item_list[3]["reading"]+20:
-		User.item_list[3]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(10)
-		User.mod_ability(User.item_list[3]["ability"])
+	if User.item_list[3]["page"]-User.item_list[3]["reading"]>0:
+		if User.item_list[3]["page"]!=User.item_list[3]["reading"]+20:
+			User.item_list[3]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(-10)
+			book4.label4_text = str(User.item_list[3]["page"]-User.item_list[3]["reading"])
+		if User.item_list[3]["page"]!=User.item_list[3]["reading"]+20:
+			User.item_list[3]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(10)
+			User.mod_ability(User.item_list[3]["ability"])
+			book4.label4_text = str(User.item_list[3]["page"]-User.item_list[3]["reading"])
 func read5():
-	if User.item_list[4]["page"]!=User.item_list[4]["reading"]+20:
-		User.item_list[4]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(-10)
-	if User.item_list[4]["page"]!=User.item_list[4]["reading"]+20:
-		User.item_list[4]["reading"]+=20
-		User.mod_health(-5)
-		User.mod_san(10)
-		User.mod_ability(User.item_list[4]["ability"])
+	if User.item_list[4]["page"]-User.item_list[4]["reading"]>0:
+		if User.item_list[4]["page"]!=User.item_list[4]["reading"]+20:
+			User.item_list[4]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(-10)
+			book4.label5_text = str(User.item_list[4]["page"]-User.item_list[4]["reading"])
+		if User.item_list[4]["page"]!=User.item_list[4]["reading"]+20:
+			User.item_list[4]["reading"]+=20
+			User.mod_health(-5)
+			User.mod_san(10)
+			User.mod_ability(User.item_list[4]["ability"])
+			book4.label5_text = str(User.item_list[4]["page"]-User.item_list[4]["reading"])
+
+
+func _on_back_pressed() -> void:
+	var scene = load("res://scene/my_home.tscn")
+	get_tree().change_scene_to_packed(scene)
+	pass # Replace with function body.

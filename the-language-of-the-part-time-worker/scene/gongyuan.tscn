@@ -60,7 +60,6 @@ text = "休闲"
 flat = true
 
 [node name="VBoxContainer" type="Control" parent="Node2D"]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 278.0
