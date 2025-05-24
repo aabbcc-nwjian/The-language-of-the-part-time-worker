@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clmroir2lbjlv"
-path="res://.godot/imported/bangongshi.png-c245677a5ad64904b886a909a344ac20.ctex"
+uid="uid://yhx4iudq8qtx"
+path="res://.godot/imported/bangongs.png-66142d8aab0df174c0ddc82aff9bda6d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bangongshi.png"
-dest_files=["res://.godot/imported/bangongshi.png-c245677a5ad64904b886a909a344ac20.ctex"]
+source_file="res://assets/bangongs.png"
+dest_files=["res://.godot/imported/bangongs.png-66142d8aab0df174c0ddc82aff9bda6d.ctex"]
 
 [params]
 
