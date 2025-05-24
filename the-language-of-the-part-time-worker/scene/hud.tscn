@@ -1,21 +1,29 @@
-[gd_scene load_steps=7 format=3 uid="uid://brd771tia6v4h"]
+[gd_scene load_steps=9 format=3 uid="uid://brd771tia6v4h"]
 
+[ext_resource type="Script" uid="uid://ceivo0g35yovx" path="res://script/hud.gd" id="1_lky30"]
 [ext_resource type="Texture2D" uid="uid://dccy2eiulqjh5" path="res://assets/icon/容器@2x.png" id="1_ry2h7"]
 [ext_resource type="Texture2D" uid="uid://5funfimbhccy" path="res://assets/icon/4.png" id="2_lky30"]
+[ext_resource type="Texture2D" uid="uid://sv4hjhoeow0i" path="res://assets/头像.png" id="2_qy82l"]
 [ext_resource type="Texture2D" uid="uid://b3oedtxo1a4oi" path="res://assets/icon/3.png" id="3_qy82l"]
 [ext_resource type="Texture2D" uid="uid://cbk1vhoyd78we" path="res://assets/icon/5.png" id="4_sjh6b"]
 [ext_resource type="Texture2D" uid="uid://bf7876j2fyi2s" path="res://assets/icon/组 1@1x.png" id="5_xphas"]
 
 [sub_resource type="SystemFont" id="SystemFont_ry2h7"]
 
-[node name="Control" type="CanvasLayer"]
+[node name="Hud" type="CanvasLayer"]
+script = ExtResource("1_lky30")
 metadata/_edit_vertical_guides_ = [300.0]
 metadata/_edit_horizontal_guides_ = [200.0]
 
+[node name="头像" type="Sprite2D" parent="."]
+position = Vector2(237, 92)
+scale = Vector2(1.01828, 1.05747)
+texture = ExtResource("2_qy82l")
+
 [node name="LabelNickName" type="Label" parent="."]
-offset_left = 169.0
+offset_left = 179.0
 offset_top = 16.0
-offset_right = 247.0
+offset_right = 257.0
 offset_bottom = 53.0
 theme_override_fonts/font = SubResource("SystemFont_ry2h7")
 theme_override_font_sizes/font_size = 26
@@ -24,53 +32,53 @@ text = "王小明"
 [node name="Icon" type="CanvasLayer" parent="."]
 
 [node name="IconMoney" type="Sprite2D" parent="Icon"]
-position = Vector2(181, 83)
+position = Vector2(191, 83)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_ry2h7")
 
 [node name="IconMental" type="Sprite2D" parent="Icon"]
-position = Vector2(181, 111)
+position = Vector2(191, 111)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_lky30")
 
 [node name="IconHealth" type="Sprite2D" parent="Icon"]
-position = Vector2(182, 140)
+position = Vector2(192, 140)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("3_qy82l")
 
 [node name="IconAbilitity" type="Sprite2D" parent="Icon"]
-position = Vector2(182, 166)
+position = Vector2(192, 166)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("4_sjh6b")
 
 [node name="组1_1x" type="Sprite2D" parent="."]
-position = Vector2(85, 96)
+position = Vector2(95, 96)
 texture = ExtResource("5_xphas")
 
 [node name="LabelAbility" type="Label" parent="."]
-offset_left = 207.0
+offset_left = 217.0
 offset_top = 151.0
-offset_right = 290.0
+offset_right = 300.0
 offset_bottom = 174.0
 text = "48/100"
 
 [node name="LabelHealth" type="Label" parent="."]
-offset_left = 207.0
+offset_left = 217.0
 offset_top = 124.0
-offset_right = 290.0
+offset_right = 300.0
 offset_bottom = 147.0
 text = "48/100"
 
 [node name="LabelMental" type="Label" parent="."]
-offset_left = 207.0
+offset_left = 217.0
 offset_top = 96.0
-offset_right = 290.0
+offset_right = 300.0
 offset_bottom = 119.0
 text = "48/100"
 
 [node name="LabelMoney" type="Label" parent="."]
-offset_left = 206.0
+offset_left = 216.0
 offset_top = 68.0
-offset_right = 246.0
+offset_right = 299.0
 offset_bottom = 91.0
 text = "100000000"

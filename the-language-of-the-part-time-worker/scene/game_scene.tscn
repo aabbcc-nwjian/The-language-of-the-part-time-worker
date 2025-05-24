@@ -1,9 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://8e5swejfi5uv"]
+[gd_scene load_steps=3 format=3 uid="uid://8e5swejfi5uv"]
 
 [ext_resource type="PackedScene" uid="uid://brd771tia6v4h" path="res://scene/hud.tscn" id="1_brupb"]
+[ext_resource type="Script" uid="uid://c54lu0wgko1wa" path="res://script/game_scene.gd" id="1_sl1kl"]
 
 [node name="GameScene" type="Node2D"]
+script = ExtResource("1_sl1kl")
 
-[node name="UserHud" type="CanvasLayer" parent="."]
-
-[node name="Control" parent="UserHud" instance=ExtResource("1_brupb")]
+[node name="UserHud" parent="." instance=ExtResource("1_brupb")]
