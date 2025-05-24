@@ -1,10 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://bgu8dfbicqqeq"]
+[gd_scene load_steps=10 format=3 uid="uid://bgu8dfbicqqeq"]
 
 [ext_resource type="Script" uid="uid://bo8aqw3dndjxt" path="res://script/phone.gd" id="1_phbhh"]
-[ext_resource type="Texture2D" uid="uid://cv0mjkr8samim" path="res://assets/去除聊天框.png" id="2_pmu8d"]
+[ext_resource type="Texture2D" uid="uid://ccrlo5akogf8b" path="res://assets/手机@1x2.0.png" id="2_44wvl"]
 [ext_resource type="PackedScene" uid="uid://nqe4jke58msw" path="res://scene/apphouse_scene.tscn" id="3_dx8mv"]
+[ext_resource type="Texture2D" uid="uid://d32m27tfulk3n" path="res://assets/7D2110154633EC1BF7C80BF323681300.png" id="3_g8n6r"]
+[ext_resource type="Texture2D" uid="uid://otsbg1w63jio" path="res://assets/9B09352C28158F189D736AC405D0F97F.png" id="4_44wvl"]
 [ext_resource type="PackedScene" uid="uid://bc5p1meq10uah" path="res://scene/appbank_scene.tscn" id="4_g8n6r"]
 [ext_resource type="PackedScene" uid="uid://d3tk1s5e20fe0" path="res://scene/appjob_scene.tscn" id="5_blbx6"]
+[ext_resource type="Texture2D" uid="uid://c74rhm0wxmkb4" path="res://assets/031112C97175E589762D7198F3F06630.png" id="5_ov8t6"]
+[ext_resource type="Texture2D" uid="uid://4ugk0qoxiu0n" path="res://assets/4C9399FAB4A8090374B6E513BF545449.png" id="6_7rygr"]
 
 [node name="Phone" type="Control"]
 layout_mode = 3
@@ -12,39 +16,45 @@ anchors_preset = 0
 script = ExtResource("1_phbhh")
 
 [node name="phoneLayout" type="Sprite2D" parent="."]
-position = Vector2(1249, 303)
-scale = Vector2(0.578125, 0.546113)
-texture = ExtResource("2_pmu8d")
+position = Vector2(1345.68, 272.469)
+scale = Vector2(0.891079, 0.841738)
+texture = ExtResource("2_44wvl")
 offset = Vector2(-283.676, 102.085)
 
 [node name="SubViewport" type="Control" parent="."]
 anchors_preset = 0
 
-[node name="BankApp" type="Button" parent="SubViewport"]
+[node name="BankApp" type="TextureButton" parent="SubViewport"]
 layout_mode = 0
-offset_left = 915.0
-offset_top = 118.0
-offset_right = 1015.0
-offset_bottom = 218.0
-text = "Bank"
-metadata/_edit_use_anchors_ = true
+offset_left = 942.0
+offset_top = 331.0
+offset_right = 1038.0
+offset_bottom = 424.0
+texture_normal = ExtResource("3_g8n6r")
 
-[node name="HouseApp" type="Button" parent="SubViewport"]
+[node name="CarApp" type="TextureButton" parent="SubViewport"]
 layout_mode = 0
-offset_left = 1029.0
-offset_top = 118.0
-offset_right = 1129.0
-offset_bottom = 218.0
-text = "House
-"
+offset_left = 1172.0
+offset_top = 331.0
+offset_right = 1239.0
+offset_bottom = 424.0
+texture_normal = ExtResource("4_44wvl")
 
-[node name="JobApp" type="Button" parent="SubViewport"]
+[node name="JobApp" type="TextureButton" parent="SubViewport"]
 layout_mode = 0
-offset_left = 1149.0
-offset_top = 119.0
-offset_right = 1249.0
-offset_bottom = 219.0
-text = "Job"
+offset_left = 1096.0
+offset_top = 331.0
+offset_right = 1163.0
+offset_bottom = 424.0
+texture_normal = ExtResource("5_ov8t6")
+
+[node name="HouseApp" type="TextureButton" parent="SubViewport"]
+layout_mode = 0
+offset_left = 1019.0
+offset_top = 331.0
+offset_right = 1114.0
+offset_bottom = 424.0
+texture_normal = ExtResource("6_7rygr")
 
 [node name="AppLayer" type="Control" parent="."]
 visible = false
@@ -69,5 +79,5 @@ anchors_preset = 0
 [node name="AppbankScene" parent="AppLayer/AppbankScene" instance=ExtResource("4_g8n6r")]
 
 [connection signal="pressed" from="SubViewport/BankApp" to="." method="_on_bank_app_pressed"]
-[connection signal="pressed" from="SubViewport/HouseApp" to="." method="_on_company_app_pressed"]
 [connection signal="pressed" from="SubViewport/JobApp" to="." method="_on_job_app_pressed"]
+[connection signal="pressed" from="SubViewport/HouseApp" to="." method="_on_house_app_pressed"]

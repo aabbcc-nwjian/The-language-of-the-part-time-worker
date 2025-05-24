@@ -1,0 +1,92 @@
+[
+	{
+		"id": 1,
+		"description": "医生建议你做一个体检，你该...",
+		"options": [
+			{"text": "立刻做", "effect": {"health": 10, "money": -200}},
+			{"text": "拖一拖再说", "effect": {"health": -5}},
+			{"text": "完全不理会", "effect": {"health": -15}}
+		]
+	},
+	{
+		"id": 2,
+		"description": "你在医院遇到一位老年人摔倒了...",
+		"options": [
+			{"text": "上前帮忙", "effect": {"san": 10, "health": -5}},
+			{"text": "通知护士", "effect": {"san": 5}},
+			{"text": "默默离开", "effect": {"san": -10}}
+		]
+	},
+	{
+		"id": 3,
+		"description": "体检报告显示你需要改变生活习惯...",
+		"options": [
+			{"text": "开始健康饮食", "effect": {"health": 15, "money": -100}},
+			{"text": "继续原样", "effect": {"health": -10}},
+			{"text": "尝试每周锻炼一次", "effect": {"health": 5}}
+		]
+	},
+	{
+		"id": 4,
+		"description": "医院人满为患，你排了很久的队...",
+		"options": [
+			{"text": "继续等待", "effect": {"san": -10}},
+			{"text": "改天再来", "effect": {"san": 5, "health": -5}},
+			{"text": "抱怨医院效率", "effect": {"san": -5}}
+		]
+	},
+	{
+		"id": 5,
+		"description": "护士问你是否愿意参与临床实验...",
+		"options": [
+			{"text": "参加", "effect": {"money": 200, "health": -10}},
+			{"text": "拒绝", "effect": {"san": 5}},
+			{"text": "咨询更多信息再决定", "effect": {"san": 10, "ability": 5}}
+		]
+	},
+	{
+		"id": 6,
+		"description": "你被误诊了，医生后来承认错误...",
+		"options": [
+			{"text": "谅解医生", "effect": {"san": 5}},
+			{"text": "要求赔偿", "effect": {"money": 100, "san": -5}},
+			{"text": "发帖曝光医院", "effect": {"san": 10, "ability": -5}}
+		]
+	},
+	{
+		"id": 7,
+		"description": "你需要住院观察一天...",
+		"options": [
+			{"text": "接受安排", "effect": {"health": 10, "money": -300}},
+			{"text": "拒绝住院", "effect": {"health": -15}},
+			{"text": "回家休息自行调理", "effect": {"health": -5}}
+		]
+	},
+	{
+		"id": 8,
+		"description": "隔壁床的病人情绪激动影响你休息...",
+		"options": [
+			{"text": "请求护士协调", "effect": {"san": 5}},
+			{"text": "自己忍耐", "effect": {"san": -10, "health": -5}},
+			{"text": "换个病房", "effect": {"money": -100, "san": 10}}
+		]
+	},
+	{
+		"id": 9,
+		"description": "医院食堂的饭菜让你反胃...",
+		"options": [
+			{"text": "忍着吃", "effect": {"health": -5}},
+			{"text": "点外卖", "effect": {"money": -50, "health": 5}},
+			{"text": "向医院反馈", "effect": {"san": 5}}
+		]
+	},
+	{
+		"id": 10,
+		"description": "你在医院走廊看到一位小孩在哭...",
+		"options": [
+			{"text": "上前安慰", "effect": {"san": 10}},
+			{"text": "叫护士处理", "effect": {"san": 5}},
+			{"text": "绕道离开", "effect": {"san": -5}}
+		]
+	}
+]

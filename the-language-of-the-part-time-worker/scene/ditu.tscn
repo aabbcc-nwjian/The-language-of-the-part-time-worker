@@ -1,7 +1,10 @@
+[gd_scene load_steps=5 format=3 uid="uid://dv5mf6h8gog8n"]
 [gd_scene load_steps=5 format=3 uid="uid://b3gc64uf10cvl"]
 
 [ext_resource type="Script" uid="uid://tqwbsqmep01b" path="res://script/ditu.gd" id="1_acov4"]
 [ext_resource type="Texture2D" uid="uid://e3quphgr7m73" path="res://Pictures/地图.png" id="2_wwuf8"]
+[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_uunpp"]
+[ext_resource type="Texture2D" uid="uid://1cns643msqpp" path="res://assets/icon/C4D4BDDFC87DA1C6F6F55B5DB3F7E7CC.png" id="4_wsywj"]
 [ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_uunpp"]
 [ext_resource type="Texture2D" uid="uid://bq8eebohdhkdm" path="res://Pictures/2103e3152452ad2fcf96bc6a5c1736a7.png" id="4_wsywj"]
 
@@ -14,6 +17,8 @@ script = ExtResource("1_acov4")
 position = Vector2(648, 358)
 scale = Vector2(0.65, 0.65)
 texture = ExtResource("2_wwuf8")
+
+[node name="Hud" parent="map" instance=ExtResource("3_uunpp")]
 
 [node name="buttons" type="Control" parent="map"]
 layout_mode = 3

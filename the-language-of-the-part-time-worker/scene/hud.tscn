@@ -30,7 +30,9 @@ theme_override_fonts/font = SubResource("SystemFont_ry2h7")
 theme_override_font_sizes/font_size = 26
 text = "王小明"
 
-[node name="Icon" type="CanvasLayer" parent="."]
+[node name="Icon" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
 
 [node name="IconMoney" type="Sprite2D" parent="Icon"]
 position = Vector2(191, 83)

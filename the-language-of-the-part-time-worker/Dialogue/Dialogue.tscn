@@ -8,14 +8,14 @@ script = ExtResource("1_k4lh7")
 metadata/_edit_vertical_guides_ = [300.0]
 metadata/_edit_horizontal_guides_ = [200.0]
 
-[node name="Text" type="RichTextLabel" parent="."]
-offset_left = 319.0
-offset_top = 544.0
-offset_right = 364.0
-offset_bottom = 554.0
-scale = Vector2(20.9759, 15.9164)
-
 [node name="Background" type="Sprite2D" parent="."]
 position = Vector2(790.375, 600)
 scale = Vector2(0.727526, 0.716418)
 texture = ExtResource("1_iojag")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 314.0
+offset_top = 543.0
+offset_right = 1258.0
+offset_bottom = 705.0
+scale = Vector2(1.00276, 1)

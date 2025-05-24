@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5l3pr0yuxr06"]
+
+[ext_resource type="Script" uid="uid://c353ptjy5y7oi" path="res://Dialogue/discussion.gd" id="1_8d50s"]
+[ext_resource type="Texture2D" uid="uid://dqguwmqpbtyph" path="res://Pictures/组 3@1x.png" id="1_jxo3o"]
+
+[node name="Discussion" type="CanvasLayer"]
+script = ExtResource("1_8d50s")
+metadata/_edit_vertical_guides_ = [600.0]
+metadata/_edit_horizontal_guides_ = [400.0]
+
+[node name="dialogue" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 31.0
+offset_top = 22.0
+offset_right = 71.0
+offset_bottom = 62.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="dialogue"]
+layout_mode = 0
+offset_left = 286.0
+offset_top = 459.0
+offset_right = 1231.0
+offset_bottom = 675.0
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+
+[node name="background" type="Sprite2D" parent="dialogue"]
+position = Vector2(759, 532.5)
+scale = Vector2(0.728083, 0.98806)
+texture = ExtResource("1_jxo3o")
+
+[node name="options" type="VBoxContainer" parent="."]
+offset_left = 759.0
+offset_top = 32.0
+offset_right = 1159.0
+offset_bottom = 292.0
+scale = Vector2(1.24709, 1.2)
+theme_override_constants/separation = 30
+
+[node name="option1" type="Button" parent="options"]
+custom_minimum_size = Vector2(400, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+
+[node name="option2" type="Button" parent="options"]
+custom_minimum_size = Vector2(400, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+
+[node name="option3" type="Button" parent="options"]
+custom_minimum_size = Vector2(400, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24

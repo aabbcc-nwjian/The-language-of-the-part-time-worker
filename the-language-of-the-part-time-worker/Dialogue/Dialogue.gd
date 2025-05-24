@@ -1,4 +1,7 @@
+# Dialogue.gd
 extends CanvasLayer
+@onready var text_label = $Panel/RichTextLabel
 
-func Dialogue(text : String) -> void :
-	$Text.text = text
+func show_dialogue(text: String) -> void:
+	text_label.text = text
+	visible = true

@@ -2,6 +2,7 @@ extends Node2D
 
 var scene_paths = {
 	"office": "res://scene/office.tscn",
+	"home": "res://scene/my_home.tscn"
 }
 
 @onready var scene_container = $Node2D
@@ -52,7 +53,7 @@ func choose_first():
 	User.max_san =100
 	User.ability = 100
 	User.max_ability = 100
-	load_scene("office")
+	load_scene("home")
 func choose_second():
 	User.money =8000
 	User.health =120
@@ -61,7 +62,7 @@ func choose_second():
 	User.max_san =100
 	User.ability = 100
 	User.max_ability = 100
-	load_scene("office")
+	load_scene("home")
 func choose_three():
 	User.money =15000
 	User.health =100
@@ -70,4 +71,4 @@ func choose_three():
 	User.max_san =100
 	User.ability = 80
 	User.max_ability = 80
-	load_scene("office")
+	load_scene("home")

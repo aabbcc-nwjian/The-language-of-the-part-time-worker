@@ -3,7 +3,22 @@ extends Control
 
 func _on_button_continue_pressed() -> void:
 	_recovery_status()
+	_goto_next_day()
 	pass # Replace with function body.
+
+func _goto_next_day():
+		# 工作日下班后，跳到下一个休息日
+	if (User.stage == 1):
+		User.stage = 2
+	# 休息日结束，跳到下一个工作日
+	elif (User.stage == 2):
+		User.stage = 0
+	# 只有调试的时候才会走到这
+	else:
+		User.stage = 0
+	# 推进周期数
+	User.cycle_num += 1
+	get_tree().change_scene_to_file("res://scene/day_transition.tscn")
 
 # 结算每日状态
 func _recovery_status():

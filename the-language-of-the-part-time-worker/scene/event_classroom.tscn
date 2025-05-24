@@ -1,21 +1,20 @@
 [gd_scene load_steps=6 format=3 uid="uid://chdl3cmgk12wc"]
 
+[ext_resource type="Script" uid="uid://cq1a6ogwtjltg" path="res://scene/event_classroom.gd" id="1_2pa7h"]
 [ext_resource type="PackedScene" uid="uid://di0byxytxbn11" path="res://Event/Classroom.tscn" id="1_h70x1"]
-[ext_resource type="PackedScene" uid="uid://cvxhj06fo8ugi" path="res://Options/options.tscn" id="2_38udg"]
 [ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_2pa7h"]
 [ext_resource type="PackedScene" uid="uid://d0np6fj70qxg8" path="res://Character/Person.tscn" id="4_byrpl"]
-[ext_resource type="PackedScene" uid="uid://chgrvlys4l0je" path="res://Dialogue/Dialogue.tscn" id="5_rrtpp"]
+[ext_resource type="PackedScene" uid="uid://b5l3pr0yuxr06" path="res://Dialogue/Discussion.tscn" id="5_38udg"]
 
 [node name="EventClassroom" type="Node2D"]
+script = ExtResource("1_2pa7h")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Classroom" parent="CanvasLayer" instance=ExtResource("1_h70x1")]
 
-[node name="Options" parent="CanvasLayer" instance=ExtResource("2_38udg")]
-
 [node name="Control2" parent="CanvasLayer" instance=ExtResource("3_2pa7h")]
 
 [node name="Node2D" parent="CanvasLayer" instance=ExtResource("4_byrpl")]
 
-[node name="Dialogue" parent="CanvasLayer" instance=ExtResource("5_rrtpp")]
+[node name="Discussion" parent="CanvasLayer" instance=ExtResource("5_38udg")]

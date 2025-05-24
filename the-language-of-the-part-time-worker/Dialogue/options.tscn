@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cvxhj06fo8ugi"]
 
-[ext_resource type="Script" uid="uid://yny48b0qag10" path="res://Options/options.gd" id="1_6k1gw"]
+[ext_resource type="Script" uid="uid://yny48b0qag10" path="res://Dialogue/options.gd" id="1_6k1gw"]
 
 [node name="Options" type="VBoxContainer"]
 offset_left = 860.0

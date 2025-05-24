@@ -3,6 +3,7 @@ extends Node2D
 func _on_confirm_off_work():
 	var scene = load("res://scene/my_home.tscn")
 	get_tree().change_scene_to_packed(scene)
+	User.stage = 1
 	pass
 	
 func _on_cancel_off_work():
@@ -39,7 +40,7 @@ func _on_do_fishing_pressed() -> void:
 		
 	_disable_actions()
 	_last_action = "fishing"
-	var random_index = randi_range(0, _fishing_list.size())
+	var random_index = randi_range(0, _fishing_list.size() - 1)
 	var title = _fishing_list[random_index]
 	$ProgressBar.show_progress(title, 3)
 

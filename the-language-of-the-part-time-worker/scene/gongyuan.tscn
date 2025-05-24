@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://cbaipj5fpokep"]
+[gd_scene load_steps=6 format=3 uid="uid://3gj2ppwqhp5l"]
 
 [ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://script/gongyuan.gd" id="1_1qifb"]
 [ext_resource type="Texture2D" uid="uid://brbj3fy7ucxe6" path="res://Pictures/98045f3f462673ee9c3a7330fee42e72.png" id="2_1qifb"]
-[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_07dvy"]
+[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="2_07dvy"]
 
 [sub_resource type="Theme" id="Theme_1qifb"]
 
@@ -60,6 +60,7 @@ text = "休闲"
 flat = true
 
 [node name="VBoxContainer" type="Control" parent="Node2D"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 278.0
@@ -112,4 +113,4 @@ dialog_text = "健康-5
 精神+10"
 script = SubResource("GDScript_1qifb")
 
-[node name="Hud" parent="." instance=ExtResource("3_07dvy")]
+[node name="Hud" parent="Node2D" instance=ExtResource("2_07dvy")]
