@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://jb0krc2ij36"]
+
+[ext_resource type="Script" uid="uid://bgovm6cvp5jrk" path="res://mobile/apps/appButton1.gd" id="1_vj3lt"]
+
+[node name="App1" type="Control"]
+layout_mode = 3
+anchor_right = 0.079
+anchor_bottom = 0.211
+offset_left = -5.0
+offset_top = 10.0
+offset_right = -106.12
+offset_bottom = -141.92
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 6.0
+offset_top = -2.0
+offset_right = 320.0
+offset_bottom = 125.0
+text = "App1"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 41.0
+offset_right = 99.0
+offset_bottom = 115.0
+text = "back"
+script = ExtResource("1_vj3lt")
