@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3gc64uf10cvl"]
+
+[ext_resource type="Script" uid="uid://tqwbsqmep01b" path="res://scene/ditu.gd" id="1_acov4"]
+[ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="2_wwuf8"]
+
+[node name="ditu" type="Node2D"]
+script = ExtResource("1_acov4")
+
+[node name="map" type="Node2D" parent="."]
+
+[node name="Gongyuan" type="Sprite2D" parent="map"]
+position = Vector2(648, 358)
+texture = ExtResource("2_wwuf8")
+
+[node name="buttons" type="Control" parent="map"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -195.0
+offset_top = -214.0
+offset_right = -155.0
+offset_bottom = -174.0
+
+[node name="Button1" type="Button" parent="map/buttons"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.983
+anchor_bottom = 1.42
+offset_left = 491.0
+offset_top = 515.0
+offset_right = 540.68
+offset_bottom = 545.2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "医院"
+flat = true
+
+[node name="Button2" type="Button" parent="map/buttons"]
+layout_mode = 0
+offset_left = 947.0
+offset_top = 410.0
+offset_right = 1025.0
+offset_bottom = 467.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "公园
+"
+flat = true
+
+[node name="Button3" type="Button" parent="map/buttons"]
+layout_mode = 0
+offset_left = 708.0
+offset_top = 764.0
+offset_right = 786.0
+offset_bottom = 821.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "商店"
+flat = true
+
+[node name="Button4" type="Button" parent="map/buttons"]
+layout_mode = 0
+offset_left = 1033.0
+offset_top = 741.0
+offset_right = 1111.0
+offset_bottom = 798.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "书店"
+flat = true

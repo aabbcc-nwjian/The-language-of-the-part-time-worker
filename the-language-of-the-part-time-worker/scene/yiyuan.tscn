@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3wvs5g2jt3bh"]
+
+[ext_resource type="Texture2D" uid="uid://c5but57hhppry" path="res://assets/yiyuan.png" id="1_nun3o"]
+[ext_resource type="Script" uid="uid://b2hht0iyy6bex" path="res://scene/yiyuan.gd" id="1_rij73"]
+
+[node name="yiyuan" type="Node2D"]
+script = ExtResource("1_rij73")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Yiyuan" type="Sprite2D" parent="Node2D"]
+position = Vector2(639, 357)
+texture = ExtResource("1_nun3o")
+
+[node name="Control" type="Control" parent="Node2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button1" type="Button" parent="Node2D/Control"]
+layout_mode = 0
+offset_left = 593.0
+offset_top = 558.0
+offset_right = 761.0
+offset_bottom = 676.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "看病"
+flat = true
+
+[node name="Button2" type="Button" parent="Node2D/Control"]
+layout_mode = 0
+offset_left = 1167.0
+offset_top = 38.0
+offset_right = 1245.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "返回"
+flat = true

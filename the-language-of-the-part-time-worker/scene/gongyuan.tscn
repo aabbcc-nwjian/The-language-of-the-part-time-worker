@@ -1,9 +1,40 @@
-[gd_scene load_steps=2 format=3 uid="uid://cbaipj5fpokep"]
+[gd_scene load_steps=3 format=3 uid="uid://cbaipj5fpokep"]
 
+[ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://scene/gongyuan.gd" id="1_1qifb"]
 [ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="1_hvxmv"]
 
 [node name="gongyuan" type="Node2D"]
+script = ExtResource("1_1qifb")
 
-[node name="Gongyuan" type="Sprite2D" parent="."]
-position = Vector2(640, 359)
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Gongyuan" type="Sprite2D" parent="Node2D"]
+position = Vector2(638, 356)
 texture = ExtResource("1_hvxmv")
+
+[node name="Control" type="Control" parent="Node2D/Gongyuan"]
+layout_mode = 3
+anchor_left = 0.072
+anchor_top = 0.044
+anchor_right = 0.072
+anchor_bottom = 0.044
+offset_left = -787.464
+offset_top = -391.384
+offset_right = -728.464
+offset_bottom = -378.384
+
+[node name="Button1" type="Button" parent="Node2D/Gongyuan/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -16.146
+anchor_top = -8.916
+anchor_right = -16.146
+anchor_bottom = -8.916
+offset_left = 2165.61
+offset_top = 185.908
+offset_right = 2243.61
+offset_bottom = 242.908
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "返回"
+flat = true
