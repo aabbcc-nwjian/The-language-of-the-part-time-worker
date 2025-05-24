@@ -19,7 +19,7 @@ script = ExtResource("1_vhwf3")
 position = Vector2(640, 360)
 texture = ExtResource("1_1sld3")
 
-[node name="Button" type="Button" parent="."]
+[node name="ButtonContinue" type="Button" parent="."]
 layout_mode = 0
 offset_left = 682.0
 offset_top = 549.0
@@ -64,3 +64,5 @@ offset_bottom = 499.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 38
 text = "1000"
+
+[connection signal="pressed" from="ButtonContinue" to="." method="_on_button_continue_pressed"]

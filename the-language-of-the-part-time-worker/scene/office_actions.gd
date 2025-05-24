@@ -1,7 +1,18 @@
 extends Node2D
 
+func _on_confirm_off_work():
+	var scene = load("res://scene/my_home.tscn")
+	get_tree().change_scene_to_packed(scene)
+	pass
+	
+func _on_cancel_off_work():
+	_enable_actions()
+	pass
+
 func _ready() -> void:
 	$ProgressBar.progress_complete.connect(_on_progress_finished)
+	$ConfirmOffWork.dialog_ok.connect(_on_confirm_off_work)
+	$ConfirmOffWork.dialog_cancel.connect(_on_cancel_off_work)
 
 func _disable_actions() -> void:
 	$Actions/DoFishing.disabled = true
@@ -16,6 +27,8 @@ func _enable_actions() -> void:
 var _last_action: String
 
 func _on_do_finish_work_pressed() -> void:
+	_disable_actions()
+	$ConfirmOffWork.show_popup_ok_cancel("是否确认下班")
 	pass # Replace with function body.
 
 
