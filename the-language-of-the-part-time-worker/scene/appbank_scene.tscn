@@ -88,6 +88,7 @@ text = "1000刀乐
 script = ExtResource("4_7dg0d")
 
 [node name="loan2000" type="Button" parent="CanvasLayer"]
+layout_mode = 0
 offset_left = 942.0
 offset_top = 431.0
 offset_right = 1207.0
@@ -103,6 +104,7 @@ text = "2000刀乐
 script = ExtResource("4_7dg0d")
 
 [node name="loan3000" type="Button" parent="CanvasLayer"]
+layout_mode = 0
 offset_left = 941.0
 offset_top = 477.0
 offset_right = 1206.0
@@ -118,6 +120,7 @@ text = "3000刀乐
 script = ExtResource("4_7dg0d")
 
 [node name="loan4000" type="Button" parent="CanvasLayer"]
+layout_mode = 0
 offset_left = 942.0
 offset_top = 523.0
 offset_right = 1207.0

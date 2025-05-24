@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://d32m27tfulk3n" path="res://assets/7D2110154633EC1BF7C80BF323681300.png" id="3_g8n6r"]
 [ext_resource type="Texture2D" uid="uid://otsbg1w63jio" path="res://assets/9B09352C28158F189D736AC405D0F97F.png" id="4_44wvl"]
 [ext_resource type="PackedScene" uid="uid://bc5p1meq10uah" path="res://scene/appbank_scene.tscn" id="4_g8n6r"]
-[ext_resource type="PackedScene" uid="uid://d3tk1s5e20fe0" path="res://scene/appjob_scene.tscn" id="5_blbx6"]
+[ext_resource type="PackedScene" uid="uid://d3tk1s5e20fe0" path="res://scene/appcar_scene.tscn" id="5_blbx6"]
 [ext_resource type="Texture2D" uid="uid://c74rhm0wxmkb4" path="res://assets/031112C97175E589762D7198F3F06630.png" id="5_ov8t6"]
 [ext_resource type="Texture2D" uid="uid://4ugk0qoxiu0n" path="res://assets/4C9399FAB4A8090374B6E513BF545449.png" id="6_7rygr"]
 
