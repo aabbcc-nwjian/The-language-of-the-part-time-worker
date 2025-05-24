@@ -1,0 +1,139 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3tk1s5e20fe0"]
+
+[ext_resource type="Texture2D" uid="uid://bddxvbfwirdwr" path="res://assets/carpurchase.png" id="1_mkvwi"]
+[ext_resource type="Script" uid="uid://my5uf7kfsrle" path="res://script/appcar_scene.gd" id="1_sfjda"]
+[ext_resource type="Script" uid="uid://do02kwcb8vapn" path="res://script/transparent_button.gd" id="2_5ldq1"]
+
+[node name="AppcarScene" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_sfjda")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1096.5, 364)
+scale = Vector2(0.916, 0.844)
+texture = ExtResource("1_mkvwi")
+
+[node name="CarControl" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="sport_car" type="Button" parent="CarControl"]
+layout_mode = 0
+offset_left = 919.0
+offset_top = 100.0
+offset_right = 1274.0
+offset_bottom = 223.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+script = ExtResource("2_5ldq1")
+
+[node name="car" type="Button" parent="CarControl"]
+offset_left = 918.0
+offset_top = 233.0
+offset_right = 1274.0
+offset_bottom = 356.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+script = ExtResource("2_5ldq1")
+
+[node name="electric_bike" type="Button" parent="CarControl"]
+offset_left = 919.0
+offset_top = 365.0
+offset_right = 1276.0
+offset_bottom = 488.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+script = ExtResource("2_5ldq1")
+
+[node name="bike" type="Button" parent="CarControl"]
+offset_left = 919.0
+offset_top = 504.0
+offset_right = 1275.0
+offset_bottom = 627.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+script = ExtResource("2_5ldq1")
+
+[node name="confirm" type="Button" parent="CarControl"]
+layout_mode = 0
+offset_left = 1055.0
+offset_top = 651.0
+offset_right = 1129.0
+offset_bottom = 694.0
+text = "确认"
+
+[node name="AcceptDialog" type="AcceptDialog" parent="."]
+title = "提示"
+position = Vector2i(945, 200)
+size = Vector2i(300, 100)
+
+[node name="Label" type="Label" parent="AcceptDialog"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 292.0
+offset_bottom = 51.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CarLabels" type="CanvasLayer" parent="."]
+
+[node name="sport_car" type="Label" parent="CarLabels"]
+offset_left = 1203.0
+offset_top = 183.0
+offset_right = 1243.0
+offset_bottom = 206.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "200"
+
+[node name="car" type="Label" parent="CarLabels"]
+offset_left = 1202.0
+offset_top = 301.0
+offset_right = 1242.0
+offset_bottom = 324.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "100"
+
+[node name="electric_bike" type="Label" parent="CarLabels"]
+offset_left = 1200.0
+offset_top = 437.0
+offset_right = 1240.0
+offset_bottom = 460.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "50"
+
+[node name="bike" type="Label" parent="CarLabels"]
+offset_left = 1218.0
+offset_top = 579.0
+offset_right = 1258.0
+offset_bottom = 602.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "25"
+
+[connection signal="pressed" from="CarControl/sport_car" to="." method="_on_sport_car_pressed"]
+[connection signal="pressed" from="CarControl/car" to="." method="_on_car_pressed"]
+[connection signal="pressed" from="CarControl/electric_bike" to="." method="_on_electric_bike_pressed"]
+[connection signal="pressed" from="CarControl/bike" to="." method="_on_bike_pressed"]
+[connection signal="pressed" from="CarControl/confirm" to="." method="_on_confirm_pressed"]
+[connection signal="confirmed" from="AcceptDialog" to="." method="_on_accept_dialog_confirmed"]
