@@ -1,49 +1,29 @@
-[gd_scene load_steps=2 format=3 uid="uid://c3gdxkomo5ady"]
+[gd_scene load_steps=3 format=3 uid="uid://cwwkfcf8rbmmd"]
 
-[sub_resource type="GDScript" id="GDScript_v0l8b"]
-script/source = "extends Button
-"
+[ext_resource type="Script" uid="uid://dnx1w1554wu6w" path="res://scene/main.gd" id="1_v0l8b"]
+[ext_resource type="Texture2D" uid="uid://co72c7p8scank" path="res://assets/fengmian.png" id="2_wp4xf"]
 
-[node name="Main" type="Node2D"]
+[node name="main" type="Node2D"]
 script = ExtResource("1_v0l8b")
 
-[node name="StartupPage" type="Node2D" parent="."]
-script = ExtResource("1_v0l8b")
+[node name="Fengmian" type="Sprite2D" parent="."]
+position = Vector2(638, 363)
+texture = ExtResource("2_wp4xf")
 
-[node name="Background" type="Sprite2D" parent="StartupPage"]
-position = Vector2(639.5, 359.5)
-scale = Vector2(0.974848, 0.976902)
-texture = ExtResource("1_itxqv")
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 638.0
+offset_top = 363.0
+offset_right = 678.0
+offset_bottom = 403.0
 
-[node name="SubViewport" type="CanvasLayer" parent="StartupPage"]
-
-[node name="ButtonNewGame" type="Button" parent="StartupPage/SubViewport"]
-offset_left = 80.0
-offset_top = 331.0
-offset_right = 279.0
-offset_bottom = 408.0
-theme_override_font_sizes/font_size = 28
-text = "新游戏"
-script = SubResource("GDScript_v0l8b")
-
-[node name="ButtonContinue" type="Button" parent="StartupPage/SubViewport"]
-offset_left = 80.0
-offset_top = 447.0
-offset_right = 279.0
-offset_bottom = 524.0
-theme_override_font_sizes/font_size = 28
-text = "继续游戏
-"
-
-[node name="ButtonExit" type="Button" parent="StartupPage/SubViewport"]
-offset_left = 80.0
-offset_top = 560.0
-offset_right = 279.0
-offset_bottom = 637.0
-theme_override_font_sizes/font_size = 28
-text = "退出游戏
-"
-
-[connection signal="pressed" from="StartupPage/SubViewport/ButtonNewGame" to="StartupPage" method="_on_button_new_game_pressed"]
-[connection signal="pressed" from="StartupPage/SubViewport/ButtonContinue" to="StartupPage" method="_on_button_continue_pressed"]
-[connection signal="pressed" from="StartupPage/SubViewport/ButtonExit" to="StartupPage" method="_on_button_exit_pressed"]
+[node name="Button" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -14.25
+anchor_top = -0.375
+anchor_right = -9.8
+anchor_bottom = 1.6
+offset_left = 6.10352e-05
+text = "开始游戏"

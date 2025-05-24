@@ -6,7 +6,7 @@ var scene_paths = {
 	"gongyuan": "res://scene/gongyuan.tscn"
 }
 
-@onready var scene_container = $Fengmian
+@onready var scene_container = $StartupPage
 func _ready():
 	$Control/Button.pressed.connect(_on_HomeButton_pressed)
 	
