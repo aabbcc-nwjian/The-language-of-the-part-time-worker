@@ -1,0 +1,73 @@
+[gd_scene load_steps=6 format=3 uid="uid://bgu8dfbicqqeq"]
+
+[ext_resource type="Script" uid="uid://bo8aqw3dndjxt" path="res://script/phone.gd" id="1_phbhh"]
+[ext_resource type="Texture2D" uid="uid://cv0mjkr8samim" path="res://assets/去除聊天框.png" id="2_pmu8d"]
+[ext_resource type="PackedScene" uid="uid://nqe4jke58msw" path="res://scene/apphouse_scene.tscn" id="3_dx8mv"]
+[ext_resource type="PackedScene" uid="uid://bc5p1meq10uah" path="res://scene/appbank_scene.tscn" id="4_g8n6r"]
+[ext_resource type="PackedScene" uid="uid://d3tk1s5e20fe0" path="res://scene/appjob_scene.tscn" id="5_blbx6"]
+
+[node name="Phone" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_phbhh")
+
+[node name="phoneLayout" type="Sprite2D" parent="."]
+position = Vector2(1249, 303)
+scale = Vector2(0.578125, 0.546113)
+texture = ExtResource("2_pmu8d")
+offset = Vector2(-283.676, 102.085)
+
+[node name="SubViewport" type="Control" parent="."]
+anchors_preset = 0
+
+[node name="BankApp" type="Button" parent="SubViewport"]
+layout_mode = 0
+offset_left = 915.0
+offset_top = 118.0
+offset_right = 1015.0
+offset_bottom = 218.0
+text = "Bank"
+metadata/_edit_use_anchors_ = true
+
+[node name="HouseApp" type="Button" parent="SubViewport"]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 118.0
+offset_right = 1129.0
+offset_bottom = 218.0
+text = "House
+"
+
+[node name="JobApp" type="Button" parent="SubViewport"]
+layout_mode = 0
+offset_left = 1149.0
+offset_top = 119.0
+offset_right = 1249.0
+offset_bottom = 219.0
+text = "Job"
+
+[node name="AppLayer" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+
+[node name="ApphouseScene" type="Control" parent="AppLayer"]
+visible = false
+anchors_preset = 0
+
+[node name="ApphouseScene" parent="AppLayer/ApphouseScene" instance=ExtResource("3_dx8mv")]
+
+[node name="AppjobScene" type="Control" parent="AppLayer"]
+visible = false
+anchors_preset = 0
+
+[node name="AppjobScene" parent="AppLayer/AppjobScene" instance=ExtResource("5_blbx6")]
+
+[node name="AppbankScene" type="Control" parent="AppLayer"]
+visible = false
+anchors_preset = 0
+
+[node name="AppbankScene" parent="AppLayer/AppbankScene" instance=ExtResource("4_g8n6r")]
+
+[connection signal="pressed" from="SubViewport/BankApp" to="." method="_on_bank_app_pressed"]
+[connection signal="pressed" from="SubViewport/HouseApp" to="." method="_on_company_app_pressed"]
+[connection signal="pressed" from="SubViewport/JobApp" to="." method="_on_job_app_pressed"]

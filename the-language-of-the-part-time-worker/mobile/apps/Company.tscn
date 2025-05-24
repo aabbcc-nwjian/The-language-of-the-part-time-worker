@@ -1,0 +1,57 @@
+[gd_scene load_steps=2 format=3 uid="uid://b18ethdtvd0a2"]
+
+[ext_resource type="Script" uid="uid://coelqh83uy4we" path="res://mobile/apps/appButton2.gd" id="1_87xbs"]
+
+[node name="App2" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -226.0
+offset_top = -60.0
+offset_right = -226.0
+offset_bottom = -60.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 65.0
+offset_right = 542.0
+offset_bottom = 192.0
+text = "Company
+"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 229.0
+offset_top = 125.0
+offset_right = 323.0
+offset_bottom = 199.0
+text = "back"
+script = ExtResource("1_87xbs")
+
+[node name="Company1Layer" type="CanvasLayer" parent="."]
+
+[node name="Company1" type="Label" parent="Company1Layer"]
+offset_left = 292.0
+offset_top = 33.0
+offset_right = 517.0
+offset_bottom = 168.0
+text = "Company1"
+
+[node name="Company1Layer2" type="CanvasLayer" parent="."]
+
+[node name="Company1" type="Label" parent="Company1Layer2"]
+offset_left = 301.0
+offset_top = 176.0
+offset_right = 501.0
+offset_bottom = 300.0
+text = "Company2"
+
+[node name="Company1Layer3" type="CanvasLayer" parent="."]
+
+[node name="Company1" type="Label" parent="Company1Layer3"]
+offset_left = 312.0
+offset_top = 285.0
+offset_right = 725.0
+offset_bottom = 622.0
+text = "Company3
+"

@@ -1,5 +1,19 @@
 extends Node
+
+# 游戏进行的周期数
+var cycle_num = 0
+# 游戏阶段
+# 0： 工作日白天
+# 1： 工作日下班后
+# 2： 休息日
+var stage = 0
+
+# 选择的出身
 var choose = 0
+# 居住的房间
+var room := 0
+
+# 能力属性
 var nick_name := "张晓梅"
 var money := 10000
 var health := 100
@@ -8,6 +22,30 @@ var san := 100
 var max_san := 100
 var ability := 100
 var max_ability := 100
+
+# 定义不同房间的租金
+var room_rent: int:
+	get:
+		if (room == 0):
+			return -50
+		if (room == 1):
+			return -100
+		if (room == 2):
+			return -200
+		else:
+			return 50
+
+# 定义不同房间的SAN回复值
+var room_recovery: int:
+	get:
+		if (room == 0):
+			return 50
+		if (room == 1):
+			return 80
+		if (room == 2):
+			return 150
+		else:
+			return 50
 
 signal nickname_changed(new_value)
 signal money_changed(new_value)

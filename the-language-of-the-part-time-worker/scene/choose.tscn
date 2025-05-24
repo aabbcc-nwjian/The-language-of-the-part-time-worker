@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dmndr0i6fmtvg"]
 
 [ext_resource type="Texture2D" uid="uid://dgdslt2eppjp0" path="res://Pictures/选择出身.png" id="1_stlec"]
-[ext_resource type="Script" uid="uid://bv1pj6tmjy1pw" path="res://scene/choose.gd" id="1_vh0bc"]
+[ext_resource type="Script" path="res://scene/choose.gd" id="1_vh0bc"]
 
 [sub_resource type="GDScript" id="GDScript_vh0bc"]
 script/source = "extends AcceptDialog
@@ -53,6 +53,7 @@ text = "选择"
 title = ""
 initial_position = 2
 size = Vector2i(200, 200)
+visible = true
 content_scale_factor = 1.32
 dialog_text = "确定要选择这个吗"
 script = SubResource("GDScript_vh0bc")

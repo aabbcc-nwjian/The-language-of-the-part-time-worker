@@ -68,6 +68,7 @@ theme_override_font_sizes/font_size = 38
 text = "取消"
 
 [node name="ButtonOk" type="Button" parent="Control"]
+layout_mode = 0
 offset_left = 348.0
 offset_top = 281.0
 offset_right = 512.0
