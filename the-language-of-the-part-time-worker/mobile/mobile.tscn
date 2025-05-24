@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://b4l7rd3ehnkhi"]
+[gd_scene load_steps=3 format=3 uid="uid://b4l7rd3ehnkhi"]
 
-[ext_resource type="Script" uid="uid://bbpdts1rcw1s7" path="res://mobile/button.gd" id="1_if8gs"]
-[ext_resource type="Script" uid="uid://deqco4lnhju2j" path="res://mobile/button_2.gd" id="2_m1bpx"]
-[ext_resource type="Script" uid="uid://c15x6jquhna76" path="res://mobile/button_3.gd" id="3_lcrsh"]
+[ext_resource type="Script" uid="uid://de7wpo3ir5m4n" path="res://mobile/mobile.gd" id="1_m1bpx"]
 [ext_resource type="Texture2D" uid="uid://cv0mjkr8samim" path="res://assets/去除聊天框.png" id="4_8f28n"]
 
-[node name="mobile" type="Node2D"]
+[node name="mobile" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_m1bpx")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -15,7 +16,6 @@ offset_top = 155.0
 offset_right = 978.0
 offset_bottom = 248.0
 text = "App1"
-script = ExtResource("1_if8gs")
 
 [node name="Button2" type="Button" parent="CanvasLayer"]
 offset_left = 1008.0
@@ -23,7 +23,6 @@ offset_top = 154.0
 offset_right = 1113.0
 offset_bottom = 255.0
 text = "App2"
-script = ExtResource("2_m1bpx")
 
 [node name="Button3" type="Button" parent="CanvasLayer"]
 offset_left = 1148.0
@@ -31,7 +30,6 @@ offset_top = 150.0
 offset_right = 1255.0
 offset_bottom = 256.0
 text = "App3"
-script = ExtResource("3_lcrsh")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(1075, 364)
@@ -45,3 +43,7 @@ offset_left = 889.0
 offset_top = 46.0
 offset_right = 1257.0
 offset_bottom = 696.0
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button3" to="." method="_on_button_3_pressed"]
