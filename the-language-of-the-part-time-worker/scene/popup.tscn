@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://jil4t5terbfd"]
 
 [ext_resource type="Texture2D" uid="uid://c7x8w2bc3823s" path="res://assets/矩形 72@1x.png" id="1_56vfc"]
-[ext_resource type="Script" uid="uid://dqc21k2wp4h41" path="res://scene/popup.gd" id="1_64wbc"]
+[ext_resource type="Script" path="res://scene/popup.gd" id="1_64wbc"]
 
 [sub_resource type="Gradient" id="Gradient_l86xc"]
 colors = PackedColorArray(0, 0, 0, 0.337255, 0, 0, 0, 0.380392)
