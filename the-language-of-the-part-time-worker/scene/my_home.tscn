@@ -1,23 +1,38 @@
-[gd_scene load_steps=14 format=3 uid="uid://bebccm0l4q2n0"]
+[gd_scene load_steps=28 format=3 uid="uid://bebccm0l4q2n0"]
 
 [ext_resource type="Texture2D" uid="uid://7murnhegd6bw" path="res://assets/home1/555@1x.png" id="1_jyjdf"]
-[ext_resource type="Script" path="res://scene/my_home.gd" id="1_oly1t"]
+[ext_resource type="Script" uid="uid://wgkxakmbhlov" path="res://scene/my_home.gd" id="1_oly1t"]
+[ext_resource type="Texture2D" uid="uid://w5prrrsk2dbt" path="res://assets/home3/容器 14@1x.png" id="2_1ts2y"]
 [ext_resource type="Texture2D" uid="uid://dgehub3vuxi55" path="res://assets/home1/5556@1x.png" id="2_ntff0"]
 [ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="2_suw3g"]
+[ext_resource type="Texture2D" uid="uid://dfgcptp0spudc" path="res://assets/home3/D0D87EC97916CFCDAC7877ECF08CCA42.png" id="3_7w57e"]
 [ext_resource type="Script" uid="uid://tf38bv5k047g" path="res://script/alpha_texture_button.gd" id="3_oly1t"]
 [ext_resource type="Texture2D" uid="uid://bx3kfnwkq8w5f" path="res://assets/home1/551@1x.png" id="4_b8885"]
+[ext_resource type="Texture2D" uid="uid://bhqu1mlcc4wq6" path="res://assets/home3/002DB2C440DB4253552BC336D688E93E.png" id="4_kd7y5"]
+[ext_resource type="Texture2D" uid="uid://bioqgdsorkl6i" path="res://assets/home3/BAF597459694D8F2C3F4371ECE5E5664.png" id="6_6kgs7"]
 [ext_resource type="Texture2D" uid="uid://duyivjp1pxg2p" path="res://assets/home1/55555555@1x.png" id="6_xsdsx"]
 [ext_resource type="Texture2D" uid="uid://dakcrh6s28hyo" path="res://assets/home1/553@1x.png" id="7_105dc"]
+[ext_resource type="Texture2D" uid="uid://dmx7a0jna8ms1" path="res://assets/home3/F396F145B5B291E3081DFF3F66DC059C.png" id="7_ajcdk"]
+[ext_resource type="Texture2D" uid="uid://delxp5edhbyti" path="res://assets/home3/525D7852355FCCC0DE7935A659F81AB9.png" id="8_idf50"]
 [ext_resource type="Texture2D" uid="uid://cvef8un6h8gp" path="res://assets/home1/55@1x.png" id="8_suw3g"]
 [ext_resource type="Texture2D" uid="uid://bnue0t0ijh2vl" path="res://assets/home1/552@1x.png" id="9_br3rh"]
+[ext_resource type="Texture2D" uid="uid://s3ttoie4xe8" path="res://assets/home3/4C7D3E881B7E70E38624524E4B68D944.png" id="9_f043b"]
 [ext_resource type="PackedScene" uid="uid://c837doqwlwuqw" path="res://scene/popup_confirm.tscn" id="10_105dc"]
+[ext_resource type="Texture2D" uid="uid://bqxo1ewsfv0nr" path="res://assets/home2/56067E2000A4213A03B3CB7597DEE473.png" id="10_xmc6t"]
+[ext_resource type="Texture2D" uid="uid://bjurm1fe0oyl3" path="res://assets/home2/01EE54CBD2D6B2BD55AB010551F3FD48.png" id="11_kdyhv"]
 [ext_resource type="PackedScene" uid="uid://c73fuxlcpbusb" path="res://scene/progress_bar.tscn" id="12_br3rh"]
+[ext_resource type="Texture2D" uid="uid://xfgadwdtenlq" path="res://assets/home2/97E06E461EE620E2E45D20819AAB5886.png" id="12_eoqy4"]
+[ext_resource type="Texture2D" uid="uid://dtqnxvjswq6sl" path="res://assets/home2/4D2576DDF6F79DE001400AA4EF60BB09.png" id="13_vlcg7"]
 [ext_resource type="PackedScene" uid="uid://jil4t5terbfd" path="res://scene/popup.tscn" id="13_wa2lr"]
+[ext_resource type="Texture2D" uid="uid://cyfk4f2deg8un" path="res://assets/home2/270DC4E2000DDEC62A638E7EC14EFE4F.png" id="14_8emvd"]
+[ext_resource type="Texture2D" uid="uid://s5chdw21ogjl" path="res://assets/home2/FFF2EED4A6CB3132AA06516673164931.png" id="15_cxcqj"]
+[ext_resource type="Texture2D" uid="uid://wx38rftmul5" path="res://assets/home2/6E5F24DCCC2E7AE659F04E372065F914.png" id="16_c7q7s"]
 
 [node name="MyHome" type="Node2D"]
 script = ExtResource("1_oly1t")
 
 [node name="Room2" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="555_1x" type="Sprite2D" parent="Room2"]
 position = Vector2(640, 360)
@@ -51,49 +66,93 @@ texture_hover = ExtResource("9_br3rh")
 script = ExtResource("3_oly1t")
 
 [node name="Room3" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="555_1x" type="Sprite2D" parent="Room3"]
 position = Vector2(640, 360)
-texture = ExtResource("1_jyjdf")
+texture = ExtResource("10_xmc6t")
 
 [node name="Bed" type="TextureButton" parent="Room3"]
-offset_left = 25.0
-offset_top = 6.0
-offset_right = 784.0
-offset_bottom = 726.0
-texture_normal = ExtResource("2_ntff0")
-texture_hover = ExtResource("4_b8885")
+offset_left = 99.0
+offset_top = -1.0
+offset_right = 858.0
+offset_bottom = 719.0
+texture_normal = ExtResource("11_kdyhv")
+texture_hover = ExtResource("12_eoqy4")
 script = ExtResource("3_oly1t")
 
 [node name="Computer" type="TextureButton" parent="Room3"]
-offset_left = 722.0
-offset_top = 318.0
-offset_right = 890.0
-offset_bottom = 474.0
-texture_normal = ExtResource("6_xsdsx")
-texture_hover = ExtResource("7_105dc")
+offset_left = 802.0
+offset_top = 320.0
+offset_right = 1243.0
+offset_bottom = 570.0
+texture_normal = ExtResource("13_vlcg7")
+texture_hover = ExtResource("14_8emvd")
 script = ExtResource("3_oly1t")
 
 [node name="BookShelf" type="TextureButton" parent="Room3"]
-offset_left = 959.0
-offset_top = 77.0
-offset_right = 1280.0
-offset_bottom = 720.0
-texture_normal = ExtResource("8_suw3g")
-texture_hover = ExtResource("9_br3rh")
+offset_left = 913.0
+offset_top = 2.0
+offset_right = 1234.0
+offset_bottom = 645.0
+texture_normal = ExtResource("15_cxcqj")
+texture_hover = ExtResource("16_c7q7s")
+script = ExtResource("3_oly1t")
+
+[node name="Room1" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="555_1x" type="Sprite2D" parent="Room1"]
+position = Vector2(640, 360)
+texture = ExtResource("2_1ts2y")
+
+[node name="Bed" type="TextureButton" parent="Room1"]
+offset_left = 87.0
+offset_top = 301.0
+offset_right = 873.0
+offset_bottom = 1021.0
+texture_normal = ExtResource("3_7w57e")
+texture_hover = ExtResource("4_kd7y5")
+script = ExtResource("3_oly1t")
+
+[node name="Computer" type="TextureButton" parent="Room1"]
+offset_left = 778.0
+offset_top = 259.0
+offset_right = 1219.0
+offset_bottom = 509.0
+texture_normal = ExtResource("6_6kgs7")
+texture_hover = ExtResource("7_ajcdk")
+script = ExtResource("3_oly1t")
+
+[node name="BookShelf" type="TextureButton" parent="Room1"]
+offset_left = 919.0
+offset_top = 541.0
+offset_right = 1284.0
+offset_bottom = 1184.0
+texture_normal = ExtResource("8_idf50")
+texture_hover = ExtResource("9_f043b")
 script = ExtResource("3_oly1t")
 
 [node name="Hud" parent="." instance=ExtResource("2_suw3g")]
 
 [node name="ConfirmSleep" parent="." instance=ExtResource("10_105dc")]
+visible = false
 
 [node name="ConfirmComputer" parent="." instance=ExtResource("10_105dc")]
+visible = false
 
 [node name="ProgressBar" parent="." instance=ExtResource("12_br3rh")]
+visible = false
 
 [node name="PopupComputerResult" parent="." instance=ExtResource("13_wa2lr")]
+visible = false
 
 [connection signal="pressed" from="Room2/Bed" to="." method="_on_bed_pressed"]
 [connection signal="pressed" from="Room2/Computer" to="." method="_on_computer_pressed"]
+[connection signal="pressed" from="Room2/BookShelf" to="." method="_on_book_shelf_pressed"]
 [connection signal="pressed" from="Room3/Bed" to="." method="_on_bed_pressed"]
 [connection signal="pressed" from="Room3/Computer" to="." method="_on_computer_pressed"]
+[connection signal="pressed" from="Room3/BookShelf" to="." method="_on_book_shelf_pressed"]
+[connection signal="pressed" from="Room1/Bed" to="." method="_on_bed_pressed"]
+[connection signal="pressed" from="Room1/Computer" to="." method="_on_computer_pressed"]
+[connection signal="pressed" from="Room1/BookShelf" to="." method="_on_book_shelf_pressed"]

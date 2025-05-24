@@ -39,6 +39,7 @@ theme_override_font_sizes/font_size = 38
 text = "1000"
 
 [node name="DiffSan" type="Label" parent="."]
+layout_mode = 0
 offset_left = 819.0
 offset_top = 263.0
 offset_right = 1049.0
@@ -48,6 +49,7 @@ theme_override_font_sizes/font_size = 38
 text = "1000"
 
 [node name="DiffHealth" type="Label" parent="."]
+layout_mode = 0
 offset_left = 819.0
 offset_top = 358.0
 offset_right = 1049.0
@@ -57,6 +59,7 @@ theme_override_font_sizes/font_size = 38
 text = "1000"
 
 [node name="DiffAbility" type="Label" parent="."]
+layout_mode = 0
 offset_left = 819.0
 offset_top = 446.0
 offset_right = 1049.0
