@@ -1,23 +1,29 @@
-[gd_scene load_steps=10 format=3 uid="uid://dlddkxjqpo8b6"]
+[gd_scene load_steps=14 format=3 uid="uid://bebccm0l4q2n0"]
 
 [ext_resource type="Texture2D" uid="uid://7murnhegd6bw" path="res://assets/home1/555@1x.png" id="1_jyjdf"]
 [ext_resource type="Script" path="res://scene/my_home.gd" id="1_oly1t"]
 [ext_resource type="Texture2D" uid="uid://dgehub3vuxi55" path="res://assets/home1/5556@1x.png" id="2_ntff0"]
-[ext_resource type="Script" path="res://script/alpha_texture_button.gd" id="3_oly1t"]
+[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="2_suw3g"]
+[ext_resource type="Script" uid="uid://tf38bv5k047g" path="res://script/alpha_texture_button.gd" id="3_oly1t"]
 [ext_resource type="Texture2D" uid="uid://bx3kfnwkq8w5f" path="res://assets/home1/551@1x.png" id="4_b8885"]
 [ext_resource type="Texture2D" uid="uid://duyivjp1pxg2p" path="res://assets/home1/55555555@1x.png" id="6_xsdsx"]
 [ext_resource type="Texture2D" uid="uid://dakcrh6s28hyo" path="res://assets/home1/553@1x.png" id="7_105dc"]
 [ext_resource type="Texture2D" uid="uid://cvef8un6h8gp" path="res://assets/home1/55@1x.png" id="8_suw3g"]
 [ext_resource type="Texture2D" uid="uid://bnue0t0ijh2vl" path="res://assets/home1/552@1x.png" id="9_br3rh"]
+[ext_resource type="PackedScene" uid="uid://c837doqwlwuqw" path="res://scene/popup_confirm.tscn" id="10_105dc"]
+[ext_resource type="PackedScene" uid="uid://c73fuxlcpbusb" path="res://scene/progress_bar.tscn" id="12_br3rh"]
+[ext_resource type="PackedScene" uid="uid://jil4t5terbfd" path="res://scene/popup.tscn" id="13_wa2lr"]
 
 [node name="MyHome" type="Node2D"]
 script = ExtResource("1_oly1t")
 
-[node name="555_1x" type="Sprite2D" parent="."]
+[node name="Room2" type="CanvasLayer" parent="."]
+
+[node name="555_1x" type="Sprite2D" parent="Room2"]
 position = Vector2(640, 360)
 texture = ExtResource("1_jyjdf")
 
-[node name="Bed" type="TextureButton" parent="."]
+[node name="Bed" type="TextureButton" parent="Room2"]
 offset_left = 25.0
 offset_top = 6.0
 offset_right = 784.0
@@ -26,7 +32,7 @@ texture_normal = ExtResource("2_ntff0")
 texture_hover = ExtResource("4_b8885")
 script = ExtResource("3_oly1t")
 
-[node name="Computer" type="TextureButton" parent="."]
+[node name="Computer" type="TextureButton" parent="Room2"]
 offset_left = 722.0
 offset_top = 318.0
 offset_right = 890.0
@@ -35,7 +41,7 @@ texture_normal = ExtResource("6_xsdsx")
 texture_hover = ExtResource("7_105dc")
 script = ExtResource("3_oly1t")
 
-[node name="BookShelf" type="TextureButton" parent="."]
+[node name="BookShelf" type="TextureButton" parent="Room2"]
 offset_left = 959.0
 offset_top = 77.0
 offset_right = 1280.0
@@ -44,4 +50,50 @@ texture_normal = ExtResource("8_suw3g")
 texture_hover = ExtResource("9_br3rh")
 script = ExtResource("3_oly1t")
 
-[connection signal="pressed" from="Bed" to="." method="_on_bed_pressed"]
+[node name="Room3" type="CanvasLayer" parent="."]
+
+[node name="555_1x" type="Sprite2D" parent="Room3"]
+position = Vector2(640, 360)
+texture = ExtResource("1_jyjdf")
+
+[node name="Bed" type="TextureButton" parent="Room3"]
+offset_left = 25.0
+offset_top = 6.0
+offset_right = 784.0
+offset_bottom = 726.0
+texture_normal = ExtResource("2_ntff0")
+texture_hover = ExtResource("4_b8885")
+script = ExtResource("3_oly1t")
+
+[node name="Computer" type="TextureButton" parent="Room3"]
+offset_left = 722.0
+offset_top = 318.0
+offset_right = 890.0
+offset_bottom = 474.0
+texture_normal = ExtResource("6_xsdsx")
+texture_hover = ExtResource("7_105dc")
+script = ExtResource("3_oly1t")
+
+[node name="BookShelf" type="TextureButton" parent="Room3"]
+offset_left = 959.0
+offset_top = 77.0
+offset_right = 1280.0
+offset_bottom = 720.0
+texture_normal = ExtResource("8_suw3g")
+texture_hover = ExtResource("9_br3rh")
+script = ExtResource("3_oly1t")
+
+[node name="Hud" parent="." instance=ExtResource("2_suw3g")]
+
+[node name="ConfirmSleep" parent="." instance=ExtResource("10_105dc")]
+
+[node name="ConfirmComputer" parent="." instance=ExtResource("10_105dc")]
+
+[node name="ProgressBar" parent="." instance=ExtResource("12_br3rh")]
+
+[node name="PopupComputerResult" parent="." instance=ExtResource("13_wa2lr")]
+
+[connection signal="pressed" from="Room2/Bed" to="." method="_on_bed_pressed"]
+[connection signal="pressed" from="Room2/Computer" to="." method="_on_computer_pressed"]
+[connection signal="pressed" from="Room3/Bed" to="." method="_on_bed_pressed"]
+[connection signal="pressed" from="Room3/Computer" to="." method="_on_computer_pressed"]

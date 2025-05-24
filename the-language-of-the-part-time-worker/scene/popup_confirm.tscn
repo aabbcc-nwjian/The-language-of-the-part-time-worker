@@ -1,0 +1,79 @@
+[gd_scene load_steps=5 format=3 uid="uid://c837doqwlwuqw"]
+
+[ext_resource type="Script" uid="uid://eok620p1by2" path="res://script/popup_confirm.gd" id="1_6vexv"]
+[ext_resource type="Texture2D" uid="uid://c7x8w2bc3823s" path="res://assets/矩形 72@1x.png" id="2_2wbf2"]
+
+[sub_resource type="Gradient" id="Gradient_l86xc"]
+colors = PackedColorArray(0, 0, 0, 0.337255, 0, 0, 0, 0.380392)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_64wbc"]
+gradient = SubResource("Gradient_l86xc")
+
+[node name="PopupConfirm" type="CanvasLayer"]
+script = ExtResource("1_6vexv")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 329.0
+offset_top = 150.0
+offset_right = 965.0
+offset_bottom = 553.0
+
+[node name="Sprite2D" type="Sprite2D" parent="Control"]
+position = Vector2(301, 226.375)
+scale = Vector2(5.28906, 865.25)
+texture = SubResource("GradientTexture1D_64wbc")
+
+[node name="Background" type="Sprite2D" parent="Control"]
+position = Vector2(318, 201)
+texture = ExtResource("2_2wbf2")
+
+[node name="Content" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 109.0
+offset_right = 585.0
+offset_bottom = 266.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 30
+text = "正在等下班倒计时正在等下班倒计时正在等下班倒计时正在等下班倒计时"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="Title" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 59.0
+offset_top = 40.0
+offset_right = 585.0
+offset_bottom = 92.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 12
+theme_override_font_sizes/font_size = 30
+text = "提示"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonCancel" type="Button" parent="Control"]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 281.0
+offset_right = 283.0
+offset_bottom = 349.0
+theme_override_font_sizes/font_size = 38
+text = "取消"
+
+[node name="ButtonOk" type="Button" parent="Control"]
+offset_left = 348.0
+offset_top = 281.0
+offset_right = 512.0
+offset_bottom = 349.0
+theme_override_font_sizes/font_size = 38
+text = "确认"
+
+[connection signal="pressed" from="Control/ButtonCancel" to="." method="_on_button_cancel_pressed"]
+[connection signal="pressed" from="Control/ButtonOk" to="." method="_on_button_ok_pressed"]
