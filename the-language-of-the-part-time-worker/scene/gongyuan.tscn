@@ -1,7 +1,20 @@
+<<<<<<< HEAD
 [gd_scene load_steps=3 format=3 uid="uid://ctq645vo2gg65"]
 
 [ext_resource type="Script" path="res://scene/gongyuan.gd" id="1_1qifb"]
 [ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="1_hvxmv"]
+=======
+[gd_scene load_steps=5 format=3 uid="uid://cbaipj5fpokep"]
+
+[ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://script/gongyuan.gd" id="1_1qifb"]
+[ext_resource type="Texture2D" uid="uid://brbj3fy7ucxe6" path="res://Pictures/98045f3f462673ee9c3a7330fee42e72.png" id="2_1qifb"]
+
+[sub_resource type="Theme" id="Theme_1qifb"]
+
+[sub_resource type="GDScript" id="GDScript_1qifb"]
+script/source = "extends AcceptDialog
+"
+>>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 
 [node name="gongyuan" type="Node2D"]
 script = ExtResource("1_1qifb")
@@ -10,7 +23,7 @@ script = ExtResource("1_1qifb")
 
 [node name="Gongyuan" type="Sprite2D" parent="Node2D"]
 position = Vector2(638, 356)
-texture = ExtResource("1_hvxmv")
+texture = ExtResource("2_1qifb")
 
 [node name="Control" type="Control" parent="Node2D/Gongyuan"]
 layout_mode = 3
@@ -24,17 +37,83 @@ offset_right = -728.464
 offset_bottom = -378.384
 
 [node name="Button1" type="Button" parent="Node2D/Gongyuan/Control"]
+light_mask = 0
+visibility_layer = 0
 layout_mode = 1
 anchors_preset = -1
 anchor_left = -16.146
 anchor_top = -8.916
 anchor_right = -16.146
 anchor_bottom = -8.916
-offset_left = 2165.61
-offset_top = 185.908
-offset_right = 2243.61
-offset_bottom = 242.908
+offset_left = 1904.61
+offset_top = 535.908
+offset_right = 2180.61
+offset_bottom = 650.908
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
-text = "返回"
 flat = true
+
+[node name="Button2" type="Button" parent="Node2D/Gongyuan/Control"]
+visible = false
+layout_mode = 0
+offset_left = 614.0
+offset_top = 568.0
+offset_right = 782.0
+offset_bottom = 686.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "休闲"
+flat = true
+
+[node name="VBoxContainer" type="Control" parent="Node2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 278.0
+offset_top = 276.0
+offset_right = 742.0
+offset_bottom = 471.0
+
+[node name="Button" type="Button" parent="Node2D/VBoxContainer"]
+light_mask = 0
+visibility_layer = 0
+layout_mode = 2
+offset_left = 230.0
+offset_top = 139.0
+offset_right = 496.0
+offset_bottom = 249.0
+theme = SubResource("Theme_1qifb")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+flat = true
+
+[node name="Button2" type="Button" parent="Node2D/VBoxContainer"]
+light_mask = 0
+visibility_layer = 0
+layout_mode = 2
+offset_left = -161.0
+offset_top = 139.0
+offset_right = 101.0
+offset_bottom = 262.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+flat = true
+
+[node name="AcceptDialog" type="AcceptDialog" parent="Node2D"]
+auto_translate_mode = 1
+title = ""
+initial_position = 2
+size = Vector2i(200, 200)
+content_scale_factor = 1.46
+dialog_text = "健康-15
+健康上限+5"
+script = SubResource("GDScript_1qifb")
+
+[node name="AcceptDialog2" type="AcceptDialog" parent="Node2D"]
+auto_translate_mode = 1
+title = ""
+initial_position = 2
+size = Vector2i(200, 200)
+content_scale_factor = 1.46
+dialog_text = "健康-5
+精神+10"
+script = SubResource("GDScript_1qifb")

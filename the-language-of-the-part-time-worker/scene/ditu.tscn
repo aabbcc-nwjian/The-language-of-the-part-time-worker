@@ -1,7 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://dv5mf6h8gog8n"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://scene/ditu.gd" id="1_acov4"]
 [ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="2_wwuf8"]
+=======
+[ext_resource type="Script" uid="uid://tqwbsqmep01b" path="res://script/ditu.gd" id="1_acov4"]
+[ext_resource type="Texture2D" uid="uid://e3quphgr7m73" path="res://Pictures/地图.png" id="2_wwuf8"]
+>>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 
 [node name="ditu" type="Node2D"]
 script = ExtResource("1_acov4")
@@ -10,6 +15,7 @@ script = ExtResource("1_acov4")
 
 [node name="Gongyuan" type="Sprite2D" parent="map"]
 position = Vector2(648, 358)
+scale = Vector2(0.65, 0.65)
 texture = ExtResource("2_wwuf8")
 
 [node name="buttons" type="Control" parent="map"]
@@ -21,49 +27,53 @@ offset_right = -155.0
 offset_bottom = -174.0
 
 [node name="Button1" type="Button" parent="map/buttons"]
+light_mask = 0
+visibility_layer = 0
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.983
 anchor_bottom = 1.42
-offset_left = 491.0
-offset_top = 515.0
-offset_right = 540.68
-offset_bottom = 545.2
+offset_left = 1015.0
+offset_top = 501.0
+offset_right = 1083.68
+offset_bottom = 586.2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
-text = "医院"
 flat = true
 
 [node name="Button2" type="Button" parent="map/buttons"]
+light_mask = 0
+visibility_layer = 0
 layout_mode = 0
-offset_left = 947.0
-offset_top = 410.0
-offset_right = 1025.0
-offset_bottom = 467.0
+offset_left = 524.0
+offset_top = 631.0
+offset_right = 602.0
+offset_bottom = 756.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
-text = "公园
+text = "
 "
 flat = true
 
 [node name="Button3" type="Button" parent="map/buttons"]
+light_mask = 0
+visibility_layer = 0
 layout_mode = 0
-offset_left = 708.0
-offset_top = 764.0
-offset_right = 786.0
-offset_bottom = 821.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+offset_left = 1025.0
+offset_top = 770.0
+offset_right = 1155.0
+offset_bottom = 890.0
 theme_override_font_sizes/font_size = 35
-text = "商店"
 flat = true
 
 [node name="Button4" type="Button" parent="map/buttons"]
+light_mask = 0
+visibility_layer = 0
 layout_mode = 0
-offset_left = 1033.0
-offset_top = 741.0
-offset_right = 1111.0
-offset_bottom = 798.0
+offset_left = 736.0
+offset_top = 719.0
+offset_right = 840.0
+offset_bottom = 816.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
-text = "书店"
 flat = true

@@ -1,3 +1,171 @@
+<<<<<<< HEAD
 [gd_scene format=3 uid="uid://bfmx45rhy8myd"]
+=======
+[gd_scene load_steps=6 format=3 uid="uid://m0jn7fykfstm"]
+
+[ext_resource type="Script" uid="uid://cpb30i5ar3do3" path="res://scene/book.gd" id="1_rnjoa"]
+[ext_resource type="Texture2D" uid="uid://d0q6u4851m28g" path="res://Pictures/5c0186804976450f60537947a87eb25e.png" id="2_mftuw"]
+[ext_resource type="PackedScene" uid="uid://dxfh70ky0mlo3" path="res://books message/books.tscn" id="3_mftuw"]
+[ext_resource type="Texture2D" uid="uid://dv0mbwmmf3nrs" path="res://Pictures/07ff6e0dc71de47f6f93a2d9685119c2.png" id="4_sem1a"]
+[ext_resource type="Texture2D" uid="uid://clamnr410ids0" path="res://Pictures/a3995f8d33a4b46bf86f5ab89c5c60fc.png" id="5_c8bge"]
+>>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 
 [node name="book" type="Node2D"]
+script = ExtResource("1_rnjoa")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Gongyuan" type="Sprite2D" parent="Node2D"]
+position = Vector2(642, 355)
+texture = ExtResource("2_mftuw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Node2D"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Books" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
+position = Vector2(-33, 65)
+label_text = "java"
+
+[node name="Books2" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
+position = Vector2(-32, 169)
+label_text = "c++"
+label2_text = 200
+label3_text = "能力25+"
+label4_text = 200
+
+[node name="Books3" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
+position = Vector2(-33, 285)
+label_text = "Godot"
+label2_text = 400
+label3_text = "能力20+"
+label4_text = 100
+
+[node name="Books4" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
+position = Vector2(-33, 402)
+label_text = "c#"
+label2_text = 300
+label3_text = "能力30+"
+label4_text = 220
+
+[node name="Books5" parent="Node2D/VBoxContainer" instance=ExtResource("3_mftuw")]
+position = Vector2(-32, 498)
+label_text = "css"
+label2_text = 300
+label3_text = "能力20+"
+label4_text = 160
+
+[node name="07Ff6e0Dc71De47f6f93a2d9685119c2" type="Sprite2D" parent="Node2D/VBoxContainer"]
+position = Vector2(1045, 202)
+texture = ExtResource("4_sem1a")
+
+[node name="07Ff6e0Dc71De47f6f93a2d9685119c3" type="Sprite2D" parent="Node2D/VBoxContainer"]
+position = Vector2(1043, 309)
+texture = ExtResource("4_sem1a")
+
+[node name="07Ff6e0Dc71De47f6f93a2d9685119c4" type="Sprite2D" parent="Node2D/VBoxContainer"]
+position = Vector2(1043, 420)
+texture = ExtResource("4_sem1a")
+
+[node name="07Ff6e0Dc71De47f6f93a2d9685119c5" type="Sprite2D" parent="Node2D/VBoxContainer"]
+position = Vector2(1044, 532)
+texture = ExtResource("4_sem1a")
+
+[node name="07Ff6e0Dc71De47f6f93a2d9685119c6" type="Sprite2D" parent="Node2D/VBoxContainer"]
+position = Vector2(1046, 632)
+texture = ExtResource("4_sem1a")
+
+[node name="A3995f8d33a4b46Bf86f5Ab89c5c60Fc" type="Sprite2D" parent="Node2D/VBoxContainer"]
+visible = false
+position = Vector2(1045, 202)
+texture = ExtResource("5_c8bge")
+
+[node name="A3995f8d33a4b46Bf86f5Ab89c5c60Fc2" type="Sprite2D" parent="Node2D/VBoxContainer"]
+visible = false
+position = Vector2(1043, 309)
+texture = ExtResource("5_c8bge")
+
+[node name="A3995f8d33a4b46Bf86f5Ab89c5c60Fc3" type="Sprite2D" parent="Node2D/VBoxContainer"]
+visible = false
+position = Vector2(1044, 420)
+texture = ExtResource("5_c8bge")
+
+[node name="A3995f8d33a4b46Bf86f5Ab89c5c60Fc4" type="Sprite2D" parent="Node2D/VBoxContainer"]
+visible = false
+position = Vector2(1045, 532)
+texture = ExtResource("5_c8bge")
+
+[node name="A3995f8d33a4b46Bf86f5Ab89c5c60Fc5" type="Sprite2D" parent="Node2D/VBoxContainer"]
+visible = false
+position = Vector2(1046, 632)
+texture = ExtResource("5_c8bge")
+
+[node name="Control" type="Control" parent="Node2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 642.0
+offset_top = 355.0
+offset_right = 682.0
+offset_bottom = 395.0
+
+[node name="Button" type="Button" parent="Node2D/Control"]
+light_mask = 0
+visibility_layer = 0
+layout_mode = 0
+offset_left = 504.0
+offset_top = -292.0
+offset_right = 623.0
+offset_bottom = -227.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+flat = true
+
+[node name="Button2" type="Button" parent="Node2D/Control"]
+light_mask = 0
+visibility_layer = 0
+layout_mode = 0
+offset_left = 332.0
+offset_top = -205.0
+offset_right = 478.0
+offset_bottom = -107.0
+flat = true
+
+[node name="Button3" type="Button" parent="Node2D/Control"]
+light_mask = 0
+visibility_layer = 0
+layout_mode = 0
+offset_left = 328.0
+offset_top = -85.0
+offset_right = 479.0
+offset_bottom = -4.0
+flat = true
+
+[node name="Button4" type="Button" parent="Node2D/Control"]
+light_mask = 0
+visibility_layer = 0
+layout_mode = 0
+offset_left = 316.0
+offset_top = 22.0
+offset_right = 493.0
+offset_bottom = 106.0
+flat = true
+
+[node name="Button5" type="Button" parent="Node2D/Control"]
+light_mask = 0
+visibility_layer = 0
+layout_mode = 0
+offset_left = 306.0
+offset_top = 130.0
+offset_right = 500.0
+offset_bottom = 224.0
+flat = true
+
+[node name="Button6" type="Button" parent="Node2D/Control"]
+light_mask = 0
+visibility_layer = 0
+layout_mode = 0
+offset_left = 326.0
+offset_top = 233.0
+offset_right = 486.0
+offset_bottom = 317.0
+flat = true

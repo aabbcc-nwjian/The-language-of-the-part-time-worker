@@ -1,3 +1,81 @@
+<<<<<<< HEAD
 [gd_scene load_steps=0 format=3 uid="uid://d0nkhna4ydc7p"]
+=======
+[gd_scene load_steps=3 format=3 uid="uid://d0nkhna4ydc7p"]
+
+[ext_resource type="Script" uid="uid://c8sqisq7rthoq" path="res://scene/shop.gd" id="1_4p3p6"]
+[ext_resource type="Texture2D" uid="uid://bvoofsfaps5y1" path="res://Pictures/gongyuan.png" id="1_iuafe"]
+>>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 
 [node name="shop" type="Node2D"]
+script = ExtResource("1_4p3p6")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Gongyuan" type="Sprite2D" parent="Node2D"]
+position = Vector2(642, 355)
+texture = ExtResource("1_iuafe")
+
+[node name="Control" type="Control" parent="Node2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 642.0
+offset_top = 355.0
+offset_right = 682.0
+offset_bottom = 395.0
+
+[node name="Button1" type="Button" parent="Node2D/Control"]
+visible = false
+layout_mode = 0
+offset_left = -107.0
+offset_top = 199.0
+offset_right = 61.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "买买买"
+flat = true
+
+[node name="Button2" type="Button" parent="Node2D/Control"]
+layout_mode = 0
+offset_left = 499.0
+offset_top = -292.0
+offset_right = 577.0
+offset_bottom = -235.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "返回"
+flat = true
+
+[node name="ItemList" type="ItemList" parent="Node2D"]
+offset_left = 130.0
+offset_top = 41.0
+offset_right = 1127.0
+offset_bottom = 565.0
+
+[node name="Label" type="Label" parent="Node2D/ItemList"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 21.0
+offset_right = 133.0
+offset_bottom = 76.0
+theme_override_font_sizes/font_size = 40
+text = "商品"
+
+[node name="Label2" type="Label" parent="Node2D/ItemList"]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 24.0
+offset_right = 328.0
+offset_bottom = 79.0
+theme_override_font_sizes/font_size = 40
+text = "价格"
+
+[node name="Label3" type="Label" parent="Node2D/ItemList"]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 26.0
+offset_right = 516.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 40
+text = "作用"

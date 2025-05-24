@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://cq1a6ogwtjltg" path="res://scene/event_classroom.gd" id="1_2pa7h"]
 [ext_resource type="PackedScene" uid="uid://di0byxytxbn11" path="res://Event/Classroom.tscn" id="1_h70x1"]
+<<<<<<< HEAD
+=======
+[ext_resource type="PackedScene" uid="uid://cvxhj06fo8ugi" path="res://Options/options.tscn" id="2_38udg"]
+>>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 [ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_2pa7h"]
 [ext_resource type="PackedScene" uid="uid://d0np6fj70qxg8" path="res://Character/Person.tscn" id="4_byrpl"]
 [ext_resource type="PackedScene" uid="uid://b5l3pr0yuxr06" path="res://Dialogue/Discussion.tscn" id="5_38udg"]

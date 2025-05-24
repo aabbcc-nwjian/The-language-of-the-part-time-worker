@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://0a82hlko7v4g" path="res://scene/event_park.gd" id="1_hnyi4"]
 [ext_resource type="PackedScene" uid="uid://dhpjlbwe8smxg" path="res://Event/Park.tscn" id="1_qu3ib"]
 [ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="2_hnyi4"]
+<<<<<<< HEAD
+=======
+[ext_resource type="PackedScene" uid="uid://chgrvlys4l0je" path="res://Dialogue/Dialogue.tscn" id="3_5gr1q"]
+>>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 [ext_resource type="PackedScene" uid="uid://d0np6fj70qxg8" path="res://Character/Person.tscn" id="4_shgw0"]
 [ext_resource type="PackedScene" uid="uid://b5l3pr0yuxr06" path="res://Dialogue/Discussion.tscn" id="5_qu3ib"]
 

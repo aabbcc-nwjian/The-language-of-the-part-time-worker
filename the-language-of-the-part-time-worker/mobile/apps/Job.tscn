@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://502i7ev5582s"]
+
+[ext_resource type="Script" uid="uid://c4sk00wryxevi" path="res://mobile/apps/appButton3.gd" id="1_kfos3"]
+
+[node name="App3" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 317.0
+offset_bottom = 129.0
+text = "Job
+"
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 78.0
+offset_right = 99.0
+offset_bottom = 152.0
+text = "back"
+script = ExtResource("1_kfos3")

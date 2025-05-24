@@ -1,5 +1,19 @@
 extends Node
 
+# 游戏进行的周期数
+var cycle_num = 0
+# 游戏阶段
+# 0： 工作日白天
+# 1： 工作日下班后
+# 2： 休息日
+var stage = 0
+
+# 选择的出身
+var choose = 0
+# 居住的房间
+var room := 0
+
+# 能力属性
 var nick_name := "张晓梅"
 var money := 10000
 var health := 100
@@ -8,6 +22,30 @@ var san := 100
 var max_san := 100
 var ability := 100
 var max_ability := 100
+
+# 定义不同房间的租金
+var room_rent: int:
+	get:
+		if (room == 0):
+			return -50
+		if (room == 1):
+			return -100
+		if (room == 2):
+			return -200
+		else:
+			return 50
+
+# 定义不同房间的SAN回复值
+var room_recovery: int:
+	get:
+		if (room == 0):
+			return 50
+		if (room == 1):
+			return 80
+		if (room == 2):
+			return 150
+		else:
+			return 50
 
 signal nickname_changed(new_value)
 signal money_changed(new_value)
@@ -89,3 +127,30 @@ func set_max_ability(value: int) -> void:
 	max_ability = value
 	max_ability_changed.emit(value)
 	set_ability(clamp(ability, 0, value))
+
+
+
+var item_list = []
+var a = false
+var b = false
+var c = false
+var d = false
+var e = false
+func add_item(name:String,price:float,description:String,page:int,reading:int):
+	var item = {
+		"name":name,
+		"price":price,
+		"description":description,
+		"page":page,
+		"reading":reading
+	}
+	item_list.append(item)
+func get_item(index:int):
+	return item_list[index]
+func get_all_items():
+	return item_list;
+func readbook(index:int,num:int):
+	if num + item_list[index].reading>=item_list[index].page:
+		item_list[index].reading=item_list[index].page
+	else :
+		item_list[index].reading=num + item_list[index].reading
