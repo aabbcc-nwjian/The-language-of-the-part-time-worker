@@ -20,7 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://c837doqwlwuqw" path="res://scene/popup_confirm.tscn" id="10_105dc"]
 [ext_resource type="Texture2D" uid="uid://bqxo1ewsfv0nr" path="res://assets/home2/56067E2000A4213A03B3CB7597DEE473.png" id="10_xmc6t"]
 [ext_resource type="Texture2D" uid="uid://bjurm1fe0oyl3" path="res://assets/home2/01EE54CBD2D6B2BD55AB010551F3FD48.png" id="11_kdyhv"]
-[ext_resource type="PackedScene" uid="uid://c73fuxlcpbusb" path="res://scene/progress_bar.tscn" id="12_br3rh"]
+[ext_resource type="PackedScene" uid="uid://q8yx3khnaqsu" path="res://scene/progress_bar.tscn" id="12_br3rh"]
 [ext_resource type="Texture2D" uid="uid://xfgadwdtenlq" path="res://assets/home2/97E06E461EE620E2E45D20819AAB5886.png" id="12_eoqy4"]
 [ext_resource type="Texture2D" uid="uid://dtqnxvjswq6sl" path="res://assets/home2/4D2576DDF6F79DE001400AA4EF60BB09.png" id="13_vlcg7"]
 [ext_resource type="PackedScene" uid="uid://jil4t5terbfd" path="res://scene/popup.tscn" id="13_wa2lr"]

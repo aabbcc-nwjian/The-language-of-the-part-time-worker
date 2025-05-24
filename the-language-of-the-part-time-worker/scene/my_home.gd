@@ -19,7 +19,7 @@ func _ready() -> void:
 	confirm_sleep.dialog_ok.connect(_on_confirm_sleep)
 	confirm_computer.dialog_ok.connect(_on_confirm_computer)
 	progress_computer.progress_complete.connect(_on_computer_finished)
-	$Room1.show()
+	_show_room()
 	
 func _on_computer_finished():
 	computer_result.show_popup("金钱: -50  健康: -5\n精神: +10  能力上限: +2")
