@@ -1,6 +1,19 @@
 extends Node
+
+# 游戏进行的周期数
+var cycle_num = 0
+# 游戏阶段
+# 0： 工作日白天
+# 1： 工作日下班后
+# 2： 休息日
+var stage = 0
+
+# 选择的出身
 var choose = 0
+# 居住的房间
 var room := 0
+
+# 能力属性
 var nick_name := "张晓梅"
 var money := 10000
 var health := 100

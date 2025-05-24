@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://nqe4jke58msw"]
+[gd_scene load_steps=4 format=3 uid="uid://nqe4jke58msw"]
 
 [ext_resource type="Script" uid="uid://dddhuayk7i5u3" path="res://script/apphouse_scene.gd" id="1_6e5u1"]
 [ext_resource type="Texture2D" uid="uid://bg8h1k8cqpl2j" path="res://assets/renthouse.png" id="1_ptbwp"]
+[ext_resource type="Script" uid="uid://do02kwcb8vapn" path="res://script/transparent_button.gd" id="3_caekl"]
 
 [node name="ApphouseScene" type="Node2D"]
 script = ExtResource("1_6e5u1")
@@ -13,23 +14,26 @@ texture = ExtResource("1_ptbwp")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="Button" type="Button" parent="CanvasLayer"]
-offset_left = 950.0
-offset_top = 117.0
-offset_right = 1242.0
-offset_bottom = 237.0
+[node name="ButtonBigHouse" type="Button" parent="CanvasLayer"]
+offset_left = 942.0
+offset_top = 116.0
+offset_right = 1253.0
+offset_bottom = 266.0
+script = ExtResource("3_caekl")
 
-[node name="Button2" type="Button" parent="CanvasLayer"]
-offset_left = 950.0
+[node name="ButtonSmallRoom" type="Button" parent="CanvasLayer"]
+offset_left = 942.0
 offset_top = 469.0
-offset_right = 1242.0
-offset_bottom = 589.0
+offset_right = 1253.0
+offset_bottom = 619.0
+script = ExtResource("3_caekl")
 
-[node name="Button3" type="Button" parent="CanvasLayer"]
-offset_left = 948.0
-offset_top = 306.0
-offset_right = 1240.0
-offset_bottom = 426.0
+[node name="ButtonApartment" type="Button" parent="CanvasLayer"]
+offset_left = 942.0
+offset_top = 293.0
+offset_right = 1253.0
+offset_bottom = 441.0
+script = ExtResource("3_caekl")
 
 [node name="Label" type="Label" parent="CanvasLayer"]
 offset_left = 1096.0
@@ -65,8 +69,9 @@ offset_bottom = 101.0
 text = "确定要选择这个吗"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 1
 
-[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="CanvasLayer/Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="CanvasLayer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonBigHouse" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonSmallRoom" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="CanvasLayer/ButtonApartment" to="." method="_on_button_3_pressed"]
 [connection signal="confirmed" from="AcceptDialog" to="." method="_on_accept_dialog_confirmed"]

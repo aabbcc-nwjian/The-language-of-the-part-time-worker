@@ -1,5 +1,10 @@
 extends Control
 
+func hide_phone():
+	hide()
+	
+func show_phone():
+	show()
 
 func _on_button_pressed() -> void:
 	print("按钮被点击了！")
