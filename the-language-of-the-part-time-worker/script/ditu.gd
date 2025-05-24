@@ -8,12 +8,15 @@ var scene_paths = {
 }
 
 @onready var scene_container = $map
+@onready var hud = $map/Hud
+
 func _ready():
 	$map/buttons/Button1.pressed.connect(_on_yiyuan_pressed)
 	$map/buttons/Button2.pressed.connect(_on_gongyuan_pressed)
 	$map/buttons/Button4.pressed.connect(_on_book_pressed)
 	$map/buttons/Button3.pressed.connect(_on_shop_pressed)
-
+	hud.hide()
+	
 func load_scene(scene_key: String):
 	# 清除旧场景
 	for child in scene_container.get_children():
@@ -30,10 +33,19 @@ func load_scene(scene_key: String):
 	
 
 func _on_gongyuan_pressed():
+	hud.show()
 	load_scene("gongyuan")
 func _on_yiyuan_pressed():
+	hud.show()
 	load_scene("yiyuan")
 func _on_book_pressed():
+	hud.hide()
 	load_scene("book")
 func _on_shop_pressed():
+	hud.hide()
 	load_scene("shop")
+
+
+func _on_button_return_pressed() -> void:
+	get_tree().change_scene_to_file("res://scene/my_home.tscn")
+	pass # Replace with function body.
