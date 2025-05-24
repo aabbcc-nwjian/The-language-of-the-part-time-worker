@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://b3wvs5g2jt3bh"]
+[gd_scene load_steps=4 format=3 uid="uid://b3wvs5g2jt3bh"]
 
 [ext_resource type="Texture2D" uid="uid://c5but57hhppry" path="res://assets/yiyuan.png" id="1_nun3o"]
 [ext_resource type="Script" uid="uid://b2hht0iyy6bex" path="res://script/yiyuan.gd" id="1_rij73"]
+
+[sub_resource type="Theme" id="Theme_rij73"]
 
 [node name="yiyuan" type="Node2D"]
 script = ExtResource("1_rij73")
@@ -19,6 +21,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="Button1" type="Button" parent="Node2D/Control"]
+visible = false
 layout_mode = 0
 offset_left = 593.0
 offset_top = 558.0
@@ -38,4 +41,33 @@ offset_bottom = 95.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
 text = "返回"
+flat = true
+
+[node name="VBoxContainer" type="HBoxContainer" parent="Node2D"]
+offset_left = 266.0
+offset_top = 291.0
+offset_right = 990.0
+offset_bottom = 486.0
+theme_override_constants/separation = 200
+
+[node name="Button" type="Button" parent="Node2D/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_rij73")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "买药"
+flat = true
+
+[node name="Button2" type="Button" parent="Node2D/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "打针"
+flat = true
+
+[node name="Button3" type="Button" parent="Node2D/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "住院"
 flat = true

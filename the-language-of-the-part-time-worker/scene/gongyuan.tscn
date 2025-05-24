@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbaipj5fpokep"]
+[gd_scene load_steps=4 format=3 uid="uid://cbaipj5fpokep"]
 
 [ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://script/gongyuan.gd" id="1_1qifb"]
 [ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="1_hvxmv"]
+
+[sub_resource type="Theme" id="Theme_1qifb"]
 
 [node name="gongyuan" type="Node2D"]
 script = ExtResource("1_1qifb")
@@ -40,6 +42,7 @@ text = "返回"
 flat = true
 
 [node name="Button2" type="Button" parent="Node2D/Gongyuan/Control"]
+visible = false
 layout_mode = 0
 offset_left = 614.0
 offset_top = 568.0
@@ -48,4 +51,26 @@ offset_bottom = 686.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 80
 text = "休闲"
+flat = true
+
+[node name="VBoxContainer" type="HBoxContainer" parent="Node2D"]
+offset_left = 420.0
+offset_top = 297.0
+offset_right = 884.0
+offset_bottom = 492.0
+theme_override_constants/separation = 200
+
+[node name="Button" type="Button" parent="Node2D/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_1qifb")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "跑步"
+flat = true
+
+[node name="Button2" type="Button" parent="Node2D/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "散步"
 flat = true

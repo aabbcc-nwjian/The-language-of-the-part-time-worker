@@ -21,6 +21,7 @@ offset_right = 682.0
 offset_bottom = 395.0
 
 [node name="Button1" type="Button" parent="Node2D/Control"]
+visible = false
 layout_mode = 0
 offset_left = -107.0
 offset_top = 199.0
@@ -41,3 +42,36 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
 text = "返回"
 flat = true
+
+[node name="ItemList" type="ItemList" parent="Node2D"]
+offset_left = 130.0
+offset_top = 41.0
+offset_right = 1127.0
+offset_bottom = 565.0
+
+[node name="Label" type="Label" parent="Node2D/ItemList"]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 21.0
+offset_right = 133.0
+offset_bottom = 76.0
+theme_override_font_sizes/font_size = 40
+text = "商品"
+
+[node name="Label2" type="Label" parent="Node2D/ItemList"]
+layout_mode = 0
+offset_left = 248.0
+offset_top = 24.0
+offset_right = 328.0
+offset_bottom = 79.0
+theme_override_font_sizes/font_size = 40
+text = "价格"
+
+[node name="Label3" type="Label" parent="Node2D/ItemList"]
+layout_mode = 0
+offset_left = 436.0
+offset_top = 26.0
+offset_right = 516.0
+offset_bottom = 81.0
+theme_override_font_sizes/font_size = 40
+text = "作用"
