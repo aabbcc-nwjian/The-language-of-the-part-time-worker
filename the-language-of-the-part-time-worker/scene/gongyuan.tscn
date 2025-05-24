@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-[gd_scene load_steps=3 format=3 uid="uid://ctq645vo2gg65"]
-
-[ext_resource type="Script" path="res://scene/gongyuan.gd" id="1_1qifb"]
-[ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="1_hvxmv"]
-=======
 [gd_scene load_steps=5 format=3 uid="uid://cbaipj5fpokep"]
 
 [ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://script/gongyuan.gd" id="1_1qifb"]
@@ -14,7 +8,6 @@
 [sub_resource type="GDScript" id="GDScript_1qifb"]
 script/source = "extends AcceptDialog
 "
->>>>>>> 429df033968e0eee8d76fe055bbaa11391506595
 
 [node name="gongyuan" type="Node2D"]
 script = ExtResource("1_1qifb")
