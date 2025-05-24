@@ -1,3 +1,43 @@
-[gd_scene format=3 uid="uid://m0jn7fykfstm"]
+[gd_scene load_steps=3 format=3 uid="uid://m0jn7fykfstm"]
+
+[ext_resource type="Texture2D" uid="uid://bvoofsfaps5y1" path="res://Pictures/gongyuan.png" id="1_du0vi"]
+[ext_resource type="Script" uid="uid://cpb30i5ar3do3" path="res://scene/book.gd" id="1_rnjoa"]
 
 [node name="book" type="Node2D"]
+script = ExtResource("1_rnjoa")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Gongyuan" type="Sprite2D" parent="Node2D"]
+position = Vector2(642, 355)
+texture = ExtResource("1_du0vi")
+
+[node name="Control" type="Control" parent="Node2D"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 642.0
+offset_top = 355.0
+offset_right = 682.0
+offset_bottom = 395.0
+
+[node name="Button1" type="Button" parent="Node2D/Control"]
+layout_mode = 0
+offset_left = -107.0
+offset_top = 199.0
+offset_right = 61.0
+offset_bottom = 317.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "卷"
+flat = true
+
+[node name="Button2" type="Button" parent="Node2D/Control"]
+layout_mode = 0
+offset_left = 499.0
+offset_top = -292.0
+offset_right = 577.0
+offset_bottom = -235.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 35
+text = "返回"
+flat = true

@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://di0byxytxbn11" path="res://Event/Classroom.tscn" id="1_h70x1"]
 [ext_resource type="PackedScene" uid="uid://cvxhj06fo8ugi" path="res://Options/options.tscn" id="2_38udg"]
-[ext_resource type="PackedScene" uid="uid://ddrhstkb5vjje" path="res://scene/hud.tscn" id="3_2pa7h"]
+[ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="3_2pa7h"]
 [ext_resource type="PackedScene" uid="uid://d0np6fj70qxg8" path="res://Character/Person.tscn" id="4_byrpl"]
 [ext_resource type="PackedScene" uid="uid://chgrvlys4l0je" path="res://Dialogue/Dialogue.tscn" id="5_rrtpp"]
 

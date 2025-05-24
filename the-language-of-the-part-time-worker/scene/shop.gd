@@ -7,6 +7,7 @@ var scene_paths = {
 @onready var scene_container = $Node2D
 func _ready():
 	$Node2D/Control/Button2.pressed.connect(_on_back_pressed)
+	$Node2D/Control/Button1.pressed.connect(check)
 
 func load_scene(scene_key: String):
 	# 清除旧场景
@@ -25,3 +26,8 @@ func load_scene(scene_key: String):
 
 func _on_back_pressed():
 	load_scene("map")
+func check():
+	User.mod_san(25)
+	User.mod_money(-200)
+	print(User.money)
+	print(User.san)

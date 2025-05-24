@@ -1,5 +1,5 @@
 extends Node
-
+var choose = 0
 var nick_name := "张晓梅"
 var money := 10000
 var health := 100

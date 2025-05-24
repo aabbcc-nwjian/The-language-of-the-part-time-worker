@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://cbaipj5fpokep"]
 
-[ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://scene/gongyuan.gd" id="1_1qifb"]
+[ext_resource type="Script" uid="uid://cj3cfbpxd6fk5" path="res://script/gongyuan.gd" id="1_1qifb"]
 [ext_resource type="Texture2D" uid="uid://6g8pkdj8hfaf" path="res://assets/gongyuan.png" id="1_hvxmv"]
 
 [node name="gongyuan" type="Node2D"]
@@ -37,4 +37,15 @@ offset_bottom = 242.908
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 35
 text = "返回"
+flat = true
+
+[node name="Button2" type="Button" parent="Node2D/Gongyuan/Control"]
+layout_mode = 0
+offset_left = 614.0
+offset_top = 568.0
+offset_right = 782.0
+offset_bottom = 686.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 80
+text = "休闲"
 flat = true

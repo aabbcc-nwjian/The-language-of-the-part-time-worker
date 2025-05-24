@@ -11,8 +11,8 @@ var scene_paths = {
 func _ready():
 	$map/buttons/Button1.pressed.connect(_on_yiyuan_pressed)
 	$map/buttons/Button2.pressed.connect(_on_gongyuan_pressed)
-	$map/buttons/Button3.pressed.connect(_on_book_pressed)
-	$map/buttons/Button4.pressed.connect(_on_shop_pressed)
+	$map/buttons/Button4.pressed.connect(_on_book_pressed)
+	$map/buttons/Button3.pressed.connect(_on_shop_pressed)
 
 func load_scene(scene_key: String):
 	# 清除旧场景

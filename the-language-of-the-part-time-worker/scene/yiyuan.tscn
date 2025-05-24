@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b3wvs5g2jt3bh"]
 
 [ext_resource type="Texture2D" uid="uid://c5but57hhppry" path="res://assets/yiyuan.png" id="1_nun3o"]
-[ext_resource type="Script" uid="uid://b2hht0iyy6bex" path="res://scene/yiyuan.gd" id="1_rij73"]
+[ext_resource type="Script" uid="uid://b2hht0iyy6bex" path="res://script/yiyuan.gd" id="1_rij73"]
 
 [node name="yiyuan" type="Node2D"]
 script = ExtResource("1_rij73")
