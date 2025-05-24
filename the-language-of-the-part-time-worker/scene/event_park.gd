@@ -1,5 +1,9 @@
 extends Node2D
 
+var scene_paths = {
+	"park": "res://scene/gongyuan.tscn"
+}
+
 @onready var discussion_node = $CanvasLayer/Discussion
 
 var event_list: Array = [] 
@@ -54,6 +58,5 @@ func _on_option_selected(effect: Dictionary) -> void:
 		User.mod_health(effect["health"])
 	if "ability" in effect:
 		User.mod_ability(effect["ability"])
-	
-	# 触发下一个随机事件
-	trigger_random_event()
+
+	get_tree().change_scene_to_file(scene_paths["park"])

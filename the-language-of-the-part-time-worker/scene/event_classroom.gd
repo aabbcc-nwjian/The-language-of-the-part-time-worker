@@ -1,5 +1,9 @@
 extends Node2D
 
+var scene_paths = {
+	"book": "res://scene/book.tscn"
+}
+
 @onready var discussion_node = $CanvasLayer/Discussion
 
 var event_list: Array = [] 
@@ -55,5 +59,5 @@ func _on_option_selected(effect: Dictionary) -> void:
 	if "ability" in effect:
 		User.mod_ability(effect["ability"])
 	
-	# 触发下一个随机事件
-	trigger_random_event()
+	# 跳转到book场景
+	get_tree().change_scene_to_file(scene_paths["book"])

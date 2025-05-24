@@ -6,7 +6,7 @@ func _ready() -> void:
 	if (User.stage == 0):
 		$BackgroundWeekday.show()
 		await get_tree().create_timer(2).timeout
-		get_tree().change_scene_to_file("res://scene/office.tscn")
+		get_tree().change_scene_to_file("res://scene/event_company.tscn")
 	# 休息日
 	elif (User.stage == 2):
 		$BackgroundWeekend.show()

@@ -16,20 +16,19 @@ offset_top = 22.0
 offset_right = 71.0
 offset_bottom = 62.0
 
+[node name="background" type="Sprite2D" parent="dialogue"]
+position = Vector2(759, 532.5)
+scale = Vector2(0.728083, 0.98806)
+texture = ExtResource("1_jxo3o")
+
 [node name="RichTextLabel" type="RichTextLabel" parent="dialogue"]
 layout_mode = 0
 offset_left = 286.0
 offset_top = 459.0
 offset_right = 1231.0
 offset_bottom = 675.0
-theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/normal_font_size = 24
 bbcode_enabled = true
-
-[node name="background" type="Sprite2D" parent="dialogue"]
-position = Vector2(759, 532.5)
-scale = Vector2(0.728083, 0.98806)
-texture = ExtResource("1_jxo3o")
 
 [node name="options" type="VBoxContainer" parent="."]
 offset_left = 759.0

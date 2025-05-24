@@ -1,92 +1,92 @@
 [
 	{
 		"id": 1,
-		"description": "老师突然要你上台演讲...",
+		"description": "你在图书馆找不到一本需要的书...",
 		"options": [
-			{"text": "勇敢上去", "effect": {"ability": 10, "san": -10}},
-			{"text": "婉拒", "effect": {"san": 5}},
-			{"text": "装作没听见", "effect": {"san": -5, "ability": -5}}
+			{"text": "向管理员求助", "effect": {"ability": 5}},
+			{"text": "自己继续找", "effect": {"san": -5}},
+			{"text": "换一本书看", "effect": {"san": 5}}
 		]
 	},
 	{
 		"id": 2,
-		"description": "你在课堂上不小心睡着了...",
+		"description": "你不小心在图书馆打了个响亮的喷嚏...",
 		"options": [
-			{"text": "被老师点名批评", "effect": {"san": -10}},
-			{"text": "装作听得很认真", "effect": {"san": -5}},
-			{"text": "下课后主动道歉", "effect": {"san": 5, "ability": 5}}
+			{"text": "小声道歉", "effect": {"san": -5}},
+			{"text": "假装无事发生", "effect": {"san": -10}},
+			{"text": "换个座位", "effect": {"san": -5}}
 		]
 	},
 	{
 		"id": 3,
-		"description": "你的作业忘在家里了...",
+		"description": "你发现有人在书架间偷偷吃东西...",
 		"options": [
-			{"text": "实话实说", "effect": {"san": 0}},
-			{"text": "编个理由", "effect": {"san": -5}},
-			{"text": "借用别人的作业交", "effect": {"ability": -5, "san": -10}}
+			{"text": "提醒对方图书馆规则", "effect": {"ability": 5, "san": -5}},
+			{"text": "告诉管理员", "effect": {"san": 5}},
+			{"text": "装作没看见", "effect": {"san": -5}}
 		]
 	},
 	{
 		"id": 4,
-		"description": "你的小组需要提交一份报告...",
+		"description": "一本你预约很久的热门新书终于到了...",
 		"options": [
-			{"text": "主动承担重任", "effect": {"ability": 15, "san": -5}},
-			{"text": "分配合理任务", "effect": {"ability": 5}},
-			{"text": "尽量少做", "effect": {"san": 5}}
+			{"text": "马上借走", "effect": {"san": 10}},
+			{"text": "再等等时机", "effect": {"san": 0}},
+			{"text": "让给别人", "effect": {"san": 5, "ability": 5}}
 		]
 	},
 	{
 		"id": 5,
-		"description": "课堂上同桌在偷偷抄你笔记...",
+		"description": "你正在学习，但旁边有人一直说话...",
 		"options": [
-			{"text": "不理他", "effect": {"san": -5}},
-			{"text": "提醒他不要这样", "effect": {"san": 5, "ability": 5}},
-			{"text": "主动分享", "effect": {"san": 10}}
+			{"text": "劝他们小声一点", "effect": {"san": -5, "ability": 5}},
+			{"text": "自己换个座位", "effect": {"san": 5}},
+			{"text": "向管理员投诉", "effect": {"san": 10}}
 		]
 	},
 	{
 		"id": 6,
-		"description": "老师问了一个你不会的问题...",
+		"description": "你找到了一个很冷门但有用的参考资料...",
 		"options": [
-			{"text": "承认不会", "effect": {"san": -5}},
-			{"text": "随机回答", "effect": {"san": -5, "ability": 5}},
-			{"text": "翻书偷看再回答", "effect": {"san": -10, "ability": 10}}
+			{"text": "认真阅读做笔记", "effect": {"ability": 10, "san": 5}},
+			{"text": "快速翻过", "effect": {"ability": 5}},
+			{"text": "留待下次", "effect": {"san": 0}}
 		]
 	},
 	{
 		"id": 7,
-		"description": "你获得了一次展示项目成果的机会...",
+		"description": "你在图书馆发现了一个别人落下的钱包...",
 		"options": [
-			{"text": "积极准备", "effect": {"ability": 15, "san": -5}},
-			{"text": "请求延期", "effect": {"san": 5}},
-			{"text": "找人帮忙代劳", "effect": {"san": 0, "ability": -10}}
+			{"text": "交给前台", "effect": {"san": 10}},
+			{"text": "翻看找线索", "effect": {"ability": 5, "san": 0}},
+			{"text": "自己收下", "effect": {"money": 200, "san": -30}}
 		]
 	},
 	{
 		"id": 8,
-		"description": "你忘记带学习资料...",
+		"description": "你在图书馆复习时感到非常困...",
 		"options": [
-			{"text": "跟同学借", "effect": {"san": 5}},
-			{"text": "向老师请假", "effect": {"san": 0}},
-			{"text": "硬着头皮上课", "effect": {"san": -10}}
+			{"text": "打个盹", "effect": {"health": 5, "san": 5}},
+			{"text": "坚持看完这章", "effect": {"san": -10}},
+			{"text": "出去走走透气", "effect": {"san": 10}}
 		]
 	},
 	{
 		"id": 9,
-		"description": "你被安排参加课外竞赛...",
+		"description": "图书馆电脑室满座，你该...",
 		"options": [
-			{"text": "全力以赴", "effect": {"ability": 15, "san": -10}},
-			{"text": "敷衍参与", "effect": {"ability": 5}},
-			{"text": "推辞不去", "effect": {"san": 10}}
+			{"text": "等待有空位", "effect": {"san": -5,"ability":10}},
+			{"text": "改用手机查资料", "effect": {"ability": 5}},
+			{"text": "在旁边蹲着学习", "effect": {"san": -5,"ability":5}}
 		]
 	},
 	{
 		"id": 10,
-		"description": "你发现考试题目有出错...",
+		"description": "你在图书馆偶遇正在写同一个课题的同学...",
 		"options": [
-			{"text": "立即反馈老师", "effect": {"ability": 5}},
-			{"text": "继续答题", "effect": {"san": -5}},
-			{"text": "借题发挥加分", "effect": {"ability": 10, "san": 5}}
+			{"text": "主动交流想法", "effect": {"ability": 10, "san": 5}},
+			{"text": "打个招呼继续学习", "effect": {"san": 5}},
+			{"text": "悄悄避开", "effect": {"san": -5}}
 		]
 	}
 ]

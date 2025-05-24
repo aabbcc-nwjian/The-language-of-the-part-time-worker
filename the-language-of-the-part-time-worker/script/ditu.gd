@@ -5,7 +5,10 @@ var scene_paths = {
 	"gongyuan": "res://scene/gongyuan.tscn",
 	"book": "res://scene/book.tscn",
 	"shop": "res://scene/shop.tscn",
-	"home":"res://scene/home.tscn"
+	"home":"res://scene/home.tscn",
+	"hospital":"res://scene/event_hospital.tscn",
+	"park":"res://scene/event_park.tscn",
+	"library":"res://scene/event_classroom.tscn"
 }
 
 @onready var scene_container = $map
@@ -35,13 +38,13 @@ func load_scene(scene_key: String):
 
 func _on_gongyuan_pressed():
 	hud.show()
-	load_scene("gongyuan")
+	load_scene("park")
 func _on_yiyuan_pressed():
 	hud.show()
-	load_scene("yiyuan")
+	load_scene("hospital")
 func _on_book_pressed():
 	hud.hide()
-	load_scene("book")
+	load_scene("library")
 func _on_shop_pressed():
 	hud.hide()
 	load_scene("shop")
