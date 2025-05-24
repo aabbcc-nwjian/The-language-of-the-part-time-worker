@@ -18,6 +18,7 @@ scale = Vector2(1.00233, 0.839306)
 texture = ExtResource("2_eqfcm")
 
 [node name="balance" type="Label" parent="BankLayer"]
+layout_mode = 0
 offset_left = 963.0
 offset_top = 234.0
 offset_right = 1159.0
@@ -25,27 +26,54 @@ offset_bottom = 281.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 
 [node name="confirm" type="Button" parent="BankLayer"]
-offset_left = 1033.0
+layout_mode = 0
+offset_left = 1030.0
 offset_top = 568.0
-offset_right = 1122.0
+offset_right = 1127.0
 offset_bottom = 596.0
 script = ExtResource("4_7dg0d")
 
 [node name="back" type="Button" parent="BankLayer"]
+layout_mode = 0
 offset_left = 904.0
 offset_top = 58.0
 offset_right = 936.0
 offset_bottom = 89.0
 script = ExtResource("4_7dg0d")
 
+[node name="loanCount" type="Label" parent="BankLayer"]
+layout_mode = 0
+offset_left = 1110.0
+offset_top = 198.0
+offset_right = 1224.0
+offset_bottom = 229.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+
+[node name="return" type="Button" parent="BankLayer"]
+layout_mode = 0
+offset_left = 1202.0
+offset_top = 57.0
+offset_right = 1252.0
+offset_bottom = 87.0
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "还款"
+script = ExtResource("4_7dg0d")
+
 [node name="CanvasLayer" type="Control" parent="."]
 anchors_preset = 0
 
 [node name="loan1000" type="Button" parent="CanvasLayer"]
-offset_left = 963.0
-offset_top = 378.0
-offset_right = 1170.0
-offset_bottom = 420.0
+layout_mode = 0
+offset_left = 942.0
+offset_top = 384.0
+offset_right = 1207.0
+offset_bottom = 415.0
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
@@ -57,30 +85,48 @@ text = "1000刀乐
 script = ExtResource("4_7dg0d")
 
 [node name="loan2000" type="Button" parent="CanvasLayer"]
-offset_left = 965.0
+offset_left = 942.0
 offset_top = 431.0
-offset_right = 1172.0
-offset_bottom = 466.0
+offset_right = 1207.0
+offset_bottom = 462.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "2000刀乐"
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "2000刀乐
+"
 script = ExtResource("4_7dg0d")
 
 [node name="loan3000" type="Button" parent="CanvasLayer"]
-offset_left = 968.0
-offset_top = 473.0
-offset_right = 1178.0
-offset_bottom = 515.0
+offset_left = 941.0
+offset_top = 477.0
+offset_right = 1206.0
+offset_bottom = 508.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "3000刀乐"
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "3000刀乐
+"
 script = ExtResource("4_7dg0d")
 
 [node name="loan4000" type="Button" parent="CanvasLayer"]
-offset_left = 972.0
-offset_top = 521.0
-offset_right = 1181.0
-offset_bottom = 560.0
+offset_left = 942.0
+offset_top = 523.0
+offset_right = 1207.0
+offset_bottom = 554.0
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "4000刀乐"
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+text = "4000刀乐
+"
 script = ExtResource("4_7dg0d")
 
 [node name="AcceptDialog" type="AcceptDialog" parent="."]
@@ -97,10 +143,74 @@ text = "贷款成功"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="AcceptDialog2" type="AcceptDialog" parent="."]
+auto_translate_mode = 1
+title = "提示"
+position = Vector2i(980, 200)
+size = Vector2i(200, 100)
+
+[node name="Label" type="Label" parent="AcceptDialog2"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 192.0
+offset_bottom = 51.0
+text = "无法确认"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AcceptDialog3" type="AcceptDialog" parent="."]
+auto_translate_mode = 1
+title = "提示"
+position = Vector2i(980, 200)
+size = Vector2i(200, 100)
+
+[node name="returnLoan" type="Label" parent="AcceptDialog3"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 192.0
+offset_bottom = 51.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AcceptDialog4" type="AcceptDialog" parent="."]
+auto_translate_mode = 1
+title = "提示"
+position = Vector2i(980, 200)
+size = Vector2i(200, 100)
+
+[node name="Label" type="Label" parent="AcceptDialog4"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 192.0
+offset_bottom = 51.0
+text = "还款成功"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AcceptDialog5" type="AcceptDialog" parent="."]
+auto_translate_mode = 1
+title = "提示"
+position = Vector2i(980, 200)
+size = Vector2i(200, 100)
+
+[node name="Label" type="Label" parent="AcceptDialog5"]
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 192.0
+offset_bottom = 51.0
+text = "余额不足，还款失败"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="pressed" from="BankLayer/confirm" to="." method="_on_confirm_pressed"]
 [connection signal="pressed" from="BankLayer/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="BankLayer/return" to="." method="_on_return_pressed"]
 [connection signal="pressed" from="CanvasLayer/loan1000" to="." method="_on_loan_1000_pressed"]
 [connection signal="pressed" from="CanvasLayer/loan2000" to="." method="_on_loan_2000_pressed"]
 [connection signal="pressed" from="CanvasLayer/loan3000" to="." method="_on_loan_3000_pressed"]
 [connection signal="pressed" from="CanvasLayer/loan4000" to="." method="_on_loan_4000_pressed"]
 [connection signal="confirmed" from="AcceptDialog" to="." method="_on_accept_dialog_confirmed"]
+[connection signal="confirmed" from="AcceptDialog2" to="." method="_on_accept_dialog_2_confirmed"]
+[connection signal="confirmed" from="AcceptDialog3" to="." method="_on_accept_dialog_3_confirmed"]
+[connection signal="confirmed" from="AcceptDialog4" to="." method="_on_accept_dialog_4_confirmed"]
+[connection signal="confirmed" from="AcceptDialog5" to="." method="_on_accept_dialog_5_confirmed"]

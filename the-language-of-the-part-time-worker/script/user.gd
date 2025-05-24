@@ -13,6 +13,7 @@ var choose = 0
 # 居住的房间
 var room := 0
 
+
 # 能力属性
 var nick_name := "张晓梅"
 var money := 10000
