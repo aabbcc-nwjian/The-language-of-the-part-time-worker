@@ -24,6 +24,11 @@ var max_san := 100
 var ability := 100
 var max_ability := 100
 
+var l_money := 0
+var l_health := 0
+var l_san := 0
+var l_ability := 0
+
 # 定义不同房间的租金
 var room_rent: int:
 	get:

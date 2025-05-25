@@ -1,5 +1,22 @@
 extends Control
 
+@onready var now_money = $DiffMoney
+@onready var now_san = $DiffSan
+@onready var now_health=$DiffHealth
+@onready var now_ability=$DiffAbility
+func _ready() -> void:
+	var m = User.money
+	var s = User.san
+	var h = User.health
+	var a = User.ability
+	now_money.text = str(m - User.l_money)
+	now_san.text = str(s - User.l_san)
+	now_health.text = str(h - User.l_health)
+	now_ability.text = str(a - User.l_ability)
+	User.l_money = m
+	User.l_san = s
+	User.l_health = h
+	User.l_ability = a
 
 func _on_button_continue_pressed() -> void:
 	_recovery_status()
