@@ -1,7 +1,30 @@
 extends Node
 
+var max_cycle = 51
+func _enter_ending():
+	if (health == 0):
+		ending = 1
+	elif (money <= 0):
+		if (choose == 1):
+			ending = 2
+		elif (choose == 2):
+			ending = 3
+		elif (choose == 3):
+			ending = 4
+	elif (room == 2 && money > 100_000):
+		ending = 5
+	else:
+		ending = 6
+	get_tree().change_scene_to_file("res://scene/ending.tscn")
+
+
 # 游戏进行的周期数
-var cycle_num = 0
+var cycle_num = 0:
+	set(value):
+		cycle_num = value
+		if (value >= max_cycle):
+			_enter_ending()
+			
 # 游戏阶段
 # 0： 工作日白天
 # 1： 工作日下班后
@@ -13,6 +36,7 @@ var choose = 0
 # 居住的房间
 var room := 0
 
+var ending := 0
 
 # 能力属性
 var nick_name := "张晓梅"
@@ -28,6 +52,10 @@ var l_money := 0
 var l_health := 0
 var l_san := 0
 var l_ability := 0
+var acc_money := 0
+var acc_health := 0
+var acc_san := 0
+var acc_max_ability := 0
 
 # 定义不同房间的租金
 var room_rent: int:
@@ -66,14 +94,17 @@ signal max_ability_changed(new_value)
 # 加减金钱
 func mod_money(value: int) -> void:
 	set_money(money + value)
+	acc_money += value
 
 # 加减健康值
 func mod_health(value: int) -> void:
 	set_health(health + value)
+	acc_health += value
 	
 # 加减精神值
 func mod_san(value: int) -> void:
 	set_san(san + value)
+	acc_san += value
 
 # 加减能力值
 func mod_ability(value: int) -> void:
@@ -90,6 +121,7 @@ func mod_max_san(value: int) -> void:
 # 加减最大能力值
 func mod_max_ability(value: int) -> void:
 	set_max_ability(max_ability + value)
+	acc_max_ability += value
 
 # 设置昵称
 func set_nickname(nickname: String) -> void:
@@ -100,11 +132,15 @@ func set_nickname(nickname: String) -> void:
 func set_money(value: int) -> void:
 	money = value
 	money_changed.emit(money)
+	if (money <= 0):
+		_enter_ending()
 
 # 设置健康的绝对值
 func set_health(value: int) -> void:
 	health = clamp(value, 0, max_health)
 	health_changed.emit(health)
+	if (health == 0):
+		_enter_ending()
 
 # 设置精神的绝对值
 func set_san(value: int) -> void:

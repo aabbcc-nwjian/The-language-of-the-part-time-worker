@@ -17,10 +17,20 @@ func _ready() -> void:
 	User.l_san = s
 	User.l_health = h
 	User.l_ability = a
+	$DiffMoney.text = "%d" % User.acc_money
+	$DiffSan.text = "%d" % User.acc_san
+	$DiffHealth.text = "%d" % User.acc_health
+	$DiffAbility.text = "%d" % User.acc_max_ability
 
 func _on_button_continue_pressed() -> void:
 	_recovery_status()
 	_goto_next_day()
+	
+	User.acc_money = 0
+	User.acc_san = 0
+	User.acc_health = 0
+	User.acc_max_ability = 0
+	
 	pass # Replace with function body.
 
 func _goto_next_day():
@@ -35,7 +45,8 @@ func _goto_next_day():
 		User.stage = 0
 	# 推进周期数
 	User.cycle_num += 1
-	get_tree().change_scene_to_file("res://scene/day_transition.tscn")
+	if (User.cycle_num < User.max_cycle):
+		get_tree().change_scene_to_file("res://scene/day_transition.tscn")
 
 # 结算每日状态
 func _recovery_status():

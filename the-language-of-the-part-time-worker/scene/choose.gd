@@ -37,7 +37,7 @@ func choose_t():
 	thechoose = 3
 	accept_dialog.popup_centered()
 func on_accept_dialog():
-
+	User.choose = thechoose
 	if thechoose == 1:
 		choose_first()
 	elif thechoose == 2:
