@@ -13,7 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://jil4t5terbfd" path="res://scene/popup.tscn" id="11_4jcat"]
 [ext_resource type="PackedScene" uid="uid://q8yx3khnaqsu" path="res://scene/progress_bar.tscn" id="11_ypve7"]
 [ext_resource type="PackedScene" uid="uid://c837doqwlwuqw" path="res://scene/popup_confirm.tscn" id="13_gliqy"]
-[ext_resource type="PackedScene" path="res://scene/todo_list.tscn" id="14_8ob14"]
+[ext_resource type="PackedScene" uid="uid://d3kadyisvovxr" path="res://scene/todo_list.tscn" id="14_8ob14"]
 
 [node name="Office" type="Node2D"]
 script = ExtResource("4_vnthd")
