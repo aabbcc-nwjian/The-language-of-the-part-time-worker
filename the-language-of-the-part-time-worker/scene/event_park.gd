@@ -58,5 +58,5 @@ func _on_option_selected(effect: Dictionary) -> void:
 		User.mod_health(effect["health"])
 	if "ability" in effect:
 		User.mod_ability(effect["ability"])
-
+	User.times-=1
 	get_tree().change_scene_to_file(scene_paths["park"])

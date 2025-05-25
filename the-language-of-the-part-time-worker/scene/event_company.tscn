@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dp071pfqq0o2u" path="res://Event/Company.tscn" id="2_lm7p6"]
 [ext_resource type="PackedScene" uid="uid://d0np6fj70qxg8" path="res://Character/Person.tscn" id="3_mund1"]
 [ext_resource type="PackedScene" uid="uid://b3x44g6r4hrth" path="res://scene/hud.tscn" id="5_lm7p6"]
-[ext_resource type="PackedScene" uid="uid://b5l3pr0yuxr06" path="res://Dialogue/Discussion.tscn" id="5_mund1"]
+[ext_resource type="PackedScene" path="res://Dialogue/Discussion.tscn" id="5_mund1"]
 
 [node name="EventCompany" type="Node2D"]
 script = ExtResource("1_mund1")

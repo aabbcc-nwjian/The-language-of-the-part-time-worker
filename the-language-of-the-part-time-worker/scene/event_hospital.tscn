@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1g4irvotiraw"]
 
-[ext_resource type="Script" path="res://scene/event_hospital.gd" id="1_8yxbq"]
+[ext_resource type="Script" uid="uid://dmpnshboxspov" path="res://scene/event_hospital.gd" id="1_8yxbq"]
 [ext_resource type="PackedScene" uid="uid://co0cie3v0kx5l" path="res://Event/Hospital.tscn" id="1_l7248"]
 [ext_resource type="PackedScene" uid="uid://d0np6fj70qxg8" path="res://Character/Person.tscn" id="4_anu0e"]
 [ext_resource type="PackedScene" path="res://Dialogue/Discussion.tscn" id="5_8yxbq"]

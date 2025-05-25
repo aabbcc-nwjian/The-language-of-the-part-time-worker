@@ -28,3 +28,5 @@ func _recovery_status():
 	User.mod_san(User.room_recovery)
 	# 结算房租
 	User.mod_money(User.room_rent)
+	
+	User.times = 3

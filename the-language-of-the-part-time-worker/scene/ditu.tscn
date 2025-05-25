@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dv5mf6h8gog8n"]
+[gd_scene load_steps=5 format=3 uid="uid://b3gc64uf10cvl"]
 
 [ext_resource type="Script" uid="uid://tqwbsqmep01b" path="res://script/ditu.gd" id="1_acov4"]
 [ext_resource type="Texture2D" uid="uid://e3quphgr7m73" path="res://Pictures/地图.png" id="2_wwuf8"]

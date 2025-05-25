@@ -129,7 +129,11 @@ func set_max_ability(value: int) -> void:
 	max_ability_changed.emit(value)
 	set_ability(clamp(ability, 0, value))
 
-
+var times = 3
+func random_int():
+	var rng = RandomNumberGenerator.new()
+	rng.randomize()
+	return rng.randi_range(0,1)
 
 var item_list = []
 var a = false

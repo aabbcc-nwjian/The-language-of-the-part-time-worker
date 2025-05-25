@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://otgfayuxenqy"]
+[gd_scene load_steps=4 format=3 uid="uid://cesg7ux626ajf"]
 
 [ext_resource type="Script" uid="uid://c0q5odp8v8cel" path="res://scene/day_transition.gd" id="1_cndrc"]
 [ext_resource type="Texture2D" uid="uid://cfqw6g30nt8l0" path="res://assets/248072228CD0363F7314C5D4320286F7.png" id="2_78bn4"]

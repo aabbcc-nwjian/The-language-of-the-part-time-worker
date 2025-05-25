@@ -60,4 +60,5 @@ func _on_option_selected(effect: Dictionary) -> void:
 		User.mod_ability(effect["ability"])
 	
 	# 跳转到book场景
+	User.times-=1
 	get_tree().change_scene_to_file(scene_paths["book"])

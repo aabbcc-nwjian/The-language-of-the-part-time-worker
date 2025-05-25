@@ -38,13 +38,22 @@ func load_scene(scene_key: String):
 
 func _on_gongyuan_pressed():
 	hud.show()
-	load_scene("park")
+	if User.times>0 and User.random_int()>0.5:
+		load_scene("park")
+	else:
+		load_scene("gongyuan")
 func _on_yiyuan_pressed():
 	hud.show()
-	load_scene("hospital")
+	if User.times>0 and User.random_int()>0.5:
+		load_scene("hospital")
+	else:
+		load_scene("yiyuan")
 func _on_book_pressed():
 	hud.hide()
-	load_scene("library")
+	if User.times>0 and User.random_int()>0.5:
+		load_scene("library")
+	else:
+		load_scene("book")
 func _on_shop_pressed():
 	hud.hide()
 	load_scene("shop")
